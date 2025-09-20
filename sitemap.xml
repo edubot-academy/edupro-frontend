@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://edupro.academy/</loc></url>
+  <url><loc>https://edupro.academy/programs</loc></url>
+  <url><loc>https://edupro.academy/programs/frontend</loc></url>
+  <url><loc>https://edupro.academy/programs/backend_django</loc></url>
+  <url><loc>https://edupro.academy/programs/flutter</loc></url>
+  <url><loc>https://edupro.academy/programs/ux_ui</loc></url>
+  <url><loc>https://edupro.academy/apply</loc></url>
+  <url><loc>https://edupro.academy/pricing</loc></url>
+  <url><loc>https://edupro.academy/about</loc></url>
+  <url><loc>https://edupro.academy/contact</loc></url>
+</urlset>
