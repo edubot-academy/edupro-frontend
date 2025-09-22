@@ -13,6 +13,14 @@ import Contact from "./pages/Contact";
 
 import "./index.css";
 
+const url = new URL(window.location.href);
+const preserved = url.searchParams.get('p');
+if (preserved) {
+  const target = decodeURIComponent(preserved);
+  // Replace the current URL so we don't keep ?p= in history
+  window.history.replaceState({}, '', target);
+}
+
 const router = createBrowserRouter([
   {
     element: <AppLayout />,   // header + footer live here

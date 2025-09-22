@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- If you host at the custom domain root, use "/" below -->
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+        // Preserve path/query/hash so the app can handle it
+        var p = location.pathname + location.search + location.hash;
+        location.replace("/?p=" + encodeURIComponent(p));
+    </script>
+</head>
+
+<body></body>
+
+</html>
