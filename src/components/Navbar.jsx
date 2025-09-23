@@ -2,6 +2,9 @@
 import { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from "./LanguageSwitcher";
+
 
 /**
  * Props:
@@ -9,22 +12,21 @@ import { HiMenu, HiX } from "react-icons/hi";
  * - lang: "EN" | "KG" | "RU"
  * - setLang: (v: string) => void
  */
-export default function Navbar({ t, lang = "EN", setLang = () => { } }) {
+export default function Navbar() {
     const [open, setOpen] = useState(false);
     const { pathname } = useLocation();
+    const { t } = useTranslation();
 
     // Safe labels if t is not provided yet
     const labels = {
-        home: "Home",
-        programs: t?.nav?.programs || "Programs",
-        pricing: t?.nav?.pricing || "Pricing",
-        about: t?.nav?.about || "About",
-        contact: t?.nav?.contact || "Contact",
-        apply: t?.hero?.ctaPrimary || "Apply Now",
+        programs: t("nav.programs"),
+        pricing: t("nav.pricing"),
+        about: t("nav.about"),
+        contact: t("nav.contact"),
+        apply: t("hero.ctaPrimary"),
     };
 
     const navLinks = [
-        { to: "/", label: labels.home },
         { to: "/programs", label: labels.programs },
         { to: "/pricing", label: labels.pricing },
         { to: "/about", label: labels.about },
@@ -62,16 +64,7 @@ export default function Navbar({ t, lang = "EN", setLang = () => { } }) {
                 {/* Right controls */}
                 <div className="hidden md:flex items-center gap-3">
                     {/* Language selector */}
-                    <select
-                        aria-label="Language"
-                        className="rounded-lg border border-slate-300 bg-white px-2 py-1 text-sm"
-                        value={lang}
-                        onChange={(e) => setLang(e.target.value)}
-                    >
-                        <option value="EN">EN</option>
-                        <option value="KG">KG</option>
-                        <option value="RU">RU</option>
-                    </select>
+                    <LanguageSwitcher />
 
                     {/* Apply button */}
                     <Link
@@ -112,21 +105,7 @@ export default function Navbar({ t, lang = "EN", setLang = () => { } }) {
 
                         {/* Language selector */}
                         <div className="pt-2 border-t border-slate-200 flex items-center justify-between">
-                            <span className="text-sm text-slate-600">Language</span>
-                            <select
-                                aria-label="Language"
-                                className="rounded-lg border border-slate-300 bg-white px-2 py-1 text-sm"
-                                value={lang}
-                                onChange={(e) => {
-                                    setLang(e.target.value);
-                                    // keep menu open/closed? close for now:
-                                    setOpen(false);
-                                }}
-                            >
-                                <option value="EN">EN</option>
-                                <option value="KG">KG</option>
-                                <option value="RU">RU</option>
-                            </select>
+                            <LanguageSwitcher />
                         </div>
 
                         {/* Apply button */}

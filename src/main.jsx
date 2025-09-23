@@ -1,4 +1,5 @@
 import React from "react";
+import './i18n';
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./layouts/AppLayout";
@@ -12,6 +13,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 import "./index.css";
+import LanguageProvider from './providers/LanguageProvider';
 
 const url = new URL(window.location.href);
 const preserved = url.searchParams.get('p');
@@ -46,4 +48,10 @@ function NotFound() {
   );
 }
 
-createRoot(document.getElementById("root")).render(<RouterProvider router={router} />);
+createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <LanguageProvider>
+      <RouterProvider router={router} />
+    </LanguageProvider>
+  </React.StrictMode>
+);
