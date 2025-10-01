@@ -4,6 +4,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from "./LanguageSwitcher";
+import Header from "./Header";
 
 
 /**
@@ -37,7 +38,9 @@ export default function Navbar() {
     const applyTo = pathname === "/" ? "/#apply" : "/apply";
 
     return (
-        <header className="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-200">
+        <header className="sticky top-0 z-50 backdrop-blur bg-white/10 border-b border-slate-200">
+            
+            <Header/>
             <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
                 {/* Brand */}
                 <Link to="/" className="flex items-center gap-3">
