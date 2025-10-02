@@ -22,16 +22,21 @@ export default function Header() {
   ];
 
   return (
+
     <header className="hidden md:block sticky top-0 z-50 backdrop-blur bg-white/40 border-b border-slate-200">
+
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Логотип */}
         <Link to="/" className="flex items-center gap-1">
           <img src={logo} alt="EduPro logo" className="h-12 w-12" />
-          <span className="font-extrabold flex items-center">
-            <span className="text-slate-800 text-3xl">Edu</span>
-            <span className="text-purple-600 text-3xl">Pro</span>
+          <span className="font-unbounded text-3xl font-extrabold flex items-center">
+            <span className="text-slate-800">Edu</span>
+            <span className="text-purple-600">Pro</span>
           </span>
         </Link>
+
+
+
 
         {/* Навигация */}
         <nav className="flex items-center gap-8 text-sm">
@@ -53,11 +58,14 @@ export default function Header() {
           <LanguageSwitcher />
           <Link
             to="/contact"
-            className="flex items-center gap-2 px-6 py-2 rounded-full bg-purple-600 text-white font-semibold text-sm hover:bg-purple-700"
+            className="flex items-center gap-2 px-6 py-2 rounded-full text-white font-semibold text-sm
+             bg-gradient-to-t from-[#472799] to-[#7640FF] 
+             hover:text-white transition-colors duration-300"
           >
             {labels.contact}
             <img src={arrow} alt="arrow" className="w-6 h-6" />
           </Link>
+
         </div>
       </div>
     </header>

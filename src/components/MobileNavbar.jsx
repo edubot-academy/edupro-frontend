@@ -3,7 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
 import logo from "../assets/logo.svg";
-import { HiX } from "react-icons/hi";
+import { CiMenuBurger } from "react-icons/ci";
+import { HiXMark } from "react-icons/hi2";
 
 export default function MobileNavbar() {
   const { t } = useTranslation();
@@ -20,7 +21,7 @@ export default function MobileNavbar() {
     { to: "/programs", label: labels.programs },
     { to: "/pricing", label: labels.pricing },
     { to: "/about", label: labels.about },
-    { to: "/contact", label: labels.contact }, // теперь обычный пункт меню
+    { to: "/contact", label: labels.contact },
   ];
 
   return (
@@ -31,7 +32,7 @@ export default function MobileNavbar() {
 
         {/* Логотип по центру */}
         <Link to="/" className="flex items-center gap-1">
-          <img src={logo} alt="EduPro logo" className="h-10 w-10" />
+          <img src={logo} alt="EduPro logo" className="h-8 w-8" />
           <span className="font-extrabold flex items-center">
             <span className="text-slate-800 text-2xl">Edu</span>
             <span className="text-purple-600 text-2xl">Pro</span>
@@ -39,10 +40,8 @@ export default function MobileNavbar() {
         </Link>
 
         {/* Гамбургер справа */}
-        <button onClick={() => setOpen(true)} className="focus:outline-none">
-          <span className="block w-6 h-0.5 bg-black mb-1"></span>
-          <span className="block w-6 h-0.5 bg-black mb-1"></span>
-          <span className="block w-6 h-0.5 bg-black"></span>
+        <button onClick={() => setOpen(true)} className="focus:outline-none bg-white">
+          <CiMenuBurger className="h-7 w-7 text-black" />
         </button>
       </div>
 
@@ -61,9 +60,9 @@ export default function MobileNavbar() {
             <div className="flex justify-start p-4">
               <button
                 onClick={() => setOpen(false)}
-                className="text-black hover:text-purple-600 focus:outline-none"
+                className="text-black hover:text-purple-600 focus:outline-none bg-white"
               >
-                <HiX className="h-7 w-7" />
+                <HiXMark className="h-7 w-7" />
               </button>
             </div>
 
