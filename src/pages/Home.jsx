@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Aboutedupro from "../components/Aboutedupro";
+import QuestionsAboutEduPro from "../components/QuestionsAboutEduPro";
 
 export default function Home() {
   const { t } = useTranslation(["common", "home"]);
@@ -241,6 +242,7 @@ export default function Home() {
           </form>
         </div>
       </section>
+      <QuestionsAboutEduPro />
     </div>
   );
 }
