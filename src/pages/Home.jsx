@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
+import LeadForm from "../components/LeadForm";
 
 // EduPro Academy Landing Page — single-file React component
 // - TailwindCSS utility classes
@@ -200,7 +201,7 @@ export default function Home() {
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold">{t('home:cta.title')}</h2>
                     <p className="text-slate-600 mt-2">{t('home:cta.subtitle')}</p>
-                    <form className="mt-8 grid sm:grid-cols-3 gap-3 text-left">
+                    {/* <form className="mt-8 grid sm:grid-cols-3 gap-3 text-left">
                         <input required placeholder="Full name" className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3" />
                         <input required type="email" placeholder="Email" className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3" />
                         <input placeholder="Phone (WhatsApp/Telegram)" className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3" />
@@ -212,8 +213,9 @@ export default function Home() {
                             <option>On‑campus</option>
                             <option>Hybrid</option>
                         </select>
-                        <button className="col-span-1 rounded-xl bg-emerald-600 text-white px-4 py-3 font-semibold hover:bg-emerald-700">{t('cta.button')}</button>
-                    </form>
+                        <button className="col-span-1 rounded-xl bg-emerald-600 text-white px-4 py-3 font-semibold hover:bg-emerald-700">{t('home:cta.button')}</button>
+                    </form> */}
+                    <LeadForm />
                 </div>
             </section>
         </div>
