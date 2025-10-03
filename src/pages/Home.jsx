@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Whyedupro from "../components/whyedupro";
+import Aboutedupro from "../components/Aboutedupro";
 
 // EduPro Academy Landing Page — single-file React component
 // - TailwindCSS utility classes
@@ -125,7 +125,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Whyedupro />
+      <Aboutedupro />
       {/* Features & Outcomes */}
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
