@@ -74,8 +74,7 @@ export default function MobileNavbar() {
                   to={link.to}
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
-                    `font-medium hover:text-purple-600 ${
-                      isActive ? "text-purple-600" : "text-black"
+                    `font-medium hover:text-purple-600 ${isActive ? "text-purple-600" : "text-black"
                     }`
                   }
                 >

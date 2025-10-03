@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export default function Footer() {
-    const { t } = useTranslation();
+    const { t } = useTranslation(['common', 'footer', 'home']);
 
     // Quick links labels come from `nav.*`
     const quickLinks = [
@@ -14,7 +14,7 @@ export default function Footer() {
 
     // Program names from translations; slugs are your routes
     const programSlugs = ["frontend", "backend_django", "flutter", "ux_ui"];
-    const programNames = t("programs.items", { returnObjects: true })
+    const programNames = t("home:programs.items", { returnObjects: true })
         .slice(0, 4)
         .map((p) => p.name);
 
@@ -45,7 +45,7 @@ export default function Footer() {
 
                 {/* Programs */}
                 <div>
-                    <h4 className="text-white font-semibold mb-3">{t("nav.programs")}</h4>
+                    <h4 className="text-white font-semibold mb-3">{t("common:nav.programs")}</h4>
                     <ul className="space-y-2">
                         {programNames.map((name, i) => (
                             <li key={programSlugs[i]}>
@@ -59,33 +59,33 @@ export default function Footer() {
 
                 {/* Contact */}
                 <div>
-                    <h4 className="text-white font-semibold mb-3">{t("footer.contact.title")}</h4>
+                    <h4 className="text-white font-semibold mb-3">{t("common:footer.contact.title")}</h4>
                     <ul className="space-y-2 text-sm">
                         <li>
-                            {t("footer.contact.labels.email")}:{" "}
-                            <a href={`mailto:${t("footer.contact.email")}`} className="hover:text-white">
-                                {t("footer.contact.email")}
+                            {t("common:footer.contact.labels.email")}:{" "}
+                            <a href={`mailto:${t("common:footer.contact.email")}`} className="hover:text-white">
+                                {t("common:footer.contact.email")}
                             </a>
                         </li>
                         <li>
-                            {t("footer.contact.labels.phone")}:{" "}
+                            {t("common:footer.contact.labels.phone")}:{" "}
                             <a href="tel:+996555000111" className="hover:text-white">
-                                {t("footer.contact.phone")}
+                                {t("common:footer.contact.phone")}
                             </a>
                         </li>
                         <li>
-                            {t("footer.contact.labels.telegram")}:{" "}
+                            {t("common:footer.contact.labels.telegram")}:{" "}
                             <a
                                 href="https://t.me/eduproacademy"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="hover:text-white"
                             >
-                                {t("footer.contact.telegram")}
+                                {t("common:footer.contact.telegram")}
                             </a>
                         </li>
                         <li>
-                            {t("footer.contact.labels.address")}: {t("footer.contact.location")}
+                            {t("common:footer.contact.labels.address")}: {t("common:footer.contact.location")}
                         </li>
                     </ul>
                 </div>
@@ -93,7 +93,7 @@ export default function Footer() {
 
             {/* Bottom bar */}
             <div className="border-t border-slate-800 py-4 text-center text-sm text-slate-400">
-                {t("footer.rights", { year: new Date().getFullYear() })}
+                {t("common:footer.rights", { year: new Date().getFullYear() })}
             </div>
         </footer>
     );

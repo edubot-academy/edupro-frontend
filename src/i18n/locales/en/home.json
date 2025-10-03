@@ -1,15 +1,4 @@
 {
-    "lang": {
-        "en": "EN",
-        "ru": "RU",
-        "ky": "KG"
-    },
-    "nav": {
-        "programs": "Programs",
-        "pricing": "Pricing",
-        "about": "About",
-        "contact": "Contact"
-    },
     "hero": {
         "eyebrow": "Future-Ready Education",
         "title": "Learn skills that get you hired.",
@@ -182,28 +171,5 @@
         "title": "Ready to start?",
         "subtitle": "Apply in 3 minutes. Our team will follow up within 24 hours.",
         "button": "Start application"
-    },
-    "footer": {
-        "brand": {
-            "name": "EduPro Academy",
-            "tagline": "Preparing students for an AI-driven future with practical IT skills and mentorship."
-        },
-        "quick": {
-            "title": "Quick Links"
-        },
-        "contact": {
-            "title": "Contact",
-            "labels": {
-                "email": "Email",
-                "phone": "Phone",
-                "telegram": "Telegram",
-                "address": "Address"
-            },
-            "email": "info@edupro.academy",
-            "phone": "+996 (555) 000-111",
-            "telegram": "@eduproacademy",
-            "location": "Bishkek, Kyrgyzstan"
-        },
-        "rights": "© {{year}} EduPro Academy. All rights reserved."
     }
 }

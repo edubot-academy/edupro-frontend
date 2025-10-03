@@ -1,0 +1,36 @@
+{
+    "lang": {
+        "en": "EN",
+        "ru": "RU",
+        "ky": "KG"
+    },
+    "nav": {
+        "programs": "Программы",
+        "pricing": "Цены",
+        "about": "О нас",
+        "contact": "Контакты"
+    },
+    "footer": {
+        "brand": {
+            "name": "EduPro Academy",
+            "tagline": "Готовим студентов к будущему с ИИ: практические IT-навыки и менторство."
+        },
+        "quick": {
+            "title": "Быстрые ссылки"
+        },
+        "contact": {
+            "title": "Контакты",
+            "labels": {
+                "email": "Email",
+                "phone": "Телефон",
+                "telegram": "Telegram",
+                "address": "Адрес"
+            },
+            "email": "info@edupro.academy",
+            "phone": "+996 (555) 000-111",
+            "telegram": "@eduproacademy",
+            "location": "Бишкек, Кыргызстан"
+        },
+        "rights": "© {{year}} EduPro Academy. Все права защищены."
+    }
+}
