@@ -7,8 +7,8 @@ export default function LeadForm({ programOptions = [] }) {
         fullName: "",
         email: "",
         phone: "",
-        programSlug: programOptions[0]?.slug || "frontend",
-        studyMode: "online",
+        courseName: programOptions[0]?.slug || "frontend",
+        courseType: "online",
         notes: "",
     });
     const [loading, setLoading] = useState(false);
@@ -26,7 +26,7 @@ export default function LeadForm({ programOptions = [] }) {
         setLoading(true); setErr("");
         try {
             const utm = readPersistedUTMs();
-            const payload = { ...form, source: document.referrer || "direct", utm };
+            const payload = { ...form, source: "WEBSITE" };
             await submitLead(payload);
             setOk(true);
             setForm((f) => ({ ...f, fullName: "", email: "", phone: "", notes: "" }));
@@ -52,7 +52,7 @@ export default function LeadForm({ programOptions = [] }) {
                 className="rounded-xl border border-slate-300 px-4 py-3 col-span-1"
             />
             <input
-                name="email" type="email" required placeholder="Email" value={form.email} onChange={onChange}
+                name="email" type="email" placeholder="Email" value={form.email} onChange={onChange}
                 className="rounded-xl border border-slate-300 px-4 py-3 col-span-1"
             />
             <input
@@ -61,7 +61,7 @@ export default function LeadForm({ programOptions = [] }) {
             />
 
             <select
-                name="programSlug" value={form.programSlug} onChange={onChange}
+                name="courseName" value={form.courseName} onChange={onChange}
                 className="rounded-xl border border-slate-300 px-4 py-3 col-span-1"
             >
                 {(programOptions.length ? programOptions : [
@@ -75,7 +75,7 @@ export default function LeadForm({ programOptions = [] }) {
             </select>
 
             <select
-                name="studyMode" value={form.studyMode} onChange={onChange}
+                name="courseType" value={form.courseType} onChange={onChange}
                 className="rounded-xl border border-slate-300 px-4 py-3 col-span-1"
             >
                 <option value="online">Online</option>
