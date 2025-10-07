@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
 import HeroBanner from "../components/HeroBanner";
+import LeadForm from "../components/LeadForm";
 
 // EduPro Academy Landing Page — single-file React component
 // - TailwindCSS utility classes
@@ -11,7 +12,22 @@ import HeroBanner from "../components/HeroBanner";
 
 
 export default function Home() {
-    const { t } = useTranslation();
+    const { t } = useTranslation(['common', 'home']);
+    const title = t('home:hero.title');
+    const subtitle = t('home:hero.subtitle');
+    const ctaPrimary = t('home:hero.ctaPrimary');
+    const ctaSecondary = t('home:hero.ctaSecondary');
+    const eyebrow = t('home:hero.eyebrow');
+    // 2) Arrays: return objects
+    const metrics = t('home:metrics', { returnObjects: true }); // -> array
+    const programs = t('home:programs.items', { returnObjects: true }); // -> array
+    const howSteps = t('home:how.steps', { returnObjects: true });
+    const features = t('home:features.items', { returnObjects: true });
+    const outcomes = t('home:outcomes.bullets', { returnObjects: true });
+    const testimonials = t('home:testimonials.items', { returnObjects: true });
+    const plans = t('home:pricing.plans', { returnObjects: true });
+    const faqItems = t('home:faq.items', { returnObjects: true });
+
     return (
         <div className="min-h-screen bg-slate-50 text-slate-900">
             {/* Hero */}
@@ -20,7 +36,7 @@ export default function Home() {
             <section className="py-8">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        {t('metrics', { returnObjects: true }).map((m, i) => (
+                        {metrics.map((m, i) => (
                             <div key={i} className="rounded-2xl bg-white ring-1 ring-slate-200 p-6 text-center shadow-sm">
                                 <div className="text-3xl font-bold">{m.value}</div>
                                 <div className="text-slate-500 mt-1 text-sm">{m.label}</div>
@@ -33,9 +49,9 @@ export default function Home() {
             {/* Programs */}
             <section id="programs" className="py-16">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold mb-8">{t('programs.title')}</h2>
+                    <h2 className="text-3xl font-bold mb-8">{t('home:programs.title')}</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {t('programs.items', { returnObjects: true }).map((p, i) => (
+                        {programs.map((p, i) => (
                             <article key={i} className="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow">
                                 <h3 className="font-semibold text-lg">{p.name}</h3>
                                 <p className="text-sm text-slate-500 mt-1">{p.dur}</p>
@@ -50,9 +66,9 @@ export default function Home() {
             {/* How it works */}
             <section className="py-16 bg-slate-100/60" id="about">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold mb-10">{t('how.title')}</h2>
+                    <h2 className="text-3xl font-bold mb-10">{t('home:how.title')}</h2>
                     <div className="grid md:grid-cols-4 gap-6">
-                        {t('how.steps', { returnObjects: true }).map((s, i) => (
+                        {howSteps.map((s, i) => (
                             <div key={i} className="rounded-2xl bg-white ring-1 ring-slate-200 p-6">
                                 <div className="h-10 w-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold mb-3">{i + 1}</div>
                                 <h3 className="font-semibold">{s.t}</h3>
@@ -67,9 +83,9 @@ export default function Home() {
             <section className="py-16">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
                     <div>
-                        <h2 className="text-2xl font-bold mb-6">{t('features.title')}</h2>
+                        <h2 className="text-2xl font-bold mb-6">{t('home:features.title')}</h2>
                         <ul className="space-y-4">
-                            {t('features.items', { returnObjects: true }).map((f, i) => (
+                            {features.map((f, i) => (
                                 <li key={i} className="flex gap-4">
                                     <div className="mt-1 h-6 w-6 rounded-lg bg-emerald-100 flex items-center justify-center">✓</div>
                                     <div>
@@ -81,9 +97,9 @@ export default function Home() {
                         </ul>
                     </div>
                     <div>
-                        <h2 className="text-2xl font-bold mb-6">{t('outcomes.title')}</h2>
+                        <h2 className="text-2xl font-bold mb-6">{t('home:outcomes.title')}</h2>
                         <ul className="grid sm:grid-cols-2 gap-4">
-                            {t('outcomes.bullets', { returnObjects: true }).map((b, i) => (
+                            {outcomes.map((b, i) => (
                                 <li key={i} className="rounded-2xl bg-white ring-1 ring-slate-200 p-4 text-sm">{b}</li>
                             ))}
                         </ul>
@@ -94,9 +110,9 @@ export default function Home() {
             {/* Testimonials */}
             <section className="py-16 bg-slate-100/60">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold mb-8">{t('testimonials.title')}</h2>
+                    <h2 className="text-3xl font-bold mb-8">{t('home:testimonials.title')}</h2>
                     <div className="grid md:grid-cols-2 gap-6">
-                        {t('testimonials.items', { returnObjects: true }).map((it, i) => (
+                        {testimonials.map((it, i) => (
                             <figure key={i} className="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm">
                                 <blockquote className="text-slate-700 leading-relaxed">“{it.quote}”</blockquote>
                                 <figcaption className="mt-4 text-sm text-slate-500">— {it.name}, {it.role}</figcaption>
@@ -109,9 +125,9 @@ export default function Home() {
             {/* Pricing */}
             <section id="pricing" className="py-16">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold mb-10">{t('pricing.title')}</h2>
+                    <h2 className="text-3xl font-bold mb-10">{t('home:pricing.title')}</h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        {t('pricing.plans', { returnObjects: true }).map((pl, i) => (
+                        {plans.map((pl, i) => (
                             <div key={i} className={`rounded-2xl p-6 ring-1 shadow-sm ${pl.featured ? "bg-emerald-600 text-white ring-emerald-700" : "bg-white ring-slate-200"}`}>
                                 <div className="flex items-baseline justify-between">
                                     <h3 className={`font-semibold ${pl.featured ? "text-white" : "text-slate-900"}`}>{pl.name}</h3>
@@ -131,9 +147,9 @@ export default function Home() {
             {/* FAQ */}
             <section className="py-16">
                 <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold mb-6 text-center">{t('faq.title')}</h2>
+                    <h2 className="text-3xl font-bold mb-6 text-center">{t('home:faq.title')}</h2>
                     <div className="divide-y divide-slate-200 rounded-2xl bg-white ring-1 ring-slate-200">
-                        {t('faq.items', { returnObjects: true }).map((qa, i) => (
+                        {faqItems.map((qa, i) => (
                             <details key={i} className="p-6 group">
                                 <summary className="cursor-pointer font-semibold flex items-center justify-between">
                                     {qa.q}
@@ -149,22 +165,23 @@ export default function Home() {
             {/* CTA */}
             <section id="apply" className="py-16 bg-gradient-to-br from-emerald-50 to-blue-50">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-3xl font-bold">{t('cta.title')}</h2>
-                    <p className="text-slate-600 mt-2">{t('cta.subtitle')}</p>
-                    <form className="mt-8 grid sm:grid-cols-3 gap-3 text-left">
+                    <h2 className="text-3xl font-bold">{t('home:cta.title')}</h2>
+                    <p className="text-slate-600 mt-2">{t('home:cta.subtitle')}</p>
+                    {/* <form className="mt-8 grid sm:grid-cols-3 gap-3 text-left">
                         <input required placeholder="Full name" className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3" />
                         <input required type="email" placeholder="Email" className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3" />
                         <input placeholder="Phone (WhatsApp/Telegram)" className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3" />
                         <select className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3">
-                            {t('programs.items', { returnObjects: true }).map((p, i) => (<option key={i}>{p.name}</option>))}
+                            {programs.map((p, i) => (<option key={i}>{p.name}</option>))}
                         </select>
                         <select className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3">
                             <option>Online</option>
                             <option>On‑campus</option>
                             <option>Hybrid</option>
                         </select>
-                        <button className="col-span-1 rounded-xl bg-emerald-600 text-white px-4 py-3 font-semibold hover:bg-emerald-700">{t('cta.button')}</button>
-                    </form>
+                        <button className="col-span-1 rounded-xl bg-emerald-600 text-white px-4 py-3 font-semibold hover:bg-emerald-700">{t('home:cta.button')}</button>
+                    </form> */}
+                    <LeadForm />
                 </div>
             </section>
         </div>

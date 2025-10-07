@@ -1,5 +1,5 @@
 export const CONFIG = {
-    USE_FORMSPREE: true, // flip to false when your CRM API is ready
+    USE_FORMSPREE: false, // flip to false when your CRM API is ready
     FORMSPREE_ENDPOINT: "https://formspree.io/f/XXXXX",
-    CRM_ENDPOINT: "https://api.edupro.academy/v1/leads",
+    CRM_ENDPOINT: "https://api.edupro.edubot.it.com/contacts",
 };
