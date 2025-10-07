@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
+import HomePricing from "../components/HomePricing";
 import LeadForm from "../components/LeadForm";
 
 // EduPro Academy Landing Page — single-file React component
@@ -24,7 +25,6 @@ export default function Home() {
     const features = t('home:features.items', { returnObjects: true });
     const outcomes = t('home:outcomes.bullets', { returnObjects: true });
     const testimonials = t('home:testimonials.items', { returnObjects: true });
-    const plans = t('home:pricing.plans', { returnObjects: true });
     const faqItems = t('home:faq.items', { returnObjects: true });
 
     return (
@@ -157,26 +157,8 @@ export default function Home() {
             </section>
 
             {/* Pricing */}
-            <section id="pricing" className="py-16">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold mb-10">{t('home:pricing.title')}</h2>
-                    <div className="grid md:grid-cols-3 gap-6">
-                        {plans.map((pl, i) => (
-                            <div key={i} className={`rounded-2xl p-6 ring-1 shadow-sm ${pl.featured ? "bg-emerald-600 text-white ring-emerald-700" : "bg-white ring-slate-200"}`}>
-                                <div className="flex items-baseline justify-between">
-                                    <h3 className={`font-semibold ${pl.featured ? "text-white" : "text-slate-900"}`}>{pl.name}</h3>
-                                    <div className="text-2xl font-bold">{pl.price}</div>
-                                </div>
-                                <ul className={`mt-4 space-y-2 text-sm ${pl.featured ? "text-white/90" : "text-slate-600"}`}>
-                                    {pl.feat.map((f, j) => (<li key={j}>• {f}</li>))}
-                                </ul>
-                                <a href="#apply" className={`mt-6 inline-flex w-full justify-center rounded-xl px-4 py-2 font-semibold ${pl.featured ? "bg-white text-emerald-700" : "bg-emerald-600 text-white"}`}>Choose plan</a>
-                            </div>
-                        ))}
-                    </div>
-                    <p className="text-xs text-slate-500 mt-4">{t('pricing.note')}</p>
-                </div>
-            </section>
+            <HomePricing />
+
 
             {/* FAQ */}
             <section className="py-16">
