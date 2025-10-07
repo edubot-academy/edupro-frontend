@@ -1,0 +1,36 @@
+{
+    "lang": {
+        "en": "EN",
+        "ru": "RU",
+        "ky": "KG"
+    },
+    "nav": {
+        "programs": "Программалар",
+        "pricing": "Баалар",
+        "about": "Биз жөнүндө",
+        "contact": "Байланыш"
+    },
+    "footer": {
+        "brand": {
+            "name": "EduPro Academy",
+            "tagline": "ИИ менен келечекке даярдоо: практикалык IT көндүмдөр жана ментордук."
+        },
+        "quick": {
+            "title": "Тез шилтемелер"
+        },
+        "contact": {
+            "title": "Байланыш",
+            "labels": {
+                "email": "Email",
+                "phone": "Телефон",
+                "telegram": "Telegram",
+                "address": "Дарек"
+            },
+            "email": "info@edupro.academy",
+            "phone": "+996 (555) 000-111",
+            "telegram": "@eduproacademy",
+            "location": "Бишкек, Кыргызстан"
+        },
+        "rights": "© {{year}} EduPro Academy. Бардык укуктар корголгон."
+    }
+}

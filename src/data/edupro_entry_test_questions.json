@@ -1,0 +1,2812 @@
+{
+  "logic": [
+    {
+      "id": "logic-1",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "If all apples are fruits and all fruits are edible, are apples edible?",
+        "ru": "Если все яблоки — это фрукты, и все фрукты съедобны, съедобны ли яблоки?",
+        "kg": "Эгер бардык алма — мөмө болуп, бардык мөмө жегиле турган болсо, алма жегиле бекен?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-2",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "If A > B and B > C, which is true?",
+        "ru": "Если A > B и B > C, что верно?",
+        "kg": "Эгер A > B жана B > C болсо, кайсысы туура?"
+      },
+      "choices": {
+        "en": [
+          "A > C",
+          "A < C",
+          "A = C"
+        ],
+        "ru": [
+          "A > C",
+          "A < C",
+          "A = C"
+        ],
+        "kg": [
+          "A > C",
+          "A < C",
+          "A = C"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-3",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "All programmers like logic puzzles. Bek is a programmer. Does Bek like logic puzzles?",
+        "ru": "Все программисты любят логические задачи. Бек — программист. Любит ли Бек логические задачи?",
+        "kg": "Бардык программисттер логикалык тапшырмаларды жакшы көрөт. Бек — программист. Бек логикалык тапшырмаларды жакшы көрөбү?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-4",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "Some cats are black. Is it true that all cats are black?",
+        "ru": "Некоторые кошки чёрные. Верно ли, что все кошки чёрные?",
+        "kg": "Айрым мышыктар кара. Бардык мышыктар кара деп айтууга болобу?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "logic-5",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "Exactly two of the statements are true: (1) A is blue. (2) A is red. (3) A is a color. Is this possible?",
+        "ru": "Ровно два утверждения верны: (1) A синее. (2) A красное. (3) A — это цвет. Возможно ли это?",
+        "kg": "Так эле эки билдирүү туура: (1) A көк. (2) A кызыл. (3) A — түс. Бул мүмкүнбү?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Depends on A"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Зависит от A"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "A га байланыштуу"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "logic-6",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "If today is Monday, what day will it be in 10 days?",
+        "ru": "Если сегодня понедельник, какой день будет через 10 дней?",
+        "kg": "Бүгүн дүйшөмбү болсо, 10 күндөн кийин кайсы күн болот?"
+      },
+      "choices": {
+        "en": [
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "ru": [
+          "Четверг",
+          "Пятница",
+          "Суббота"
+        ],
+        "kg": [
+          "Бейшемби",
+          "Жума",
+          "Ишемби"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-7",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "Two people cannot both be taller than each other. True or false?",
+        "ru": "Два человека не могут оба быть выше друг друга. Верно или нет?",
+        "kg": "Эки адам бири-биринен тең эле бою узун бола албайт. Туурабы же туура эмеспи?"
+      },
+      "choices": {
+        "en": [
+          "True",
+          "False",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Верно",
+          "Неверно",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Туура",
+          "Туура эмес",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-8",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "All squares are rectangles. Some rectangles are green. Can we conclude some squares are green?",
+        "ru": "Все квадраты — прямоугольники. Некоторые прямоугольники зелёные. Можно ли заключить, что некоторые квадраты зелёные?",
+        "kg": "Бардык квадраттар тик бурчтук. Айрым тик бурчтуктар жашыл. Айрым квадраттар жашыл деп жыйынтык чыгарса болобу?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "logic-9",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "If exactly one of A or B is true, which is the XOR of (A,B)?",
+        "ru": "Если ровно одно из A или B истинно, что такое XOR(A,B)?",
+        "kg": "Эгер A же Bнин так бири гана чын болсо, XOR(A,B) деген эмне?"
+      },
+      "choices": {
+        "en": [
+          "True",
+          "False",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Истина",
+          "Ложь",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Чын",
+          "Жалган",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-10",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "A always tells the truth. A says: “B lies.” What can we infer about B?",
+        "ru": "A всегда говорит правду. A говорит: «B лжёт». Что можем заключить о B?",
+        "kg": "A дайыма чындыкты айтат. A: «B калп айтат» деди. B жөнүндө эмне дей алабыз?"
+      },
+      "choices": {
+        "en": [
+          "B tells the truth",
+          "B lies",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "B говорит правду",
+          "B лжёт",
+          "Определить нельзя"
+        ],
+        "kg": [
+          "B чындык айтат",
+          "B калп айтат",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "logic-11",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "If all apples are fruits and all fruits are edible, are apples edible?",
+        "ru": "Если все яблоки — это фрукты, и все фрукты съедобны, съедобны ли яблоки?",
+        "kg": "Эгер бардык алма — мөмө болуп, бардык мөмө жегиле турган болсо, алма жегиле бекен?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-12",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "If A > B and B > C, which is true?",
+        "ru": "Если A > B и B > C, что верно?",
+        "kg": "Эгер A > B жана B > C болсо, кайсысы туура?"
+      },
+      "choices": {
+        "en": [
+          "A > C",
+          "A < C",
+          "A = C"
+        ],
+        "ru": [
+          "A > C",
+          "A < C",
+          "A = C"
+        ],
+        "kg": [
+          "A > C",
+          "A < C",
+          "A = C"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-13",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "All programmers like logic puzzles. Bek is a programmer. Does Bek like logic puzzles?",
+        "ru": "Все программисты любят логические задачи. Бек — программист. Любит ли Бек логические задачи?",
+        "kg": "Бардык программисттер логикалык тапшырмаларды жакшы көрөт. Бек — программист. Бек логикалык тапшырмаларды жакшы көрөбү?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-14",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "Some cats are black. Is it true that all cats are black?",
+        "ru": "Некоторые кошки чёрные. Верно ли, что все кошки чёрные?",
+        "kg": "Айрым мышыктар кара. Бардык мышыктар кара деп айтууга болобу?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "logic-15",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "Exactly two of the statements are true: (1) A is blue. (2) A is red. (3) A is a color. Is this possible?",
+        "ru": "Ровно два утверждения верны: (1) A синее. (2) A красное. (3) A — это цвет. Возможно ли это?",
+        "kg": "Так эле эки билдирүү туура: (1) A көк. (2) A кызыл. (3) A — түс. Бул мүмкүнбү?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Depends on A"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Зависит от A"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "A га байланыштуу"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "logic-16",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "If today is Monday, what day will it be in 10 days?",
+        "ru": "Если сегодня понедельник, какой день будет через 10 дней?",
+        "kg": "Бүгүн дүйшөмбү болсо, 10 күндөн кийин кайсы күн болот?"
+      },
+      "choices": {
+        "en": [
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "ru": [
+          "Четверг",
+          "Пятница",
+          "Суббота"
+        ],
+        "kg": [
+          "Бейшемби",
+          "Жума",
+          "Ишемби"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-17",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "Two people cannot both be taller than each other. True or false?",
+        "ru": "Два человека не могут оба быть выше друг друга. Верно или нет?",
+        "kg": "Эки адам бири-биринен тең эле бою узун бола албайт. Туурабы же туура эмеспи?"
+      },
+      "choices": {
+        "en": [
+          "True",
+          "False",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Верно",
+          "Неверно",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Туура",
+          "Туура эмес",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-18",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "All squares are rectangles. Some rectangles are green. Can we conclude some squares are green?",
+        "ru": "Все квадраты — прямоугольники. Некоторые прямоугольники зелёные. Можно ли заключить, что некоторые квадраты зелёные?",
+        "kg": "Бардык квадраттар тик бурчтук. Айрым тик бурчтуктар жашыл. Айрым квадраттар жашыл деп жыйынтык чыгарса болобу?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "logic-19",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "If exactly one of A or B is true, which is the XOR of (A,B)?",
+        "ru": "Если ровно одно из A или B истинно, что такое XOR(A,B)?",
+        "kg": "Эгер A же Bнин так бири гана чын болсо, XOR(A,B) деген эмне?"
+      },
+      "choices": {
+        "en": [
+          "True",
+          "False",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Истина",
+          "Ложь",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Чын",
+          "Жалган",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-20",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "A always tells the truth. A says: “B lies.” What can we infer about B?",
+        "ru": "A всегда говорит правду. A говорит: «B лжёт». Что можем заключить о B?",
+        "kg": "A дайыма чындыкты айтат. A: «B калп айтат» деди. B жөнүндө эмне дей алабыз?"
+      },
+      "choices": {
+        "en": [
+          "B tells the truth",
+          "B lies",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "B говорит правду",
+          "B лжёт",
+          "Определить нельзя"
+        ],
+        "kg": [
+          "B чындык айтат",
+          "B калп айтат",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "logic-21",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "If all apples are fruits and all fruits are edible, are apples edible?",
+        "ru": "Если все яблоки — это фрукты, и все фрукты съедобны, съедобны ли яблоки?",
+        "kg": "Эгер бардык алма — мөмө болуп, бардык мөмө жегиле турган болсо, алма жегиле бекен?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-22",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "If A > B and B > C, which is true?",
+        "ru": "Если A > B и B > C, что верно?",
+        "kg": "Эгер A > B жана B > C болсо, кайсысы туура?"
+      },
+      "choices": {
+        "en": [
+          "A > C",
+          "A < C",
+          "A = C"
+        ],
+        "ru": [
+          "A > C",
+          "A < C",
+          "A = C"
+        ],
+        "kg": [
+          "A > C",
+          "A < C",
+          "A = C"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-23",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "All programmers like logic puzzles. Bek is a programmer. Does Bek like logic puzzles?",
+        "ru": "Все программисты любят логические задачи. Бек — программист. Любит ли Бек логические задачи?",
+        "kg": "Бардык программисттер логикалык тапшырмаларды жакшы көрөт. Бек — программист. Бек логикалык тапшырмаларды жакшы көрөбү?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-24",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "Some cats are black. Is it true that all cats are black?",
+        "ru": "Некоторые кошки чёрные. Верно ли, что все кошки чёрные?",
+        "kg": "Айрым мышыктар кара. Бардык мышыктар кара деп айтууга болобу?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "logic-25",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "Exactly two of the statements are true: (1) A is blue. (2) A is red. (3) A is a color. Is this possible?",
+        "ru": "Ровно два утверждения верны: (1) A синее. (2) A красное. (3) A — это цвет. Возможно ли это?",
+        "kg": "Так эле эки билдирүү туура: (1) A көк. (2) A кызыл. (3) A — түс. Бул мүмкүнбү?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Depends on A"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Зависит от A"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "A га байланыштуу"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "logic-26",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "If today is Monday, what day will it be in 10 days?",
+        "ru": "Если сегодня понедельник, какой день будет через 10 дней?",
+        "kg": "Бүгүн дүйшөмбү болсо, 10 күндөн кийин кайсы күн болот?"
+      },
+      "choices": {
+        "en": [
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "ru": [
+          "Четверг",
+          "Пятница",
+          "Суббота"
+        ],
+        "kg": [
+          "Бейшемби",
+          "Жума",
+          "Ишемби"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-27",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "Two people cannot both be taller than each other. True or false?",
+        "ru": "Два человека не могут оба быть выше друг друга. Верно или нет?",
+        "kg": "Эки адам бири-биринен тең эле бою узун бола албайт. Туурабы же туура эмеспи?"
+      },
+      "choices": {
+        "en": [
+          "True",
+          "False",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Верно",
+          "Неверно",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Туура",
+          "Туура эмес",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-28",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "All squares are rectangles. Some rectangles are green. Can we conclude some squares are green?",
+        "ru": "Все квадраты — прямоугольники. Некоторые прямоугольники зелёные. Можно ли заключить, что некоторые квадраты зелёные?",
+        "kg": "Бардык квадраттар тик бурчтук. Айрым тик бурчтуктар жашыл. Айрым квадраттар жашыл деп жыйынтык чыгарса болобу?"
+      },
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Да",
+          "Нет",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Ооба",
+          "Жок",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "logic-29",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "If exactly one of A or B is true, which is the XOR of (A,B)?",
+        "ru": "Если ровно одно из A или B истинно, что такое XOR(A,B)?",
+        "kg": "Эгер A же Bнин так бири гана чын болсо, XOR(A,B) деген эмне?"
+      },
+      "choices": {
+        "en": [
+          "True",
+          "False",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "Истина",
+          "Ложь",
+          "Нельзя определить"
+        ],
+        "kg": [
+          "Чын",
+          "Жалган",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "logic-30",
+      "section": "logic",
+      "type": "single",
+      "q": {
+        "en": "A always tells the truth. A says: “B lies.” What can we infer about B?",
+        "ru": "A всегда говорит правду. A говорит: «B лжёт». Что можем заключить о B?",
+        "kg": "A дайыма чындыкты айтат. A: «B калп айтат» деди. B жөнүндө эмне дей алабыз?"
+      },
+      "choices": {
+        "en": [
+          "B tells the truth",
+          "B lies",
+          "Cannot be determined"
+        ],
+        "ru": [
+          "B говорит правду",
+          "B лжёт",
+          "Определить нельзя"
+        ],
+        "kg": [
+          "B чындык айтат",
+          "B калп айтат",
+          "Белгилүү эмес"
+        ]
+      },
+      "answerIndex": 1
+    }
+  ],
+  "problem": [
+    {
+      "id": "prob-1",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A train moves at 60 km/h for 3 hours. Distance traveled?",
+        "ru": "Поезд движется со скоростью 60 км/ч в течение 3 часов. Какое расстояние пройдено?",
+        "kg": "Поезд саатына 60 км ылдамдыкта 3 саат жүрдү. Канча аралык өттү?"
+      },
+      "choices": {
+        "en": [
+          "120 km",
+          "180 km",
+          "200 km"
+        ],
+        "ru": [
+          "120 км",
+          "180 км",
+          "200 км"
+        ],
+        "kg": [
+          "120 км",
+          "180 км",
+          "200 км"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-2",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "You have 8 pizza slices and eat 3. What fraction remains?",
+        "ru": "У вас 8 кусков пиццы, вы съели 3. Какая доля осталась?",
+        "kg": "Сизде пицца 8 кесим, анын 3үн жеп койдуңуз. Канча бөлүк калды?"
+      },
+      "choices": {
+        "en": [
+          "5/8",
+          "3/8",
+          "1/2"
+        ],
+        "ru": [
+          "5/8",
+          "3/8",
+          "1/2"
+        ],
+        "kg": [
+          "5/8",
+          "3/8",
+          "1/2"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "prob-3",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A book costs $15. You buy 4. Total cost?",
+        "ru": "Книга стоит $15. Вы покупаете 4. Общая стоимость?",
+        "kg": "Китеп $15 турат. 4тү сатып алдыңыз. Жалпы баа?"
+      },
+      "choices": {
+        "en": [
+          "$45",
+          "$60",
+          "$75"
+        ],
+        "ru": [
+          "$45",
+          "$60",
+          "$75"
+        ],
+        "kg": [
+          "$45",
+          "$60",
+          "$75"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-4",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A farmer has 12 cows and sells 4. How many remain?",
+        "ru": "У фермера 12 коров, он продаёт 4. Сколько осталось?",
+        "kg": "Фермерде 12 уй бар эле, 4үн сатты. Канча калды?"
+      },
+      "choices": {
+        "en": [
+          "6",
+          "8",
+          "10"
+        ],
+        "ru": [
+          "6",
+          "8",
+          "10"
+        ],
+        "kg": [
+          "6",
+          "8",
+          "10"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-5",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A bus has 40 seats; 28 are occupied. Free seats?",
+        "ru": "В автобусе 40 мест; занято 28. Сколько свободных мест?",
+        "kg": "Автобуста 40 орун; 28и толо. Бош орун канча?"
+      },
+      "choices": {
+        "en": [
+          "10",
+          "12",
+          "14"
+        ],
+        "ru": [
+          "10",
+          "12",
+          "14"
+        ],
+        "kg": [
+          "10",
+          "12",
+          "14"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-6",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A car uses 8 liters per 100 km. How much for 250 km?",
+        "ru": "Машина расходует 8 л на 100 км. Сколько нужно на 250 км?",
+        "kg": "Унаа 100 кмге 8 литр сарптайт. 250 кмга канча керек?"
+      },
+      "choices": {
+        "en": [
+          "16 L",
+          "18 L",
+          "20 L"
+        ],
+        "ru": [
+          "16 л",
+          "18 л",
+          "20 л"
+        ],
+        "kg": [
+          "16 л",
+          "18 л",
+          "20 л"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "prob-7",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "If 30% of 200 is X, what is X?",
+        "ru": "Если 30% от 200 равно X, чему равно X?",
+        "kg": "Эгер 200дүн 30%ы X болсо, X канча?"
+      },
+      "choices": {
+        "en": [
+          "50",
+          "60",
+          "70"
+        ],
+        "ru": [
+          "50",
+          "60",
+          "70"
+        ],
+        "kg": [
+          "50",
+          "60",
+          "70"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-8",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "You run 5 km in 30 minutes. What is your speed in km/h?",
+        "ru": "Вы пробежали 5 км за 30 минут. Какова скорость в км/ч?",
+        "kg": "30 мүнөттө 5 км чуркадыңыз. Ылдамдык км/саат менен?"
+      },
+      "choices": {
+        "en": [
+          "5",
+          "8",
+          "10"
+        ],
+        "ru": [
+          "5",
+          "8",
+          "10"
+        ],
+        "kg": [
+          "5",
+          "8",
+          "10"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "prob-9",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A rectangle is 6 by 4. Area?",
+        "ru": "Прямоугольник 6 на 4. Площадь?",
+        "kg": "Тик бурчтук 6га 4. Аянты?"
+      },
+      "choices": {
+        "en": [
+          "10",
+          "20",
+          "24"
+        ],
+        "ru": [
+          "10",
+          "20",
+          "24"
+        ],
+        "kg": [
+          "10",
+          "20",
+          "24"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "prob-10",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "What is 15% of 80?",
+        "ru": "Чему равны 15% от 80?",
+        "kg": "80дин 15%ы канча?"
+      },
+      "choices": {
+        "en": [
+          "8",
+          "10",
+          "12"
+        ],
+        "ru": [
+          "8",
+          "10",
+          "12"
+        ],
+        "kg": [
+          "8",
+          "10",
+          "12"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "prob-11",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A train moves at 60 km/h for 3 hours. Distance traveled?",
+        "ru": "Поезд движется со скоростью 60 км/ч в течение 3 часов. Какое расстояние пройдено?",
+        "kg": "Поезд саатына 60 км ылдамдыкта 3 саат жүрдү. Канча аралык өттү?"
+      },
+      "choices": {
+        "en": [
+          "120 km",
+          "180 km",
+          "200 km"
+        ],
+        "ru": [
+          "120 км",
+          "180 км",
+          "200 км"
+        ],
+        "kg": [
+          "120 км",
+          "180 км",
+          "200 км"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-12",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "You have 8 pizza slices and eat 3. What fraction remains?",
+        "ru": "У вас 8 кусков пиццы, вы съели 3. Какая доля осталась?",
+        "kg": "Сизде пицца 8 кесим, анын 3үн жеп койдуңуз. Канча бөлүк калды?"
+      },
+      "choices": {
+        "en": [
+          "5/8",
+          "3/8",
+          "1/2"
+        ],
+        "ru": [
+          "5/8",
+          "3/8",
+          "1/2"
+        ],
+        "kg": [
+          "5/8",
+          "3/8",
+          "1/2"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "prob-13",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A book costs $15. You buy 4. Total cost?",
+        "ru": "Книга стоит $15. Вы покупаете 4. Общая стоимость?",
+        "kg": "Китеп $15 турат. 4тү сатып алдыңыз. Жалпы баа?"
+      },
+      "choices": {
+        "en": [
+          "$45",
+          "$60",
+          "$75"
+        ],
+        "ru": [
+          "$45",
+          "$60",
+          "$75"
+        ],
+        "kg": [
+          "$45",
+          "$60",
+          "$75"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-14",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A farmer has 12 cows and sells 4. How many remain?",
+        "ru": "У фермера 12 коров, он продаёт 4. Сколько осталось?",
+        "kg": "Фермерде 12 уй бар эле, 4үн сатты. Канча калды?"
+      },
+      "choices": {
+        "en": [
+          "6",
+          "8",
+          "10"
+        ],
+        "ru": [
+          "6",
+          "8",
+          "10"
+        ],
+        "kg": [
+          "6",
+          "8",
+          "10"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-15",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A bus has 40 seats; 28 are occupied. Free seats?",
+        "ru": "В автобусе 40 мест; занято 28. Сколько свободных мест?",
+        "kg": "Автобуста 40 орун; 28и толо. Бош орун канча?"
+      },
+      "choices": {
+        "en": [
+          "10",
+          "12",
+          "14"
+        ],
+        "ru": [
+          "10",
+          "12",
+          "14"
+        ],
+        "kg": [
+          "10",
+          "12",
+          "14"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-16",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A car uses 8 liters per 100 km. How much for 250 km?",
+        "ru": "Машина расходует 8 л на 100 км. Сколько нужно на 250 км?",
+        "kg": "Унаа 100 кмге 8 литр сарптайт. 250 кмга канча керек?"
+      },
+      "choices": {
+        "en": [
+          "16 L",
+          "18 L",
+          "20 L"
+        ],
+        "ru": [
+          "16 л",
+          "18 л",
+          "20 л"
+        ],
+        "kg": [
+          "16 л",
+          "18 л",
+          "20 л"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "prob-17",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "If 30% of 200 is X, what is X?",
+        "ru": "Если 30% от 200 равно X, чему равно X?",
+        "kg": "Эгер 200дүн 30%ы X болсо, X канча?"
+      },
+      "choices": {
+        "en": [
+          "50",
+          "60",
+          "70"
+        ],
+        "ru": [
+          "50",
+          "60",
+          "70"
+        ],
+        "kg": [
+          "50",
+          "60",
+          "70"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-18",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "You run 5 km in 30 minutes. What is your speed in km/h?",
+        "ru": "Вы пробежали 5 км за 30 минут. Какова скорость в км/ч?",
+        "kg": "30 мүнөттө 5 км чуркадыңыз. Ылдамдык км/саат менен?"
+      },
+      "choices": {
+        "en": [
+          "5",
+          "8",
+          "10"
+        ],
+        "ru": [
+          "5",
+          "8",
+          "10"
+        ],
+        "kg": [
+          "5",
+          "8",
+          "10"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "prob-19",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A rectangle is 6 by 4. Area?",
+        "ru": "Прямоугольник 6 на 4. Площадь?",
+        "kg": "Тик бурчтук 6га 4. Аянты?"
+      },
+      "choices": {
+        "en": [
+          "10",
+          "20",
+          "24"
+        ],
+        "ru": [
+          "10",
+          "20",
+          "24"
+        ],
+        "kg": [
+          "10",
+          "20",
+          "24"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "prob-20",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "What is 15% of 80?",
+        "ru": "Чему равны 15% от 80?",
+        "kg": "80дин 15%ы канча?"
+      },
+      "choices": {
+        "en": [
+          "8",
+          "10",
+          "12"
+        ],
+        "ru": [
+          "8",
+          "10",
+          "12"
+        ],
+        "kg": [
+          "8",
+          "10",
+          "12"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "prob-21",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A train moves at 60 km/h for 3 hours. Distance traveled?",
+        "ru": "Поезд движется со скоростью 60 км/ч в течение 3 часов. Какое расстояние пройдено?",
+        "kg": "Поезд саатына 60 км ылдамдыкта 3 саат жүрдү. Канча аралык өттү?"
+      },
+      "choices": {
+        "en": [
+          "120 km",
+          "180 km",
+          "200 km"
+        ],
+        "ru": [
+          "120 км",
+          "180 км",
+          "200 км"
+        ],
+        "kg": [
+          "120 км",
+          "180 км",
+          "200 км"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-22",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "You have 8 pizza slices and eat 3. What fraction remains?",
+        "ru": "У вас 8 кусков пиццы, вы съели 3. Какая доля осталась?",
+        "kg": "Сизде пицца 8 кесим, анын 3үн жеп койдуңуз. Канча бөлүк калды?"
+      },
+      "choices": {
+        "en": [
+          "5/8",
+          "3/8",
+          "1/2"
+        ],
+        "ru": [
+          "5/8",
+          "3/8",
+          "1/2"
+        ],
+        "kg": [
+          "5/8",
+          "3/8",
+          "1/2"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "prob-23",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A book costs $15. You buy 4. Total cost?",
+        "ru": "Книга стоит $15. Вы покупаете 4. Общая стоимость?",
+        "kg": "Китеп $15 турат. 4тү сатып алдыңыз. Жалпы баа?"
+      },
+      "choices": {
+        "en": [
+          "$45",
+          "$60",
+          "$75"
+        ],
+        "ru": [
+          "$45",
+          "$60",
+          "$75"
+        ],
+        "kg": [
+          "$45",
+          "$60",
+          "$75"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-24",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A farmer has 12 cows and sells 4. How many remain?",
+        "ru": "У фермера 12 коров, он продаёт 4. Сколько осталось?",
+        "kg": "Фермерде 12 уй бар эле, 4үн сатты. Канча калды?"
+      },
+      "choices": {
+        "en": [
+          "6",
+          "8",
+          "10"
+        ],
+        "ru": [
+          "6",
+          "8",
+          "10"
+        ],
+        "kg": [
+          "6",
+          "8",
+          "10"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-25",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A bus has 40 seats; 28 are occupied. Free seats?",
+        "ru": "В автобусе 40 мест; занято 28. Сколько свободных мест?",
+        "kg": "Автобуста 40 орун; 28и толо. Бош орун канча?"
+      },
+      "choices": {
+        "en": [
+          "10",
+          "12",
+          "14"
+        ],
+        "ru": [
+          "10",
+          "12",
+          "14"
+        ],
+        "kg": [
+          "10",
+          "12",
+          "14"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-26",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A car uses 8 liters per 100 km. How much for 250 km?",
+        "ru": "Машина расходует 8 л на 100 км. Сколько нужно на 250 км?",
+        "kg": "Унаа 100 кмге 8 литр сарптайт. 250 кмга канча керек?"
+      },
+      "choices": {
+        "en": [
+          "16 L",
+          "18 L",
+          "20 L"
+        ],
+        "ru": [
+          "16 л",
+          "18 л",
+          "20 л"
+        ],
+        "kg": [
+          "16 л",
+          "18 л",
+          "20 л"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "prob-27",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "If 30% of 200 is X, what is X?",
+        "ru": "Если 30% от 200 равно X, чему равно X?",
+        "kg": "Эгер 200дүн 30%ы X болсо, X канча?"
+      },
+      "choices": {
+        "en": [
+          "50",
+          "60",
+          "70"
+        ],
+        "ru": [
+          "50",
+          "60",
+          "70"
+        ],
+        "kg": [
+          "50",
+          "60",
+          "70"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "prob-28",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "You run 5 km in 30 minutes. What is your speed in km/h?",
+        "ru": "Вы пробежали 5 км за 30 минут. Какова скорость в км/ч?",
+        "kg": "30 мүнөттө 5 км чуркадыңыз. Ылдамдык км/саат менен?"
+      },
+      "choices": {
+        "en": [
+          "5",
+          "8",
+          "10"
+        ],
+        "ru": [
+          "5",
+          "8",
+          "10"
+        ],
+        "kg": [
+          "5",
+          "8",
+          "10"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "prob-29",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "A rectangle is 6 by 4. Area?",
+        "ru": "Прямоугольник 6 на 4. Площадь?",
+        "kg": "Тик бурчтук 6га 4. Аянты?"
+      },
+      "choices": {
+        "en": [
+          "10",
+          "20",
+          "24"
+        ],
+        "ru": [
+          "10",
+          "20",
+          "24"
+        ],
+        "kg": [
+          "10",
+          "20",
+          "24"
+        ]
+      },
+      "answerIndex": 2
+    },
+    {
+      "id": "prob-30",
+      "section": "problem",
+      "type": "single",
+      "q": {
+        "en": "What is 15% of 80?",
+        "ru": "Чему равны 15% от 80?",
+        "kg": "80дин 15%ы канча?"
+      },
+      "choices": {
+        "en": [
+          "8",
+          "10",
+          "12"
+        ],
+        "ru": [
+          "8",
+          "10",
+          "12"
+        ],
+        "kg": [
+          "8",
+          "10",
+          "12"
+        ]
+      },
+      "answerIndex": 2
+    }
+  ],
+  "english": [
+    {
+      "id": "eng-1",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Choose the correct sentence.",
+        "ru": "Выберите правильное предложение.",
+        "kg": "Туура сүйлөмдү тандаңыз."
+      },
+      "choices": {
+        "en": [
+          "He doesn’t like coding.",
+          "He don’t like coding."
+        ],
+        "ru": [
+          "Он не любит программировать.",
+          "Он не любят программировать."
+        ],
+        "kg": [
+          "Ал программалоону жактырбайт.",
+          "Ал программалоону жактырбайт. (туура эмес)"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-2",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Fill the blank: She ___ reading a book.",
+        "ru": "Заполните пропуск: She ___ reading a book.",
+        "kg": "Боштукту толтуруңуз: She ___ reading a book."
+      },
+      "choices": {
+        "en": [
+          "is",
+          "are",
+          "am"
+        ],
+        "ru": [
+          "is",
+          "are",
+          "am"
+        ],
+        "kg": [
+          "is",
+          "are",
+          "am"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-3",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Choose the past tense of 'go'.",
+        "ru": "Выберите прошедшее время глагола 'go'.",
+        "kg": "'go' этингинин өткөн чак формасын тандаңыз."
+      },
+      "choices": {
+        "en": [
+          "went",
+          "goed",
+          "gone"
+        ],
+        "ru": [
+          "went",
+          "goed",
+          "gone"
+        ],
+        "kg": [
+          "went",
+          "goed",
+          "gone"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-4",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Pick the correct article: I have ___ apple.",
+        "ru": "Выберите правильный артикль: I have ___ apple.",
+        "kg": "Туура артиклди тандаңыз: I have ___ apple."
+      },
+      "choices": {
+        "en": [
+          "a",
+          "an",
+          "the"
+        ],
+        "ru": [
+          "a",
+          "an",
+          "the"
+        ],
+        "kg": [
+          "a",
+          "an",
+          "the"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "eng-5",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Plural of 'child' is:",
+        "ru": "Множественное число от 'child':",
+        "kg": "'child' сөзүнүн көптүк саны:"
+      },
+      "choices": {
+        "en": [
+          "childs",
+          "children",
+          "childes"
+        ],
+        "ru": [
+          "childs",
+          "children",
+          "childes"
+        ],
+        "kg": [
+          "childs",
+          "children",
+          "childes"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "eng-6",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Choose the correct sentence.",
+        "ru": "Выберите правильное предложение.",
+        "kg": "Туура сүйлөмдү тандаңыз."
+      },
+      "choices": {
+        "en": [
+          "He doesn’t like coding.",
+          "He don’t like coding."
+        ],
+        "ru": [
+          "Он не любит программировать.",
+          "Он не любят программировать."
+        ],
+        "kg": [
+          "Ал программалоону жактырбайт.",
+          "Ал программалоону жактырбайт. (туура эмес)"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-7",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Fill the blank: She ___ reading a book.",
+        "ru": "Заполните пропуск: She ___ reading a book.",
+        "kg": "Боштукту толтуруңуз: She ___ reading a book."
+      },
+      "choices": {
+        "en": [
+          "is",
+          "are",
+          "am"
+        ],
+        "ru": [
+          "is",
+          "are",
+          "am"
+        ],
+        "kg": [
+          "is",
+          "are",
+          "am"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-8",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Choose the past tense of 'go'.",
+        "ru": "Выберите прошедшее время глагола 'go'.",
+        "kg": "'go' этингинин өткөн чак формасын тандаңыз."
+      },
+      "choices": {
+        "en": [
+          "went",
+          "goed",
+          "gone"
+        ],
+        "ru": [
+          "went",
+          "goed",
+          "gone"
+        ],
+        "kg": [
+          "went",
+          "goed",
+          "gone"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-9",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Pick the correct article: I have ___ apple.",
+        "ru": "Выберите правильный артикль: I have ___ apple.",
+        "kg": "Туура артиклди тандаңыз: I have ___ apple."
+      },
+      "choices": {
+        "en": [
+          "a",
+          "an",
+          "the"
+        ],
+        "ru": [
+          "a",
+          "an",
+          "the"
+        ],
+        "kg": [
+          "a",
+          "an",
+          "the"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "eng-10",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Plural of 'child' is:",
+        "ru": "Множественное число от 'child':",
+        "kg": "'child' сөзүнүн көптүк саны:"
+      },
+      "choices": {
+        "en": [
+          "childs",
+          "children",
+          "childes"
+        ],
+        "ru": [
+          "childs",
+          "children",
+          "childes"
+        ],
+        "kg": [
+          "childs",
+          "children",
+          "childes"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "eng-11",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Choose the correct sentence.",
+        "ru": "Выберите правильное предложение.",
+        "kg": "Туура сүйлөмдү тандаңыз."
+      },
+      "choices": {
+        "en": [
+          "He doesn’t like coding.",
+          "He don’t like coding."
+        ],
+        "ru": [
+          "Он не любит программировать.",
+          "Он не любят программировать."
+        ],
+        "kg": [
+          "Ал программалоону жактырбайт.",
+          "Ал программалоону жактырбайт. (туура эмес)"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-12",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Fill the blank: She ___ reading a book.",
+        "ru": "Заполните пропуск: She ___ reading a book.",
+        "kg": "Боштукту толтуруңуз: She ___ reading a book."
+      },
+      "choices": {
+        "en": [
+          "is",
+          "are",
+          "am"
+        ],
+        "ru": [
+          "is",
+          "are",
+          "am"
+        ],
+        "kg": [
+          "is",
+          "are",
+          "am"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-13",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Choose the past tense of 'go'.",
+        "ru": "Выберите прошедшее время глагола 'go'.",
+        "kg": "'go' этингинин өткөн чак формасын тандаңыз."
+      },
+      "choices": {
+        "en": [
+          "went",
+          "goed",
+          "gone"
+        ],
+        "ru": [
+          "went",
+          "goed",
+          "gone"
+        ],
+        "kg": [
+          "went",
+          "goed",
+          "gone"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-14",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Pick the correct article: I have ___ apple.",
+        "ru": "Выберите правильный артикль: I have ___ apple.",
+        "kg": "Туура артиклди тандаңыз: I have ___ apple."
+      },
+      "choices": {
+        "en": [
+          "a",
+          "an",
+          "the"
+        ],
+        "ru": [
+          "a",
+          "an",
+          "the"
+        ],
+        "kg": [
+          "a",
+          "an",
+          "the"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "eng-15",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Plural of 'child' is:",
+        "ru": "Множественное число от 'child':",
+        "kg": "'child' сөзүнүн көптүк саны:"
+      },
+      "choices": {
+        "en": [
+          "childs",
+          "children",
+          "childes"
+        ],
+        "ru": [
+          "childs",
+          "children",
+          "childes"
+        ],
+        "kg": [
+          "childs",
+          "children",
+          "childes"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "eng-16",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Choose the correct sentence.",
+        "ru": "Выберите правильное предложение.",
+        "kg": "Туура сүйлөмдү тандаңыз."
+      },
+      "choices": {
+        "en": [
+          "He doesn’t like coding.",
+          "He don’t like coding."
+        ],
+        "ru": [
+          "Он не любит программировать.",
+          "Он не любят программировать."
+        ],
+        "kg": [
+          "Ал программалоону жактырбайт.",
+          "Ал программалоону жактырбайт. (туура эмес)"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-17",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Fill the blank: She ___ reading a book.",
+        "ru": "Заполните пропуск: She ___ reading a book.",
+        "kg": "Боштукту толтуруңуз: She ___ reading a book."
+      },
+      "choices": {
+        "en": [
+          "is",
+          "are",
+          "am"
+        ],
+        "ru": [
+          "is",
+          "are",
+          "am"
+        ],
+        "kg": [
+          "is",
+          "are",
+          "am"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-18",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Choose the past tense of 'go'.",
+        "ru": "Выберите прошедшее время глагола 'go'.",
+        "kg": "'go' этингинин өткөн чак формасын тандаңыз."
+      },
+      "choices": {
+        "en": [
+          "went",
+          "goed",
+          "gone"
+        ],
+        "ru": [
+          "went",
+          "goed",
+          "gone"
+        ],
+        "kg": [
+          "went",
+          "goed",
+          "gone"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-19",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Pick the correct article: I have ___ apple.",
+        "ru": "Выберите правильный артикль: I have ___ apple.",
+        "kg": "Туура артиклди тандаңыз: I have ___ apple."
+      },
+      "choices": {
+        "en": [
+          "a",
+          "an",
+          "the"
+        ],
+        "ru": [
+          "a",
+          "an",
+          "the"
+        ],
+        "kg": [
+          "a",
+          "an",
+          "the"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "eng-20",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Plural of 'child' is:",
+        "ru": "Множественное число от 'child':",
+        "kg": "'child' сөзүнүн көптүк саны:"
+      },
+      "choices": {
+        "en": [
+          "childs",
+          "children",
+          "childes"
+        ],
+        "ru": [
+          "childs",
+          "children",
+          "childes"
+        ],
+        "kg": [
+          "childs",
+          "children",
+          "childes"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "eng-21",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Choose the correct sentence.",
+        "ru": "Выберите правильное предложение.",
+        "kg": "Туура сүйлөмдү тандаңыз."
+      },
+      "choices": {
+        "en": [
+          "He doesn’t like coding.",
+          "He don’t like coding."
+        ],
+        "ru": [
+          "Он не любит программировать.",
+          "Он не любят программировать."
+        ],
+        "kg": [
+          "Ал программалоону жактырбайт.",
+          "Ал программалоону жактырбайт. (туура эмес)"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-22",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Fill the blank: She ___ reading a book.",
+        "ru": "Заполните пропуск: She ___ reading a book.",
+        "kg": "Боштукту толтуруңуз: She ___ reading a book."
+      },
+      "choices": {
+        "en": [
+          "is",
+          "are",
+          "am"
+        ],
+        "ru": [
+          "is",
+          "are",
+          "am"
+        ],
+        "kg": [
+          "is",
+          "are",
+          "am"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-23",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Choose the past tense of 'go'.",
+        "ru": "Выберите прошедшее время глагола 'go'.",
+        "kg": "'go' этингинин өткөн чак формасын тандаңыз."
+      },
+      "choices": {
+        "en": [
+          "went",
+          "goed",
+          "gone"
+        ],
+        "ru": [
+          "went",
+          "goed",
+          "gone"
+        ],
+        "kg": [
+          "went",
+          "goed",
+          "gone"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-24",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Pick the correct article: I have ___ apple.",
+        "ru": "Выберите правильный артикль: I have ___ apple.",
+        "kg": "Туура артиклди тандаңыз: I have ___ apple."
+      },
+      "choices": {
+        "en": [
+          "a",
+          "an",
+          "the"
+        ],
+        "ru": [
+          "a",
+          "an",
+          "the"
+        ],
+        "kg": [
+          "a",
+          "an",
+          "the"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "eng-25",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Plural of 'child' is:",
+        "ru": "Множественное число от 'child':",
+        "kg": "'child' сөзүнүн көптүк саны:"
+      },
+      "choices": {
+        "en": [
+          "childs",
+          "children",
+          "childes"
+        ],
+        "ru": [
+          "childs",
+          "children",
+          "childes"
+        ],
+        "kg": [
+          "childs",
+          "children",
+          "childes"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "eng-26",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Choose the correct sentence.",
+        "ru": "Выберите правильное предложение.",
+        "kg": "Туура сүйлөмдү тандаңыз."
+      },
+      "choices": {
+        "en": [
+          "He doesn’t like coding.",
+          "He don’t like coding."
+        ],
+        "ru": [
+          "Он не любит программировать.",
+          "Он не любят программировать."
+        ],
+        "kg": [
+          "Ал программалоону жактырбайт.",
+          "Ал программалоону жактырбайт. (туура эмес)"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-27",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Fill the blank: She ___ reading a book.",
+        "ru": "Заполните пропуск: She ___ reading a book.",
+        "kg": "Боштукту толтуруңуз: She ___ reading a book."
+      },
+      "choices": {
+        "en": [
+          "is",
+          "are",
+          "am"
+        ],
+        "ru": [
+          "is",
+          "are",
+          "am"
+        ],
+        "kg": [
+          "is",
+          "are",
+          "am"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-28",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Choose the past tense of 'go'.",
+        "ru": "Выберите прошедшее время глагола 'go'.",
+        "kg": "'go' этингинин өткөн чак формасын тандаңыз."
+      },
+      "choices": {
+        "en": [
+          "went",
+          "goed",
+          "gone"
+        ],
+        "ru": [
+          "went",
+          "goed",
+          "gone"
+        ],
+        "kg": [
+          "went",
+          "goed",
+          "gone"
+        ]
+      },
+      "answerIndex": 0
+    },
+    {
+      "id": "eng-29",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Pick the correct article: I have ___ apple.",
+        "ru": "Выберите правильный артикль: I have ___ apple.",
+        "kg": "Туура артиклди тандаңыз: I have ___ apple."
+      },
+      "choices": {
+        "en": [
+          "a",
+          "an",
+          "the"
+        ],
+        "ru": [
+          "a",
+          "an",
+          "the"
+        ],
+        "kg": [
+          "a",
+          "an",
+          "the"
+        ]
+      },
+      "answerIndex": 1
+    },
+    {
+      "id": "eng-30",
+      "section": "english",
+      "type": "single",
+      "q": {
+        "en": "Plural of 'child' is:",
+        "ru": "Множественное число от 'child':",
+        "kg": "'child' сөзүнүн көптүк саны:"
+      },
+      "choices": {
+        "en": [
+          "childs",
+          "children",
+          "childes"
+        ],
+        "ru": [
+          "childs",
+          "children",
+          "childes"
+        ],
+        "kg": [
+          "childs",
+          "children",
+          "childes"
+        ]
+      },
+      "answerIndex": 1
+    }
+  ],
+  "motivation": [
+    {
+      "id": "mot-1",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Why do you want to learn programming? (3–5 sentences)",
+        "ru": "Почему вы хотите изучать программирование? (3–5 предложений)",
+        "kg": "Эмне үчүн программалоону үйрөнгүңүз келет? (3–5 сүйлөм)"
+      }
+    },
+    {
+      "id": "mot-2",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Describe a time you solved a difficult problem. What did you do?",
+        "ru": "Опишите случай, когда вы решили сложную проблему. Что вы сделали?",
+        "kg": "Кыйын маселени чечкен учурду сүрөттөп бериңиз. Эмне жасадыңыз?"
+      }
+    },
+    {
+      "id": "mot-3",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "How many hours per week can you study consistently? Be realistic.",
+        "ru": "Сколько часов в неделю вы можете стабильно заниматься? Реалистично.",
+        "kg": "Аптасына канча саат туруктуу окуй аласыз? Чындыкка жакын баалаңыз."
+      }
+    },
+    {
+      "id": "mot-4",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "What motivates you to join EduPro Academy?",
+        "ru": "Что мотивирует вас присоединиться к EduPro Academy?",
+        "kg": "Сизди EduPro Academyге кошулганга эмне мотивация берет?"
+      }
+    },
+    {
+      "id": "mot-5",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Where do you see yourself in 3 years after starting this course?",
+        "ru": "Кем вы видите себя через 3 года после начала курса?",
+        "kg": "Бул курстан кийин 3 жылда өзүңүздү кайсы жерде көрөсүз?"
+      }
+    },
+    {
+      "id": "mot-6",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Why do you want to learn programming? (3–5 sentences)",
+        "ru": "Почему вы хотите изучать программирование? (3–5 предложений)",
+        "kg": "Эмне үчүн программалоону үйрөнгүңүз келет? (3–5 сүйлөм)"
+      }
+    },
+    {
+      "id": "mot-7",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Describe a time you solved a difficult problem. What did you do?",
+        "ru": "Опишите случай, когда вы решили сложную проблему. Что вы сделали?",
+        "kg": "Кыйын маселени чечкен учурду сүрөттөп бериңиз. Эмне жасадыңыз?"
+      }
+    },
+    {
+      "id": "mot-8",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "How many hours per week can you study consistently? Be realistic.",
+        "ru": "Сколько часов в неделю вы можете стабильно заниматься? Реалистично.",
+        "kg": "Аптасына канча саат туруктуу окуй аласыз? Чындыкка жакын баалаңыз."
+      }
+    },
+    {
+      "id": "mot-9",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "What motivates you to join EduPro Academy?",
+        "ru": "Что мотивирует вас присоединиться к EduPro Academy?",
+        "kg": "Сизди EduPro Academyге кошулганга эмне мотивация берет?"
+      }
+    },
+    {
+      "id": "mot-10",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Where do you see yourself in 3 years after starting this course?",
+        "ru": "Кем вы видите себя через 3 года после начала курса?",
+        "kg": "Бул курстан кийин 3 жылда өзүңүздү кайсы жерде көрөсүз?"
+      }
+    },
+    {
+      "id": "mot-11",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Why do you want to learn programming? (3–5 sentences)",
+        "ru": "Почему вы хотите изучать программирование? (3–5 предложений)",
+        "kg": "Эмне үчүн программалоону үйрөнгүңүз келет? (3–5 сүйлөм)"
+      }
+    },
+    {
+      "id": "mot-12",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Describe a time you solved a difficult problem. What did you do?",
+        "ru": "Опишите случай, когда вы решили сложную проблему. Что вы сделали?",
+        "kg": "Кыйын маселени чечкен учурду сүрөттөп бериңиз. Эмне жасадыңыз?"
+      }
+    },
+    {
+      "id": "mot-13",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "How many hours per week can you study consistently? Be realistic.",
+        "ru": "Сколько часов в неделю вы можете стабильно заниматься? Реалистично.",
+        "kg": "Аптасына канча саат туруктуу окуй аласыз? Чындыкка жакын баалаңыз."
+      }
+    },
+    {
+      "id": "mot-14",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "What motivates you to join EduPro Academy?",
+        "ru": "Что мотивирует вас присоединиться к EduPro Academy?",
+        "kg": "Сизди EduPro Academyге кошулганга эмне мотивация берет?"
+      }
+    },
+    {
+      "id": "mot-15",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Where do you see yourself in 3 years after starting this course?",
+        "ru": "Кем вы видите себя через 3 года после начала курса?",
+        "kg": "Бул курстан кийин 3 жылда өзүңүздү кайсы жерде көрөсүз?"
+      }
+    },
+    {
+      "id": "mot-16",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Why do you want to learn programming? (3–5 sentences)",
+        "ru": "Почему вы хотите изучать программирование? (3–5 предложений)",
+        "kg": "Эмне үчүн программалоону үйрөнгүңүз келет? (3–5 сүйлөм)"
+      }
+    },
+    {
+      "id": "mot-17",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Describe a time you solved a difficult problem. What did you do?",
+        "ru": "Опишите случай, когда вы решили сложную проблему. Что вы сделали?",
+        "kg": "Кыйын маселени чечкен учурду сүрөттөп бериңиз. Эмне жасадыңыз?"
+      }
+    },
+    {
+      "id": "mot-18",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "How many hours per week can you study consistently? Be realistic.",
+        "ru": "Сколько часов в неделю вы можете стабильно заниматься? Реалистично.",
+        "kg": "Аптасына канча саат туруктуу окуй аласыз? Чындыкка жакын баалаңыз."
+      }
+    },
+    {
+      "id": "mot-19",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "What motivates you to join EduPro Academy?",
+        "ru": "Что мотивирует вас присоединиться к EduPro Academy?",
+        "kg": "Сизди EduPro Academyге кошулганга эмне мотивация берет?"
+      }
+    },
+    {
+      "id": "mot-20",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Where do you see yourself in 3 years after starting this course?",
+        "ru": "Кем вы видите себя через 3 года после начала курса?",
+        "kg": "Бул курстан кийин 3 жылда өзүңүздү кайсы жерде көрөсүз?"
+      }
+    },
+    {
+      "id": "mot-21",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Why do you want to learn programming? (3–5 sentences)",
+        "ru": "Почему вы хотите изучать программирование? (3–5 предложений)",
+        "kg": "Эмне үчүн программалоону үйрөнгүңүз келет? (3–5 сүйлөм)"
+      }
+    },
+    {
+      "id": "mot-22",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Describe a time you solved a difficult problem. What did you do?",
+        "ru": "Опишите случай, когда вы решили сложную проблему. Что вы сделали?",
+        "kg": "Кыйын маселени чечкен учурду сүрөттөп бериңиз. Эмне жасадыңыз?"
+      }
+    },
+    {
+      "id": "mot-23",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "How many hours per week can you study consistently? Be realistic.",
+        "ru": "Сколько часов в неделю вы можете стабильно заниматься? Реалистично.",
+        "kg": "Аптасына канча саат туруктуу окуй аласыз? Чындыкка жакын баалаңыз."
+      }
+    },
+    {
+      "id": "mot-24",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "What motivates you to join EduPro Academy?",
+        "ru": "Что мотивирует вас присоединиться к EduPro Academy?",
+        "kg": "Сизди EduPro Academyге кошулганга эмне мотивация берет?"
+      }
+    },
+    {
+      "id": "mot-25",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Where do you see yourself in 3 years after starting this course?",
+        "ru": "Кем вы видите себя через 3 года после начала курса?",
+        "kg": "Бул курстан кийин 3 жылда өзүңүздү кайсы жерде көрөсүз?"
+      }
+    },
+    {
+      "id": "mot-26",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Why do you want to learn programming? (3–5 sentences)",
+        "ru": "Почему вы хотите изучать программирование? (3–5 предложений)",
+        "kg": "Эмне үчүн программалоону үйрөнгүңүз келет? (3–5 сүйлөм)"
+      }
+    },
+    {
+      "id": "mot-27",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Describe a time you solved a difficult problem. What did you do?",
+        "ru": "Опишите случай, когда вы решили сложную проблему. Что вы сделали?",
+        "kg": "Кыйын маселени чечкен учурду сүрөттөп бериңиз. Эмне жасадыңыз?"
+      }
+    },
+    {
+      "id": "mot-28",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "How many hours per week can you study consistently? Be realistic.",
+        "ru": "Сколько часов в неделю вы можете стабильно заниматься? Реалистично.",
+        "kg": "Аптасына канча саат туруктуу окуй аласыз? Чындыкка жакын баалаңыз."
+      }
+    },
+    {
+      "id": "mot-29",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "What motivates you to join EduPro Academy?",
+        "ru": "Что мотивирует вас присоединиться к EduPro Academy?",
+        "kg": "Сизди EduPro Academyге кошулганга эмне мотивация берет?"
+      }
+    },
+    {
+      "id": "mot-30",
+      "section": "motivation",
+      "type": "text",
+      "q": {
+        "en": "Where do you see yourself in 3 years after starting this course?",
+        "ru": "Кем вы видите себя через 3 года после начала курса?",
+        "kg": "Бул курстан кийин 3 жылда өзүңүздү кайсы жерде көрөсүз?"
+      }
+    }
+  ]
+}
