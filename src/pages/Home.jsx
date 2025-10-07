@@ -1,6 +1,13 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Aboutedupro from "../components/Aboutedupro";
+import LeadForm from "../components/LeadForm";
+
+// EduPro Academy Landing Page — single-file React component
+// - TailwindCSS utility classes
+// - Lightweight, no external UI deps
+// - Sections: Navbar, Hero, Metrics, Programs, HowItWorks, Features, Outcomes, Testimonials, Pricing, FAQ, CTA, Footer
+// - Language toggle mock (EN/KG/RU) with minimal copy variants
 
 export default function Home() {
   const { t } = useTranslation(["common", "home"]);
@@ -207,7 +214,8 @@ export default function Home() {
         className="py-16 bg-gradient-to-br from-emerald-50 to-blue-50"
       >
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold">{t("home:cta.title")}</h2>
+          <LeadForm />
+          {/* <h2 className="text-3xl font-bold">{t("home:cta.title")}</h2>
           <p className="text-slate-600 mt-2">{t("home:cta.subtitle")}</p>
           <form className="mt-8 grid sm:grid-cols-3 gap-3 text-left">
             <input
@@ -238,7 +246,7 @@ export default function Home() {
             <button className="col-span-1 rounded-xl bg-emerald-600 text-white px-4 py-3 font-semibold hover:bg-emerald-700">
               {t("home:cta.button")}
             </button>
-          </form>
+          </form> */}
         </div>
       </section>
     </div>
