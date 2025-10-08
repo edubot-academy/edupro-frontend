@@ -145,45 +145,6 @@ export default function Home() {
 
       <Aboutedupro />
 
-      {/* Features & Outcomes */}
-      <section className="py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
-          <div>
-            <h2 className="text-2xl font-bold mb-6">
-              {t("home:features.title")}
-            </h2>
-            <ul className="space-y-4">
-              {features.map((f, i) => (
-                <li key={i} className="flex gap-4">
-                  <div className="mt-1 h-6 w-6 rounded-lg bg-emerald-100 flex items-center justify-center">
-                    ✓
-                  </div>
-                  <div>
-                    <div className="font-semibold">{f.t}</div>
-                    <div className="text-sm text-slate-600">{f.d}</div>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold mb-6">
-              {t("home:outcomes.title")}
-            </h2>
-            <ul className="grid sm:grid-cols-2 gap-4">
-              {outcomes.map((b, i) => (
-                <li
-                  key={i}
-                  className="rounded-2xl bg-white ring-1 ring-slate-200 p-4 text-sm"
-                >
-                  {b}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials */}
       <section className="py-16 bg-slate-100/60">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

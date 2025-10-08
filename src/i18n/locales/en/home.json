@@ -97,36 +97,6 @@
     ]
   },
 
-  "features": {
-    "title": "Why choose EduPro",
-    "items": [
-      {
-        "t": "AI-assisted learning",
-        "d": "Personalized tips, hints, and instant feedback while you study."
-      },
-      {
-        "t": "Career support",
-        "d": "Resume, LinkedIn, mock interviews, salary negotiation."
-      },
-      {
-        "t": "Flexible formats",
-        "d": "Evenings & weekends, online or on-campus."
-      },
-      {
-        "t": "Community",
-        "d": "Access mentors, alumni and hiring partners."
-      }
-    ]
-  },
-  "outcomes": {
-    "title": "Outcomes you can measure",
-    "bullets": [
-      "Job-ready portfolio by Week 8",
-      "Real-world teamwork via Git & sprints",
-      "English & soft-skills coaching",
-      "Internship placement support"
-    ]
-  },
   "testimonials": {
     "title": "What our students say",
     "items": [
