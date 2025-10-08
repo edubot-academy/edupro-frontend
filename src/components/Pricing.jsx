@@ -5,17 +5,18 @@ import { useTranslation } from 'react-i18next';
 const HomePricing = () => {
     const { t } = useTranslation(['common', 'home']);
     const plans = t('home:pricing.plans', { returnObjects: true });
+    const pricing = t('home:pricing', { returnObjects: true });
 
     return (
         <section id="pricing" className="py-16 bg-[#F8F8F8]">
             <div className="mx-auto max-w-[430px] lg:max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
                 {/* Заголовок */}
                 <h2 className="md:text-[50px] font-bold text-[#32215E] mb-6 text-[30px] leading-[120%] tracking-[1%] text-center uppercase">
-                    Окуу баалары
+                    {pricing.title}
                 </h2>
                 <div className="inline-block mb-12">
                     <span className="px-6 py-2 rounded-full opacity-100 border border-[#C9C9C9] font-[Suisse_Intl] font-normal text-[18px] leading-[120%] tracking-[1%] text-center text-[#555555]">
-                        ПУТЬ К ВАШЕЙ КАРЬЕРА
+                        {pricing.subtitle}
                     </span>
                 </div>
 
@@ -69,7 +70,8 @@ const HomePricing = () => {
                                     : "bg-[linear-gradient(180deg,#7640FF_-13.77%,#472799_188.41%)] text-white hover:opacity-90"
                                     }`}
                             >
-                                Записаться <HiOutlineArrowLongRight className="w-[46px] h-[25.837295532226562px]" />
+                                {pricing.button}
+                                <HiOutlineArrowLongRight className="w-[46px] h-[25.837295532226562px]" />
                             </button>
                         </div>
                     ))}

@@ -117,6 +117,7 @@
     },
     "pricing": {
         "title": "Tuition options",
+        "subtitle": "THE PATH TO YOUR CAREER",
         "plans": [
             {
                 "name": "Starter",
@@ -148,6 +149,7 @@
                 ]
             }
         ],
+        "button": "Sign up",
         "note": "*Guarantee depends on assessment and attendance."
     },
     "faq": {

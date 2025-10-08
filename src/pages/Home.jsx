@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
-import HomePricing from "../components/HomePricing";
+import HomePricing from "../components/Pricing";
 import LeadForm from "../components/LeadForm";
 
 // EduPro Academy Landing Page — single-file React component
