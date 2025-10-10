@@ -24,10 +24,10 @@ export function submitContactMessage({ name, email, message }) {
         fullName: name,
         email,
         phone: "",
-        programSlug: "general",     // <- generic bucket
-        studyMode: "online",        // <- required by DTO; any default OK
+        courseName: "general",     // <- generic bucket
+        courseType: "online",        // <- required by DTO; any default OK
         notes: message,
-        source: "contact_page",
+        source: "WEBSITE",
         leadType: "contact",        // <- tells CRM this is from Contact page
     });
 }
