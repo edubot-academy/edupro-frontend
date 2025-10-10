@@ -1,100 +1,81 @@
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import React from "react";
+import "../index.css";
+import lightIcon from "../assets/light.svg";
 
 export default function Footer() {
-    const { t } = useTranslation(['common', 'footer', 'home']);
+  return (
+    <footer className="relative w-full h-[556px] bg-[#32215E] text-white overflow-hidden">
+      <div className="absolute inset-0 flex justify-center items-center pointer-events-none overflow-hidden">
+        <h1
+          className="font-[Unbounded] text-[300px] font-extrabold leading-[1] w-auto max-w-full select-none tracking-wide"
+          style={{
+            color: "rgba(90, 60, 150, 50)",
+            WebkitMaskImage:
+              "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
+            WebkitMaskRepeat: "no-repeat",
+            WebkitMaskSize: "100% 100%",
+            maskImage:
+              "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 85%)",
+            maskRepeat: "no-repeat",
+            maskSize: "100% 100%",
+            transform: "scaleX(1)",
+          }}
+        >
+          EduPro
+        </h1>
+      </div>
 
-    // Quick links labels come from `nav.*`
-    const quickLinks = [
-        { to: "/programs", label: t("nav.programs") },
-        { to: "/pricing", label: t("nav.pricing") },
-        { to: "/about", label: t("nav.about") },
-        { to: "/contact", label: t("nav.contact") },
-    ];
+      <div className="relative z-10 max-w-[1400px] mx-auto px-10 py-20 flex justify-between gap-20">
+        <div className="max-w-sm text-left">
+          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 font-['Open_Sans']">
+            <img src={lightIcon} alt="Light" className="w-6 h-6" />
+            <span className="font-extrabold">EduPro</span>
+          </h2>
+          <p className="text-sm leading-relaxed text-gray-200">
+            Поднимите свою карьеру, доход и жизнь на новый уровень. SkillUp
+            помог более 400 студентам получить свою первую работу в сфере
+            технологий. Станьте следующим и измените свою жизнь уже сегодня!
+          </p>
+        </div>
 
-    // Program names from translations; slugs are your routes
-    const programSlugs = ["frontend", "backend_django", "flutter", "ux_ui"];
-    const programNames = t("home:programs.items", { returnObjects: true })
-        .slice(0, 4)
-        .map((p) => p.name);
+        <div className="flex gap-16">
+          <div>
+            <h3 className="font-semibold mb-4">Тез шилтемелер</h3>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>Главная</li>
+              <li>Программа</li>
+              <li>О нас</li>
+              <li>Наши курсы</li>
+              <li>Контакты</li>
+            </ul>
+          </div>
 
-    return (
-        <footer className="w-full bg-slate-900 text-slate-300 mt-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid gap-8 md:grid-cols-4">
-                {/* Brand */}
-                <div>
-                    <h3 className="text-white font-bold text-xl">{t("footer.brand.name")}</h3>
-                    <p className="mt-3 text-sm text-slate-400 leading-relaxed">
-                        {t("footer.brand.tagline")}
-                    </p>
-                </div>
+          <div>
+            <h3 className="font-semibold mb-4">Программалaр</h3>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>Frontend инженер</li>
+              <li>Django менен Backend</li>
+              <li>UX/UI дизайн</li>
+            </ul>
+          </div>
 
-                {/* Quick Links */}
-                <div>
-                    <h4 className="text-white font-semibold mb-3">{t("footer.quick.title")}</h4>
-                    <ul className="space-y-2">
-                        {quickLinks.map((link) => (
-                            <li key={link.to}>
-                                <Link to={link.to} className="hover:text-white">
-                                    {link.label}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+          <div>
+            <h3 className="font-semibold mb-4">Байланыш</h3>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>Email: info@edupro.academy</li>
+              <li>Телефон: +996 (555) 000-111</li>
+              <li>Telegram: @eduproacademy</li>
+              <li>Дарек: Бишкек, Кыргызстан</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-                {/* Programs */}
-                <div>
-                    <h4 className="text-white font-semibold mb-3">{t("common:nav.programs")}</h4>
-                    <ul className="space-y-2">
-                        {programNames.map((name, i) => (
-                            <li key={programSlugs[i]}>
-                                <Link to={`/programs/${programSlugs[i]}`} className="hover:text-white">
-                                    {name}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+      <div className="absolute bottom-20 left-0 w-full border-t border-[#FFFFFF33]" />
 
-                {/* Contact */}
-                <div>
-                    <h4 className="text-white font-semibold mb-3">{t("common:footer.contact.title")}</h4>
-                    <ul className="space-y-2 text-sm">
-                        <li>
-                            {t("common:footer.contact.labels.email")}:{" "}
-                            <a href={`mailto:${t("common:footer.contact.email")}`} className="hover:text-white">
-                                {t("common:footer.contact.email")}
-                            </a>
-                        </li>
-                        <li>
-                            {t("common:footer.contact.labels.phone")}:{" "}
-                            <a href="tel:+996555000111" className="hover:text-white">
-                                {t("common:footer.contact.phone")}
-                            </a>
-                        </li>
-                        <li>
-                            {t("common:footer.contact.labels.telegram")}:{" "}
-                            <a
-                                href="https://t.me/eduproacademy"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-white"
-                            >
-                                {t("common:footer.contact.telegram")}
-                            </a>
-                        </li>
-                        <li>
-                            {t("common:footer.contact.labels.address")}: {t("common:footer.contact.location")}
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            {/* Bottom bar */}
-            <div className="border-t border-slate-800 py-4 text-center text-sm text-slate-400">
-                {t("common:footer.rights", { year: new Date().getFullYear() })}
-            </div>
-        </footer>
-    );
+      <div className="absolute bottom-10 w-full text-center text-sm text-gray-400">
+        Copyright © 2021-2025 SkillUP | Privacy Policy | Terms & Conditions
+      </div>
+    </footer>
+  );
 }
