@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
+import PopularPrograms from "../components/PopularPrograms";
 
 // EduPro Academy Landing Page — single-file React component
 // - TailwindCSS utility classes
@@ -78,23 +79,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
-            {/* Programs */}
-            <section id="programs" className="py-16">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold mb-8">{t('home:programs.title')}</h2>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {programs.map((p, i) => (
-                            <article key={i} className="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow">
-                                <h3 className="font-semibold text-lg">{p.name}</h3>
-                                <p className="text-sm text-slate-500 mt-1">{p.dur}</p>
-                                <p className="text-slate-600 mt-3 text-sm leading-relaxed">{p.text}</p>
-                                <a href="#apply" className="mt-4 inline-flex text-emerald-700 font-semibold">Apply →</a>
-                            </article>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <PopularPrograms />
+           
 
             {/* How it works */}
             <section className="py-16 bg-slate-100/60" id="about">

@@ -28,22 +28,22 @@
         "title": "Популярные программы",
         "items": [
             {
-                "name": "Frontend-инженерия",
+                "name": "Frontend",
                 "dur": "16 недель",
                 "text": "React, Tailwind, API, деплой, подготовка к собеседованиям."
             },
             {
-                "name": "Backend на Django",
+                "name": "Backend",
                 "dur": "24 недели",
                 "text": "Python, Django REST, PostgreSQL, Docker, CI/CD."
             },
             {
-                "name": "Мобильная разработка на Flutter",
+                "name": "Fullstack",
                 "dur": "20 недель",
                 "text": "Dart, UI на Flutter, стейт-менеджмент, публикация в сторах."
             },
             {
-                "name": "UX/UI дизайн",
+                "name": "Английский",
                 "dur": "12 недель",
                 "text": "Figma, исследования, вайрфреймы, дизайн-системы, хэнд офф."
             }

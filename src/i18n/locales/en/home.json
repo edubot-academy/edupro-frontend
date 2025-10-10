@@ -28,22 +28,22 @@
         "title": "Popular Programs",
         "items": [
             {
-                "name": "Frontend Engineering",
+                "name": "Frontend",
                 "dur": "16 weeks",
                 "text": "React, Tailwind, APIs, deployment, interview prep."
             },
             {
-                "name": "Backend with Django",
-                "dur": "24 weeks",
+                "name": "Backend",
+                "dur": "6 months",
                 "text": "Python, Django REST, PostgreSQL, Docker, CI/CD."
             },
             {
-                "name": "Mobile with Flutter",
-                "dur": "20 weeks",
+                "name": "Fullstack",
+                "dur": "6 months",
                 "text": "Dart, Flutter UI, state mgmt, Play Store/App Store."
             },
             {
-                "name": "UX/UI Design",
+                "name": "English",
                 "dur": "12 weeks",
                 "text": "Figma, research, wireframes, design systems, handoff."
             }
