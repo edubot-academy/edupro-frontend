@@ -1,177 +1,224 @@
 {
-    "hero": {
-        "eyebrow": "Future-Ready Education",
-        "title": "Learn skills that get you hired.",
-        "subtitle": "EduPro Academy blends practical projects, mentorship, and AI-assisted learning to turn beginners into job-ready talent.",
-        "ctaPrimary": "Apply now",
-        "ctaSecondary": "Download brochure"
+  "hero": {
+    "eyebrow": "Future-Ready Education",
+    "title": "Learn skills that get you hired.",
+    "subtitle": "EduPro Academy blends practical projects, mentorship, and AI-assisted learning to turn beginners into job-ready talent.",
+    "ctaPrimary": "Apply now",
+    "ctaSecondary": "Download brochure"
+  },
+  "metrics": [
+    {
+      "value": "1,200+",
+      "label": "Graduates"
     },
-    "metrics": [
-        {
-            "value": "1,200+",
-            "label": "Graduates"
-        },
-        {
-            "value": "87%",
-            "label": "Hire/Internship rate"
-        },
-        {
-            "value": "25+",
-            "label": "Hiring partners"
-        },
-        {
-            "value": "3",
-            "label": "Languages (EN/KG/RU)"
-        }
-    ],
-    "programs": {
-        "title": "Popular Programs",
-        "items": [
-            {
-                "name": "Frontend Engineering",
-                "dur": "16 weeks",
-                "text": "React, Tailwind, APIs, deployment, interview prep."
-            },
-            {
-                "name": "Backend with Django",
-                "dur": "24 weeks",
-                "text": "Python, Django REST, PostgreSQL, Docker, CI/CD."
-            },
-            {
-                "name": "Mobile with Flutter",
-                "dur": "20 weeks",
-                "text": "Dart, Flutter UI, state mgmt, Play Store/App Store."
-            },
-            {
-                "name": "UX/UI Design",
-                "dur": "12 weeks",
-                "text": "Figma, research, wireframes, design systems, handoff."
-            }
-        ]
+    {
+      "value": "87%",
+      "label": "Hire/Internship rate"
     },
-    "how": {
-        "title": "How it works",
-        "steps": [
-            {
-                "t": "Learn by building",
-                "d": "Short lessons + real projects guided by mentors."
-            },
-            {
-                "t": "Get feedback",
-                "d": "Code reviews, design critiques, weekly checkpoints."
-            },
-            {
-                "t": "Build portfolio",
-                "d": "Ship capstones that impress recruiters."
-            },
-            {
-                "t": "Land the role",
-                "d": "Interview coaching, referrals, and job search support."
-            }
-        ]
+    {
+      "value": "25+",
+      "label": "Hiring partners"
     },
-    "features": {
-        "title": "Why choose EduPro",
-        "items": [
-            {
-                "t": "AI-assisted learning",
-                "d": "Personalized tips, hints, and instant feedback while you study."
-            },
-            {
-                "t": "Career support",
-                "d": "Resume, LinkedIn, mock interviews, salary negotiation."
-            },
-            {
-                "t": "Flexible formats",
-                "d": "Evenings & weekends, online or on-campus."
-            },
-            {
-                "t": "Community",
-                "d": "Access mentors, alumni and hiring partners."
-            }
-        ]
-    },
-    "outcomes": {
-        "title": "Outcomes you can measure",
-        "bullets": [
-            "Job-ready portfolio by Week 8",
-            "Real-world teamwork via Git & sprints",
-            "English & soft-skills coaching",
-            "Internship placement support"
-        ]
-    },
-    "testimonials": {
-        "title": "What our students say",
-        "items": [
-            {
-                "name": "Aizada T.",
-                "role": "Frontend Dev @ FinTech",
-                "quote": "The projects felt like real work. The mock interviews made the difference."
-            },
-            {
-                "name": "Erkin K.",
-                "role": "Junior Python Dev",
-                "quote": "Mentors reviewed every pull request. I learned faster than in college."
-            }
-        ]
-    },
-    "pricing": {
-        "title": "Tuition options",
-        "subtitle": "THE PATH TO YOUR CAREER",
-        "plans": [
-            {
-                "name": "Starter",
-                "price": "$49/mo",
-                "feat": [
-                    "Weekly workshops",
-                    "Community access",
-                    "Career webinars"
-                ]
-            },
-            {
-                "name": "Pro Track",
-                "price": "$149/mo",
-                "featured": true,
-                "feat": [
-                    "Full curriculum",
-                    "1:1 mentor",
-                    "Capstone review",
-                    "Interview prep"
-                ]
-            },
-            {
-                "name": "Career Plus",
-                "price": "$399/mo",
-                "feat": [
-                    "All Pro",
-                    "Guaranteed internship*",
-                    "Personal coach"
-                ]
-            }
-        ],
-        "button": "Sign up",
-        "note": "*Guarantee depends on assessment and attendance."
-    },
-    "faq": {
-        "title": "FAQ",
-        "items": [
-            {
-                "q": "Do I need prior experience?",
-                "a": "No. We start from fundamentals and accelerate quickly with projects."
-            },
-            {
-                "q": "Is it in-person or online?",
-                "a": "Both options are available; choose what fits your schedule."
-            },
-            {
-                "q": "Will you help me find a job?",
-                "a": "Yes—portfolio, mock interviews, and referrals through partner network."
-            }
-        ]
-    },
-    "cta": {
-        "title": "Ready to start?",
-        "subtitle": "Apply in 3 minutes. Our team will follow up within 24 hours.",
-        "button": "Start application"
+    {
+      "value": "3",
+      "label": "Languages (EN/KG/RU)"
     }
+  ],
+  "programs": {
+    "title": "Popular Programs",
+    "items": [
+      {
+        "name": "Frontend Engineering",
+        "dur": "16 weeks",
+        "text": "React, Tailwind, APIs, deployment, interview prep."
+      },
+      {
+        "name": "Backend with Django",
+        "dur": "24 weeks",
+        "text": "Python, Django REST, PostgreSQL, Docker, CI/CD."
+      },
+      {
+        "name": "Mobile with Flutter",
+        "dur": "20 weeks",
+        "text": "Dart, Flutter UI, state mgmt, Play Store/App Store."
+      },
+      {
+        "name": "UX/UI Design",
+        "dur": "12 weeks",
+        "text": "Figma, research, wireframes, design systems, handoff."
+      }
+    ]
+  },
+  "career": {
+    "title": "Start Your Journey",
+    "button": "YOUR CAREER PATH",
+    "features": [
+      {
+        "title": "Learn by Building",
+        "text": "Short lessons + real projects guided by mentors."
+      },
+      {
+        "title": "Get Feedback",
+        "text": "Receive comments and guidance from experts."
+      },
+      {
+        "title": "Build a Portfolio",
+        "text": "Capstone projects that impress recruiters."
+      },
+      {
+        "title": "Get Job-Ready",
+        "text": "Interview prep, tips, and job search support."
+      }
+    ]
+  },
+  "aboutFounders": {
+    "title": "FOUNDERS OF EduPro",
+    "button": "YOUR CAREER PATH",
+    "blocks": [
+      {
+        "name": "Bekten Azhymyrza",
+        "position": "Founder of EduPro",
+        "description": "Hi! My name is Bekten, I'm an IT specialist. I've been working in development for several years and love solving problems with technology. My main focus is web development: I create websites, applications, and various digital services. I started simple — with layouts and small projects for acquaintances, and now I work on more complex systems where architecture, security, and user experience are important. I constantly learn new things: studying modern frameworks, automation, and the latest IT trends."
+      },
+      {
+        "name": "Bekten Azhymyrza",
+        "position": "Founder of EduPro",
+        "description": "Hi! My name is Bekten, I'm an IT specialist. I've been working in development for several years and love solving problems with technology. My main focus is web development: I create websites, applications, and various digital services. I started simple — with layouts and small projects for acquaintances, and now I work on more complex systems where architecture, security, and user experience are important. I constantly learn new things: studying modern frameworks, automation, and the latest IT trends."
+      }
+    ]
+  },
+  "studentFeedback": {
+    "title": "WHAT STUDENTS SAY",
+    "button": "YOUR CAREER PATH",
+    "blocks": [
+      {
+        "text": "Projects felt like real work. Mock interviews played a decisive role."
+      },
+      {
+        "text": "Mentors reviewed every PR. Learned faster than at university."
+      },
+      {
+        "text": "Mentors reviewed every PR. Learned faster than at university."
+      },
+      {
+        "text": "Mentors reviewed every PR. Learned faster than at university."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "button": "YOUR CAREER PATH",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$49/mo",
+        "features": [
+          "Weekly workshops",
+          "Access to community",
+          "Career webinars"
+        ],
+        "cta": "Enroll Now"
+      },
+      {
+        "name": "Pro Track",
+        "price": "$149/mo",
+        "features": [
+          "Full program",
+          "1:1 mentor",
+          "Capstone review",
+          "Interview preparation"
+        ],
+        "cta": "Enroll Now"
+      },
+      {
+        "name": "Career Plus",
+        "price": "$399/mo",
+        "features": [
+          "Everything in Pro Track",
+          "Guaranteed internship",
+          "Personal coach"
+        ],
+        "cta": "Enroll Now"
+      }
+    ]
+  },
+  "freeTest": {
+    "title": "Take the test for free and find out your level!",
+    "text": "Answer a few simple questions and get instant results. Determine your current level of knowledge and understand where to start learning. The test is completely free and takes no more than 5 minutes.",
+    "button": "Take the Test"
+  },
+  "faq": {
+    "title": "FREQUENTLY ASKED QUESTIONS",
+    "button": "YOUR CAREER PATH",
+    "items": [
+      {
+        "q": "DO I NEED PRIOR EXPERIENCE?",
+        "description": "No. We start from the basics and quickly advance through projects and practical exercises."
+      },
+      {
+        "q": "IS IT ONLINE OR OFFLINE?",
+        "description": "You can choose either online or offline format depending on your preference and schedule."
+      },
+      {
+        "q": "HOW LONG IS THE PROGRAM?",
+        "description": "The program lasts several weeks, with weekly workshops, mentorship, and final projects."
+      },
+      {
+        "q": "WILL YOU HELP ME FIND A JOB?",
+        "description": "Yes. We provide portfolio guidance, mock interviews, and connections to our partner network."
+      }
+    ]
+  },
+  "mentors": {
+    "title": "OUR MENTORS",
+    "button": "WITH OVER 10 YEARS OF EXPERIENCE",
+    "mentors": [
+      { "name": "Talaaybek Imankulov", "role": "FrontEnd Mentor" },
+      { "name": "Mentor Name 2", "role": "BackEnd Mentor" },
+      { "name": "Mentor Name 3", "role": "UI/UX Mentor" },
+      { "name": "Mentor Name 4", "role": "AI Mentor" }
+    ]
+  },
+  "consultation": {
+    "title": "ANY QUESTIONS? WE’LL CONSULT YOU FOR FREE!",
+    "subtitle": "Submit your request in 3 minutes. Our team will contact you within 24 hours.",
+    "form": {
+      "name": "Your name",
+      "phone": "Leave your phone number",
+      "position": "FrontEnd Engineer",
+      "format": "Offline",
+      "button": "Sign up"
+    },
+    "socials": "We are on social media",
+    "contacts": {
+      "title": "Our contacts",
+      "phone": "+996 550 942 433",
+      "addressTitle": "Address",
+      "address": "Bishkek, Kyrgyzstan",
+      "email": "Email"
+    }
+  },
+
+  "footer": {
+    "about": {
+      "text": "Boost your career, income, and life to a new level. SkillUp has helped over 400 students get their first job in tech. Become the next one and change your life today!"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "links": ["Home", "Program", "About Us", "Our Courses", "Contacts"]
+    },
+
+    "programs": {
+      "title": "Programs",
+      "items": ["Frontend Engineering", "Django Backend", "UX/UI Design"]
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email",
+      "phone": "Phone",
+      "telegram": "Telegram",
+      "address": "Address: Bishkek, Kyrgyzstan"
+    },
+    "copyright": "Copyright © 2021–2025 SkillUP | Privacy Policy | Terms & Conditions"
+  }
 }
