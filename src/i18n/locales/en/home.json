@@ -169,10 +169,34 @@
       }
     ]
   },
-  "cta": {
-    "title": "Ready to start?",
-    "subtitle": "Apply in 3 minutes. Our team will follow up within 24 hours.",
-    "button": "Start application"
+  "mentors": {
+    "title": "OUR MENTORS",
+    "button": "WITH OVER 10 YEARS OF EXPERIENCE",
+    "mentors": [
+      { "name": "Talaaybek Imankulov", "role": "FrontEnd Mentor" },
+      { "name": "Mentor Name 2", "role": "BackEnd Mentor" },
+      { "name": "Mentor Name 3", "role": "UI/UX Mentor" },
+      { "name": "Mentor Name 4", "role": "AI Mentor" }
+    ]
+  },
+  "consultation": {
+    "title": "ANY QUESTIONS? WE’LL CONSULT YOU FOR FREE!",
+    "subtitle": "Submit your request in 3 minutes. Our team will contact you within 24 hours.",
+    "form": {
+      "name": "Your name",
+      "phone": "Leave your phone number",
+      "position": "FrontEnd Engineer",
+      "format": "Offline",
+      "button": "Sign up"
+    },
+    "socials": "We are on social media",
+    "contacts": {
+      "title": "Our contacts",
+      "phone": "+996 550 942 433",
+      "addressTitle": "Address",
+      "address": "Bishkek, Kyrgyzstan",
+      "email": "Email"
+    }
   },
 
   "footer": {
