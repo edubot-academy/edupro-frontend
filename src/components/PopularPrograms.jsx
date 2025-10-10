@@ -14,7 +14,6 @@ export default function PopularPrograms() {
   const { t } = useTranslation(['home']);
   const programs = t('home:programs.items', { returnObjects: true }) || [];
 
-  // 🔹 Иконки технологий
   const techIcons = {
     HTML5: SiHtml5,
     CSS3: SiCss3,
