@@ -54,18 +54,22 @@
     "button": "YOUR CAREER PATH",
     "features": [
       {
+        "id": "1",
         "title": "Learn by Building",
         "text": "Short lessons + real projects guided by mentors."
       },
       {
+        "id": "2",
         "title": "Get Feedback",
         "text": "Receive comments and guidance from experts."
       },
       {
+        "id": "3",
         "title": "Build a Portfolio",
         "text": "Capstone projects that impress recruiters."
       },
       {
+        "id": "4",
         "title": "Get Job-Ready",
         "text": "Interview prep, tips, and job search support."
       }
@@ -173,10 +177,22 @@
     "title": "OUR MENTORS",
     "button": "WITH OVER 10 YEARS OF EXPERIENCE",
     "mentors": [
-      { "name": "Talaaybek Imankulov", "role": "FrontEnd Mentor" },
-      { "name": "Mentor Name 2", "role": "BackEnd Mentor" },
-      { "name": "Mentor Name 3", "role": "UI/UX Mentor" },
-      { "name": "Mentor Name 4", "role": "AI Mentor" }
+      {
+        "name": "Talaaybek Imankulov",
+        "role": "FrontEnd Mentor"
+      },
+      {
+        "name": "Mentor Name 2",
+        "role": "BackEnd Mentor"
+      },
+      {
+        "name": "Mentor Name 3",
+        "role": "UI/UX Mentor"
+      },
+      {
+        "name": "Mentor Name 4",
+        "role": "AI Mentor"
+      }
     ]
   },
   "consultation": {
@@ -198,18 +214,27 @@
       "email": "Email"
     }
   },
-
   "footer": {
     "about": {
       "text": "Boost your career, income, and life to a new level. SkillUp has helped over 400 students get their first job in tech. Become the next one and change your life today!"
     },
     "quickLinks": {
       "title": "Quick Links",
-      "links": ["Home", "Program", "About Us", "Our Courses", "Contacts"]
+      "links": [
+        "Home",
+        "Program",
+        "About Us",
+        "Our Courses",
+        "Contacts"
+      ]
     },
     "programs": {
       "title": "Programs",
-      "items": ["Frontend Engineering", "Django Backend", "UX/UI Design"]
+      "items": [
+        "Frontend Engineering",
+        "Django Backend",
+        "UX/UI Design"
+      ]
     },
     "contact": {
       "title": "Contact",
