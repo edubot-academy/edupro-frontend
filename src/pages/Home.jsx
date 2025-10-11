@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import LeadForm from "../components/LeadForm";
+import HowItWork from "../components/HowItWork";
 
 // EduPro Academy Landing Page — single-file React component
 // - TailwindCSS utility classes
@@ -25,10 +26,7 @@ export default function Home() {
     ? programsObj
     : Object.values(programsObj);
 
-  const howStepsObj = t("home:how.steps", { returnObjects: true });
-  const howSteps = Array.isArray(howStepsObj)
-    ? howStepsObj
-    : Object.values(howStepsObj);
+ 
 
   const featuresObj = t("home:features.items", { returnObjects: true });
   const features = Array.isArray(featuresObj)
@@ -97,7 +95,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Metrics */}
       <section className="py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -143,30 +140,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* How it works */}
-      <section className="py-16 bg-slate-100/60" id="about">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-10">{t("home:how.title")}</h2>
-          <div className="grid md:grid-cols-4 gap-6">
-            {howSteps.map((s, i) => (
-              <div
-                key={i}
-                className="rounded-2xl bg-white ring-1 ring-slate-200 p-6"
-              >
-                <div className="h-10 w-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold mb-3">
-                  {i + 1}
-                </div>
-                <h3 className="font-semibold">{s.t}</h3>
-                <p className="text-sm text-slate-600 mt-2 leading-relaxed">
-                  {s.d}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <HowItWork />
       {/* Features & Outcomes */}
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
@@ -240,17 +214,15 @@ export default function Home() {
             {plans.map((pl, i) => (
               <div
                 key={i}
-                className={`rounded-2xl p-6 ring-1 shadow-sm ${
-                  pl.featured
+                className={`rounded-2xl p-6 ring-1 shadow-sm ${pl.featured
                     ? "bg-emerald-600 text-white ring-emerald-700"
                     : "bg-white ring-slate-200"
-                }`}
+                  }`}
               >
                 <div className="flex items-baseline justify-between">
                   <h3
-                    className={`font-semibold ${
-                      pl.featured ? "text-white" : "text-slate-900"
-                    }`}
+                    className={`font-semibold ${pl.featured ? "text-white" : "text-slate-900"
+                      }`}
                   >
                     {pl.name}
                   </h3>
@@ -258,9 +230,8 @@ export default function Home() {
                 </div>
 
                 <ul
-                  className={`mt-4 space-y-2 text-sm ${
-                    pl.featured ? "text-white/90" : "text-slate-600"
-                  }`}
+                  className={`mt-4 space-y-2 text-sm ${pl.featured ? "text-white/90" : "text-slate-600"
+                    }`}
                 >
                   {Array.isArray(pl.features) &&
                     pl.features.map((f, j) => <li key={j}>• {f}</li>)}
@@ -268,11 +239,10 @@ export default function Home() {
 
                 <a
                   href="#apply"
-                  className={`mt-6 inline-flex w-full justify-center rounded-xl px-4 py-2 font-semibold ${
-                    pl.featured
+                  className={`mt-6 inline-flex w-full justify-center rounded-xl px-4 py-2 font-semibold ${pl.featured
                       ? "bg-white text-emerald-700"
                       : "bg-emerald-600 text-white"
-                  }`}
+                    }`}
                 >
                   Choose plan
                 </a>
