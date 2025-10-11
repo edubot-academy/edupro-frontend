@@ -14,6 +14,7 @@ export default function PopularPrograms() {
   const { t } = useTranslation(['home']);
   const programs = t('home:programs.items', { returnObjects: true }) || [];
 
+  
   const techIcons = {
     HTML5: SiHtml5,
     CSS3: SiCss3,
@@ -43,28 +44,64 @@ export default function PopularPrograms() {
 
   // 🔹 Технологии для каждой программы
   const programTechs = {
-    Frontend: ["GitHub", "JavaScript", "Git", "TypeScript", "Redux", "HTML5", "CSS3", "React"],
+    Frontend: ["HTML5", "CSS3", "JavaScript", "React", "TypeScript", "Redux", "Git", "GitHub"],
     Backend: ["Python", "PostgreSQL", "Docker", "Linux", "Nginx", "Git"],
     Fullstack: ["HTML5", "CSS3", "JavaScript", "React", "NodeJS", "TypeScript", "PostgreSQL", "Docker", "Git"],
     English: ["Grammar", "Vocabulary", "Listening", "Speaking", "Writing"],
+    Mobile: ["Flutter", "Dart", "Git", "GitHub", "Figma"],
+    UXUI: ["Figma", "HTML5", "CSS3", "Git", "JavaScript"],
   };
 
-  // 🔹 Словарь для маппинга перевода → английский ключ
-  const nameMap = {
-    // Русский
-    'Фронтенд': 'Frontend',
-    'Бэкенд': 'Backend',
-    'Фулстек': 'Fullstack',
-    'Английский': 'English',
-    // Английский
-    'Frontend': 'Frontend',
-    'Backend': 'Backend',
-    'Fullstack': 'Fullstack',
-    'English': 'English',
+  // 🔹 Улучшенная функция для получения технологий
+  const getProgramTechs = (programName) => {
+    if (!programName) return [];
+    
+    const name = programName.trim().toLowerCase();
+    
+    // Фронтенд варианты
+    if (name.includes('фронт') || name.includes('frontend')) {
+      return programTechs.Frontend || [];
+    } 
+    // Бэкенд варианты
+    else if (name.includes('бэк') || name.includes('back-end') || name.includes('backend')) {
+      return programTechs.Backend || [];
+    } 
+    // Фулстек варианты
+    else if (name.includes('фул') || name.includes('fullstack') || name.includes('full-stack')) {
+      return programTechs.Fullstack || [];
+    } 
+    // Английский варианты
+    else if (name.includes('англ') || name.includes('english') || name.includes('ingl')) {
+      return programTechs.English || [];
+    }
+    // Mobile with Flutter
+    else if (name.includes('mobile') || name.includes('flutter') || name.includes('мобил')) {
+      return programTechs.Mobile || [];
+    }
+    // UX/UI Design
+    else if (name.includes('ux') || name.includes('ui') || name.includes('design') || name.includes('дизайн')) {
+      return programTechs.UXUI || [];
+    }
+    
+    // Прямое соответствие
+    const directMatch = programTechs[programName.trim()];
+    if (directMatch) return directMatch;
+    
+    console.warn(`No technologies found for program: ${programName}`);
+    return [];
   };
+
+  // Проверка структуры данных programs
+  console.log('PROGRAMS DATA:', programs);
+  console.log('Programs type:', typeof programs);
+  console.log('Programs length:', programs.length);
+  
+  if (!Array.isArray(programs) || programs.length === 0) {
+    return <div className="text-white text-center py-8">No programs data available</div>;
+  }
 
   return (
-    <section className="relative  w-full mb-44">
+    <section className="relative w-full mb-10">
       {/* Земля */}
       <div className="flex justify-center relative z-10 pt-20">
         <img
@@ -74,36 +111,35 @@ export default function PopularPrograms() {
              md:w-[200px] md:h-[390px] 
              sm:w-[180px] sm:h-[220px] 
              xs:w-[150px] xs:h-[180px]
-             lg:w-[285px] lg:h-[380px]
-             "
+             lg:w-[285px] lg:h-[380px]"
         />
       </div>
 
-      {/* Фон и заголовок */}
+   
       <div className="relative flex justify-center -mt-44">
-        {/* Фон для десктопа и планшета */}
+       
         <img
           src={bg}
           alt="Background"
           className="w-full max-w-full object-cover hidden md:block"
         />
 
-        {/* Фон для мобильных */}
+   
         <img
           src={mobile_bg}
           alt="Background"
           className="w-full max-w-full object-cover md:hidden"
         />
 
-        {/* Текст EduPro - скрыт на мобильных */}
-       <h1 className="absolute text-[180px] md:text-[220px] lg:text-[280px] xl:text-[390px] font-bold bg-gradient-to-t from-[#190B3B] to-[#A37FFF] bg-clip-text text-transparent opacity-15 select-none top-[calc(25%-15px)] left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:block hidden max-w-[90vw] overflow-hidden">
+     
+        <h1 className="absolute text-[180px] md:text-[220px] lg:text-[280px] xl:text-[390px] font-bold bg-gradient-to-t from-[#190B3B] to-[#A37FFF] bg-clip-text text-transparent opacity-15 select-none top-[calc(25%-15px)] left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:block hidden max-w-[90vw] overflow-hidden">
           EduPro
-</h1>
+        </h1>
 
         <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-4
                 top-[calc(5%+5px)] xs:top-[calc(8%+5px)] sm:top-[calc(12%+5px)] md:top-[calc(14%+5px)] lg:top-[calc(18%+5px)] xl:top-[calc(20%+5px)]">
           <h2 className="text-white font-bold leading-[120%] tracking-[1%] text-center pt-9 uppercase whitespace-nowrap 
-                 text-[24px] xs:text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px]">
+                 text-[20px] xs:text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px]">
             {t('home:programs.title')}
           </h2>
 
@@ -114,16 +150,18 @@ export default function PopularPrograms() {
               ПУТЬ К ВАШЕЙ КАРЬЕРЕ
             </p>
           </div>
-</div>
+        </div>
       </div>
 
       {/* Карточки программ */}
       <div className="relative flex justify-center z-20 mx-auto max-w-9xl px-4 sm:px-6 lg:px-8 mt-[5%] sm:mt-[10%] md:-mt-[25%] lg:-mt-[35%] xl:-mt-[420px]">
         <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-4 md:overflow-visible md:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
           {programs.map((p, i) => {
-            const rawName = p.name?.trim();
-            const name = nameMap[rawName] || rawName;
-            const techList = programTechs[name] || [];
+            const rawName = p.name?.trim() || `Program ${i + 1}`;
+            const techList = getProgramTechs(rawName);
+
+        
+            console.log(`Program ${i}:`, rawName, 'Technologies:', techList);
 
             return (
               <article
@@ -134,8 +172,10 @@ export default function PopularPrograms() {
                   {rawName}
                 </h3>
 
-                <p className="text-sm text-slate-500 mt-1">{p.dur}</p>
-                <p className="text-slate-600 mt-2 text-sm leading-relaxed line-clamp-3">{p.text}</p>
+                <p className="text-sm text-slate-500 mt-1">{p.dur || 'Duration not specified'}</p>
+                <p className="text-slate-600 mt-2 text-sm leading-relaxed line-clamp-3">
+                  {p.text || 'Description not available'}
+                </p>
 
                 <div className="mt-3 flex flex-wrap gap-1.5">
                   {techList.length > 0 ? (
@@ -146,19 +186,27 @@ export default function PopularPrograms() {
                           key={idx}
                           className="flex items-center border border-black rounded-md px-1.5 py-0.5 text-xs hover:scale-105 transition-transform"
                         >
-                          {Icon && <Icon className="w-4 h-4 mr-1.5 text-[#555]" />}
+                          {Icon ? (
+                            <Icon className="w-4 h-4 mr-1.5 text-[#555]" />
+                          ) : (
+                            <span className="w-4 h-4 mr-1.5 bg-gray-300 rounded flex items-center justify-center text-[10px]">
+                              ?
+                            </span>
+                          )}
                           {tech}
                         </div>
                       );
                     })
                   ) : (
-                    <span className="text-slate-400 text-xs italic">No technologies</span>
+                    <span className="text-slate-400 text-xs italic">
+                      Technologies not configured for: {rawName}
+                    </span>
                   )}
                 </div>
 
                 <a
                   href="#apply"
-                  className="mt-3 inline-flex text-emerald-700 font-semibold text-sm"
+                  className="mt-3 inline-flex text-emerald-700 font-semibold text-sm hover:text-emerald-800 transition-colors"
                 >
                   Apply →
                 </a>
