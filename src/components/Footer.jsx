@@ -1,13 +1,25 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "../index.css";
 import lightIcon from "../assets/light.svg";
 
 export default function Footer() {
+  const { t } = useTranslation(["home"]);
+
+  const quickLinksRaw = t("home:footer.quickLinks.links", {
+    returnObjects: true,
+  });
+  const quickLinks = Array.isArray(quickLinksRaw) ? quickLinksRaw : [];
+
+  const programsRaw = t("footer.programs.items", { returnObjects: true });
+  const programs = Array.isArray(programsRaw) ? programsRaw : [];
+  const qu = t("home:footer.programs", { returnObjects: true });
+
   return (
-    <footer className="relative w-full h-[556px] bg-[#32215E] text-white overflow-hidden">
-      <div className="absolute inset-0 flex justify-center items-center pointer-events-none overflow-hidden">
+    <footer className="relative w-full min-h-[556px] bg-[#32215E] text-white overflow-hidden">
+      <div className="absolute inset-0 flex justify-center items-center pointer-events-none overflow-hidden hidden sm:flex">
         <h1
-          className="font-[Unbounded] text-[300px] font-extrabold leading-[1] w-auto max-w-full select-none tracking-wide"
+          className="font-[Unbounded] text-[180px] sm:text-[220px] md:text-[260px] lg:text-[300px] font-extrabold leading-[1] w-auto max-w-full select-none tracking-wide"
           style={{
             color: "rgba(90, 60, 150, 50)",
             WebkitMaskImage:
@@ -25,47 +37,53 @@ export default function Footer() {
         </h1>
       </div>
 
-      <div className="relative z-10 max-w-[1400px] mx-auto px-10 py-20 flex justify-between gap-20">
-        <div className="max-w-sm text-left">
-          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 font-['Open_Sans']">
-            <img src={lightIcon} alt="Light" className="w-6 h-6" />
+      <div className="relative z-10 max-w-[1400px] mx-auto px-6 sm:px-10 py-10 sm:py-16 md:py-20 flex flex-col md:flex-row justify-between gap-10 sm:gap-14 md:gap-20">
+        <div className="max-w-sm text-left flex-1">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4 flex items-center gap-2 font-['Open_Sans']">
+            <img
+              src={lightIcon}
+              alt="Light"
+              className="w-5 h-5 sm:w-6 sm:h-6"
+            />
             <span className="font-extrabold">EduPro</span>
           </h2>
-          <p className="text-sm leading-relaxed text-gray-200">
-            Поднимите свою карьеру, доход и жизнь на новый уровень. SkillUp
-            помог более 400 студентам получить свою первую работу в сфере
-            технологий. Станьте следующим и измените свою жизнь уже сегодня!
+          <p className="text-xs sm:text-sm leading-relaxed text-gray-200 break-words max-w-[400px]">
+            {t("footer.about.text")}
           </p>
         </div>
 
-        <div className="flex gap-16">
-          <div>
-            <h3 className="font-semibold mb-4">Тез шилтемелер</h3>
-            <ul className="space-y-2 text-gray-300 text-sm">
-              <li>Главная</li>
-              <li>Программа</li>
-              <li>О нас</li>
-              <li>Наши курсы</li>
-              <li>Контакты</li>
+        <div className="flex flex-col sm:flex-row flex-wrap gap-8 sm:gap-12 md:gap-16">
+          <div className="min-w-[120px] sm:min-w-[160px]">
+            <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">
+              {qu.title}
+            </h3>
+            <ul className="space-y-1 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
+              {quickLinks.map((link, i) => (
+                <li key={i}>{link}</li>
+              ))}
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-semibold mb-4">Программалaр</h3>
-            <ul className="space-y-2 text-gray-300 text-sm">
-              <li>Frontend инженер</li>
-              <li>Django менен Backend</li>
-              <li>UX/UI дизайн</li>
+          <div className="min-w-[120px] sm:min-w-[160px]">
+            <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">
+              {t("footer.programs.title")}
+            </h3>
+            <ul className="space-y-1 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
+              {programs.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-semibold mb-4">Байланыш</h3>
-            <ul className="space-y-2 text-gray-300 text-sm">
-              <li>Email: info@edupro.academy</li>
-              <li>Телефон: +996 (555) 000-111</li>
-              <li>Telegram: @eduproacademy</li>
-              <li>Дарек: Бишкек, Кыргызстан</li>
+          <div className="min-w-[160px] sm:min-w-[180px] mb-20 sm:mb-0">
+            <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">
+              {t("footer.contact.title")}
+            </h3>
+            <ul className="space-y-1 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
+              <li>{t("footer.contact.email")}: info@edupro.academy</li>
+              <li>{t("footer.contact.phone")}: +996 (555) 000-111</li>
+              <li>{t("footer.contact.telegram")}: @eduproacademy</li>
+              <li>{t("footer.contact.address")}</li>
             </ul>
           </div>
         </div>
@@ -73,8 +91,20 @@ export default function Footer() {
 
       <div className="absolute bottom-20 left-0 w-full border-t border-[#FFFFFF33]" />
 
-      <div className="absolute bottom-10 w-full text-center text-sm text-gray-400">
-        Copyright © 2021-2025 SkillUP | Privacy Policy | Terms & Conditions
+      <div
+        className="
+        absolute bottom-8 left-0 w-full 
+        text-center lg:text-center 
+        px-4 
+        text-xs sm:text-sm 
+        text-gray-400 
+        break-words 
+        leading-relaxed 
+        max-w-[90%] 
+        mx-auto
+      "
+      >
+        {t("footer.copyright")}
       </div>
     </footer>
   );
