@@ -172,7 +172,7 @@
   "mentors": {
     "title": "OUR MENTORS",
     "button": "WITH OVER 10 YEARS OF EXPERIENCE",
-    "mentors": [
+    "mentor": [
       { "name": "Talaaybek Imankulov", "role": "FrontEnd Mentor" },
       { "name": "Mentor Name 2", "role": "BackEnd Mentor" },
       { "name": "Mentor Name 3", "role": "UI/UX Mentor" },

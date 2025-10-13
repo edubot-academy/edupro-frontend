@@ -172,7 +172,7 @@
   "mentors": {
     "title": "НАШИ МЕНТОРЫ",
     "button": "С ОПЫТОМ БОЛЕЕ 10 ЛЕТ",
-    "mentors": [
+    "mentor": [
       { "name": "Талаайбек Ыманкулов", "role": "FrontEnd Ментор" },
       { "name": "Имя Ментор 2", "role": "BackEnd Ментор" },
       { "name": "Имя Ментор 3", "role": "UI/UX Ментор" },
