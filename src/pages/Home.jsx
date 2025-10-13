@@ -12,14 +12,20 @@ export default function Home() {
   const ctaSecondary = t("home:hero.ctaSecondary");
   const eyebrow = t("home:hero.eyebrow");
 
-  const metrics = t("home:metrics", { returnObjects: true });
-  const programs = t("home:programs.items", { returnObjects: true });
-  const howSteps = t("home:how.steps", { returnObjects: true });
-  const features = t("home:features.items", { returnObjects: true });
-  const outcomes = t("home:outcomes.bullets", { returnObjects: true });
-  const testimonials = t("home:testimonials.items", { returnObjects: true });
-  const plans = t("home:pricing.plans", { returnObjects: true });
-  const faqItems = t("home:faq.items", { returnObjects: true });
+  const safeArray = (data) => (Array.isArray(data) ? data : []);
+
+  const metrics = safeArray(t("home:metrics", { returnObjects: true }));
+  const programs = safeArray(t("home:programs.items", { returnObjects: true }));
+  const howSteps = safeArray(t("home:how.steps", { returnObjects: true }));
+  const features = safeArray(t("home:features.items", { returnObjects: true }));
+  const outcomes = safeArray(
+    t("home:outcomes.bullets", { returnObjects: true })
+  );
+  const testimonials = safeArray(
+    t("home:testimonials.items", { returnObjects: true })
+  );
+  const plans = safeArray(t("home:pricing.plans", { returnObjects: true }));
+  const faqItems = safeArray(t("home:faq.items", { returnObjects: true }));
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
