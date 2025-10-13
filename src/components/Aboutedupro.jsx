@@ -20,9 +20,6 @@ function Aboutedupro() {
 
   const icons = { world, computer, person, file };
 
-  console.log("features:", features);
-  console.log("extraFeatures:", extraFeatures);
-
   return (
     <div className="bg-gray-100 py-16 flex flex-col items-center">
       <div className="bg-white p-6 sm:p-10 rounded-2xl w-full max-w-5xl">

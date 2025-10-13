@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Aboutedupro from "../components/Aboutedupro";
+import AboutEdupro from "../components/AboutEdupro";
 import LeadForm from "../components/LeadForm";
 
 // EduPro Academy Landing Page — single-file React component
@@ -12,14 +12,12 @@ import LeadForm from "../components/LeadForm";
 export default function Home() {
   const { t } = useTranslation(["common", "home"]);
 
-  // Hero
   const title = t("home:hero.title");
   const subtitle = t("home:hero.subtitle");
   const ctaPrimary = t("home:hero.ctaPrimary");
   const ctaSecondary = t("home:hero.ctaSecondary");
   const eyebrow = t("home:hero.eyebrow");
 
-  // Arrays
   const metrics = t("home:metrics", { returnObjects: true });
   const programs = t("home:programs.items", { returnObjects: true });
   const howSteps = t("home:how.steps", { returnObjects: true });
@@ -143,7 +141,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Aboutedupro />
+      <AboutEdupro />
 
       {/* Testimonials */}
       <section className="py-16 bg-slate-100/60">
