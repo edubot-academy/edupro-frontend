@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import arrow from "../../assets/arrowRight.svg";
+
 const Button = ({
   children,
-  to,
+  url, 
   onClick,
   className = "",
-  type = "button",
+  type = "button", 
   disabled = false,
   loading = false,
   ...props
@@ -28,14 +29,13 @@ const Button = ({
   ) : (
     <>
       {children}
-      {/* стрелка 🔥 дефолтно в каждой кнопке */}
       <img src={arrow} alt="arrow" className="w-6 h-6" />
     </>
   );
 
-  if (to) {
+  if (type === "link" && url) {
     return (
-      <Link to={to} className={finalStyles} {...props}>
+      <Link to={url} className={finalStyles} {...props}>
         {content}
       </Link>
     );
@@ -43,7 +43,7 @@ const Button = ({
 
   return (
     <button
-      type={type}
+      type={type === "link" ? "button" : type} 
       onClick={onClick}
       disabled={disabled || loading}
       className={finalStyles}
