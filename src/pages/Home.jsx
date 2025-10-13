@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import LeadForm from "../components/LeadForm";
+import Consult from "../components/Consult";
 
 // EduPro Academy Landing Page — single-file React component
 // - TailwindCSS utility classes
@@ -327,8 +328,10 @@ export default function Home() {
                         </select>
                         <button className="col-span-1 rounded-xl bg-emerald-600 text-white px-4 py-3 font-semibold hover:bg-emerald-700">{t('home:cta.button')}</button>
                     </form> */}
-          <LeadForm />
+          {/* <LeadForm /> */}
+          
         </div>
+        <Consult/>
       </section>
     </div>
   );
