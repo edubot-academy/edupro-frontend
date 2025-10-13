@@ -207,6 +207,7 @@
       "title": "Quick Links",
       "links": ["Home", "Program", "About Us", "Our Courses", "Contacts"]
     },
+
     "programs": {
       "title": "Programs",
       "items": ["Frontend Engineering", "Django Backend", "UX/UI Design"]

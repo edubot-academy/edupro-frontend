@@ -1,5 +1,7 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
+import HomePricing from "../components/Pricing";
+import { useTranslation } from "react-i18next";
 import LeadForm from "../components/LeadForm";
 
 // EduPro Academy Landing Page — single-file React component
@@ -9,21 +11,49 @@ import LeadForm from "../components/LeadForm";
 // - Language toggle mock (EN/KG/RU) with minimal copy variants
 
 export default function Home() {
-    const { t } = useTranslation(['common', 'home']);
-    const title = t('home:hero.title');
-    const subtitle = t('home:hero.subtitle');
-    const ctaPrimary = t('home:hero.ctaPrimary');
-    const ctaSecondary = t('home:hero.ctaSecondary');
-    const eyebrow = t('home:hero.eyebrow');
-    // 2) Arrays: return objects
-    const metrics = t('home:metrics', { returnObjects: true }); // -> array
-    const programs = t('home:programs.items', { returnObjects: true }); // -> array
-    const howSteps = t('home:how.steps', { returnObjects: true });
-    const features = t('home:features.items', { returnObjects: true });
-    const outcomes = t('home:outcomes.bullets', { returnObjects: true });
-    const testimonials = t('home:testimonials.items', { returnObjects: true });
-    const plans = t('home:pricing.plans', { returnObjects: true });
-    const faqItems = t('home:faq.items', { returnObjects: true });
+  const { t } = useTranslation(["common", "home"]);
+  const title = t("home:hero.title");
+  const subtitle = t("home:hero.subtitle");
+  const ctaPrimary = t("home:hero.ctaPrimary");
+  const ctaSecondary = t("home:hero.ctaSecondary");
+  const eyebrow = t("home:hero.eyebrow");
+  const metricsObj = t("home:metrics", { returnObjects: true });
+  const metrics = Array.isArray(metricsObj)
+    ? metricsObj
+    : Object.values(metricsObj);
+
+  const programsObj = t("home:programs.items", { returnObjects: true });
+  const programs = Array.isArray(programsObj)
+    ? programsObj
+    : Object.values(programsObj);
+
+  const howStepsObj = t("home:how.steps", { returnObjects: true });
+  const howSteps = Array.isArray(howStepsObj)
+    ? howStepsObj
+    : Object.values(howStepsObj);
+
+  const featuresObj = t("home:features.items", { returnObjects: true });
+  const features = Array.isArray(featuresObj)
+    ? featuresObj
+    : Object.values(featuresObj);
+
+  const outcomesObj = t("home:outcomes.bullets", { returnObjects: true });
+  const outcomes = Array.isArray(outcomesObj)
+    ? outcomesObj
+    : Object.values(outcomesObj);
+
+  const testimonialsObj = t("home:testimonials.items", { returnObjects: true });
+  const testimonials = Array.isArray(testimonialsObj)
+    ? testimonialsObj
+    : Object.values(testimonialsObj);
+
+  const plansObj = t("home:pricing.plans", { returnObjects: true });
+  const plans = Array.isArray(plansObj) ? plansObj : Object.values(plansObj);
+
+  const faqItemsObj = t("home:faq.items", { returnObjects: true });
+  const faqItems = Array.isArray(faqItemsObj)
+    ? faqItemsObj
+    : Object.values(faqItemsObj);
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
@@ -202,8 +232,58 @@ export default function Home() {
         </div>
       </section>
 
-            {/* Pricing */}
-            <HomePricing />
+      {/* Pricing */}
+      <section id="pricing" className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-10">
+            {t("home:pricing.title")}
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {plans.map((pl, i) => (
+              <div
+                key={i}
+                className={`rounded-2xl p-6 ring-1 shadow-sm ${
+                  pl.featured
+                    ? "bg-emerald-600 text-white ring-emerald-700"
+                    : "bg-white ring-slate-200"
+                }`}
+              >
+                <div className="flex items-baseline justify-between">
+                  <h3
+                    className={`font-semibold ${
+                      pl.featured ? "text-white" : "text-slate-900"
+                    }`}
+                  >
+                    {pl.name}
+                  </h3>
+                  <div className="text-2xl font-bold">{pl.price}</div>
+                </div>
+
+                <ul
+                  className={`mt-4 space-y-2 text-sm ${
+                    pl.featured ? "text-white/90" : "text-slate-600"
+                  }`}
+                >
+                  {Array.isArray(pl.features) &&
+                    pl.features.map((f, j) => <li key={j}>• {f}</li>)}
+                </ul>
+
+                <a
+                  href="#apply"
+                  className={`mt-6 inline-flex w-full justify-center rounded-xl px-4 py-2 font-semibold ${
+                    pl.featured
+                      ? "bg-white text-emerald-700"
+                      : "bg-emerald-600 text-white"
+                  }`}
+                >
+                  Choose plan
+                </a>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-slate-500 mt-4">{t("pricing.note")}</p>
+        </div>
+      </section>
 
       {/* FAQ */}
       <section className="py-16">
