@@ -6,14 +6,12 @@ import QuestionsAboutEduPro from "../components/QuestionsAboutEduPro";
 export default function Home() {
   const { t } = useTranslation(["common", "home"]);
 
-  // Hero
   const title = t("home:hero.title");
   const subtitle = t("home:hero.subtitle");
   const ctaPrimary = t("home:hero.ctaPrimary");
   const ctaSecondary = t("home:hero.ctaSecondary");
   const eyebrow = t("home:hero.eyebrow");
 
-  // Arrays
   const metrics = t("home:metrics", { returnObjects: true });
   const programs = t("home:programs.items", { returnObjects: true });
   const howSteps = t("home:how.steps", { returnObjects: true });
