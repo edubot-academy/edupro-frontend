@@ -16,7 +16,7 @@ export default function Footer() {
   const qu = t("home:footer.programs", { returnObjects: true });
 
   return (
-    <footer className="relative w-full min-h-[556px] bg-[#32215E] text-white overflow-hidden">
+    <footer className="relative w-full min-h-[450px] bg-[#32215E] text-white overflow-hidden">
       <div className="absolute inset-0 flex justify-center items-center pointer-events-none overflow-hidden hidden sm:flex">
         <h1
           className="font-[Unbounded] text-[180px] sm:text-[220px] md:text-[260px] lg:text-[300px] font-extrabold leading-[1] w-auto max-w-full select-none tracking-wide"
