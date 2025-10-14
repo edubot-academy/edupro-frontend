@@ -1,36 +1,152 @@
 {
-    "lang": {
-        "en": "EN",
-        "ru": "RU",
-        "ky": "KG"
+  "lang": {
+    "en": "EN",
+    "ru": "RU",
+    "ky": "KG"
+  },
+  "nav": {
+    "programs": "Programs",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "button": "YOUR CAREER PATH",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$49/mo",
+        "features": [
+          "Weekly workshops",
+          "Access to community",
+          "Career webinars"
+        ],
+        "cta": "Enroll Now"
+      },
+      {
+        "name": "Pro Track",
+        "price": "$149/mo",
+        "features": [
+          "Full program",
+          "1:1 mentor",
+          "Capstone review",
+          "Interview preparation"
+        ],
+        "cta": "Enroll Now"
+      },
+      {
+        "name": "Career Plus",
+        "price": "$399/mo",
+        "features": [
+          "Everything in Pro Track",
+          "Guaranteed internship",
+          "Personal coach"
+        ],
+        "cta": "Enroll Now"
+      }
+    ]
+  },
+  "faq": {
+    "title": "FREQUENTLY ASKED QUESTIONS",
+    "button": "YOUR CAREER PATH",
+    "items": [
+      {
+        "q": "DO I NEED PRIOR EXPERIENCE?",
+        "description": "No. We start from the basics and quickly advance through projects and practical exercises."
+      },
+      {
+        "q": "IS IT ONLINE OR OFFLINE?",
+        "description": "You can choose either online or offline format depending on your preference and schedule."
+      },
+      {
+        "q": "HOW LONG IS THE PROGRAM?",
+        "description": "The program lasts several weeks, with weekly workshops, mentorship, and final projects."
+      },
+      {
+        "q": "WILL YOU HELP ME FIND A JOB?",
+        "description": "Yes. We provide portfolio guidance, mock interviews, and connections to our partner network."
+      }
+    ]
+  },
+  "freeTest": {
+    "title": "Take the test for free and find out your level!",
+    "text": "Answer a few simple questions and get instant results. Determine your current level of knowledge and understand where to start learning. The test is completely free and takes no more than 5 minutes.",
+    "button": "Take the Test"
+  },
+
+  "career": {
+    "title": "Start Your Journey",
+    "button": "YOUR CAREER PATH",
+    "features": [
+      {
+        "title": "Learn by Building",
+        "text": "Short lessons + real projects guided by mentors."
+      },
+      {
+        "title": "Get Feedback",
+        "text": "Receive comments and guidance from experts."
+      },
+      {
+        "title": "Build a Portfolio",
+        "text": "Capstone projects that impress recruiters."
+      },
+      {
+        "title": "Get Job-Ready",
+        "text": "Interview prep, tips, and job search support."
+      }
+    ]
+  },
+  "mentors": {
+    "title": "OUR MENTORS",
+    "button": "WITH OVER 10 YEARS OF EXPERIENCE",
+    "mentors": [
+      { "name": "Talaaybek Imankulov", "role": "FrontEnd Mentor" },
+      { "name": "Mentor Name 2", "role": "BackEnd Mentor" },
+      { "name": "Mentor Name 3", "role": "UI/UX Mentor" },
+      { "name": "Mentor Name 4", "role": "AI Mentor" }
+    ]
+  },
+  "consultation": {
+    "title": "ANY QUESTIONS? WE’LL CONSULT YOU FOR FREE!",
+    "subtitle": "Submit your request in 3 minutes. Our team will contact you within 24 hours.",
+    "form": {
+      "name": "Your name",
+      "phone": "Leave your phone number",
+      "position": "FrontEnd Engineer",
+      "format": "Offline",
+      "button": "Sign up"
     },
-    "nav": {
-        "programs": "Programs",
-        "pricing": "Pricing",
-        "about": "About",
-        "contact": "Contact"
-    },
-    "footer": {
-        "brand": {
-            "name": "EduPro Academy",
-            "tagline": "Preparing students for an AI-driven future with practical IT skills and mentorship."
-        },
-        "quick": {
-            "title": "Quick Links"
-        },
-        "contact": {
-            "title": "Contact",
-            "labels": {
-                "email": "Email",
-                "phone": "Phone",
-                "telegram": "Telegram",
-                "address": "Address"
-            },
-            "email": "info@edupro.academy",
-            "phone": "+996 (555) 000-111",
-            "telegram": "@eduproacademy",
-            "location": "Bishkek, Kyrgyzstan"
-        },
-        "rights": "© {{year}} EduPro Academy. All rights reserved."
+    "socials": "We are on social media",
+    "contacts": {
+      "title": "Our contacts",
+      "phone": "+996 550 942 433",
+      "addressTitle": "Address",
+      "address": "Bishkek, Kyrgyzstan",
+      "email": "Email"
     }
+  },
+  "footer": {
+    "brand": {
+      "name": "EduPro Academy",
+      "tagline": "Preparing students for an AI-driven future with practical IT skills and mentorship."
+    },
+    "quick": {
+      "title": "Quick Links"
+    },
+    "contact": {
+      "title": "Contact",
+      "labels": {
+        "email": "Email",
+        "phone": "Phone",
+        "telegram": "Telegram",
+        "address": "Address"
+      },
+      "email": "info@edupro.academy",
+      "phone": "+996 (555) 000-111",
+      "telegram": "@eduproacademy",
+      "location": "Bishkek, Kyrgyzstan"
+    },
+    "rights": "© {{year}} EduPro Academy. All rights reserved."
+  }
 }
