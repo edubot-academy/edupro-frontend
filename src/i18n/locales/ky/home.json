@@ -99,6 +99,7 @@
         "Байланыш"
       ]
     },
+
     "programs": {
       "title": "Программалар",
       "items": ["Frontend инженериясы", "Django менен Backend", "UX/UI дизайн"]
