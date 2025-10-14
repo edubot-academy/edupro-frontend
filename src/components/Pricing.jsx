@@ -4,9 +4,8 @@ import { useTranslation } from 'react-i18next';
 
 const Pricing = () => {
     const { t } = useTranslation(['common', 'home']);
-    const plans = t('home:pricing.plans', { returnObjects: true });
-    const pricing = t('home:pricing', { returnObjects: true });
-console.log(plans)
+    const plans = t('common:pricing.plans', { returnObjects: true });
+    const pricing = t('common:pricing', { returnObjects: true });
 
     return (
         <section id="pricing" className="py-16 bg-[#F8F8F8]">
@@ -66,8 +65,8 @@ console.log(plans)
                             <button
                                 className={`w-full rounded-full font-semibold transition flex items-center justify-center font-[Suisse_Intl] font-normal leading-[120%] tracking-[1%] opacity-100 rounded-[95.69px] border border-[0.96px]  
                                 ${i % 2 === 0
-                                    ? "bg-[linear-gradient(180deg,#7640FF_-13.77%,#472799_188.41%)] text-white hover:opacity-90"
-                                    : "bg-white text-[#7640FF] hover:bg-gray-100"
+                                        ? "bg-[linear-gradient(180deg,#7640FF_-13.77%,#472799_188.41%)] text-white hover:opacity-90"
+                                        : "bg-white text-[#7640FF] hover:bg-gray-100"
                                     }`}
                             >
                                 {pl.cta}
