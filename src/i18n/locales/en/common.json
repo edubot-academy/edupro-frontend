@@ -74,7 +74,6 @@
     "text": "Answer a few simple questions and get instant results. Determine your current level of knowledge and understand where to start learning. The test is completely free and takes no more than 5 minutes.",
     "button": "Take the Test"
   },
-
   "career": {
     "title": "Start Your Journey",
     "button": "YOUR CAREER PATH",
@@ -101,10 +100,22 @@
     "title": "OUR MENTORS",
     "button": "WITH OVER 10 YEARS OF EXPERIENCE",
     "mentors": [
-      { "name": "Talaaybek Imankulov", "role": "FrontEnd Mentor" },
-      { "name": "Mentor Name 2", "role": "BackEnd Mentor" },
-      { "name": "Mentor Name 3", "role": "UI/UX Mentor" },
-      { "name": "Mentor Name 4", "role": "AI Mentor" }
+      {
+        "name": "Talaaybek Imankulov",
+        "role": "FrontEnd Mentor"
+      },
+      {
+        "name": "Mentor Name 2",
+        "role": "BackEnd Mentor"
+      },
+      {
+        "name": "Mentor Name 3",
+        "role": "UI/UX Mentor"
+      },
+      {
+        "name": "Mentor Name 4",
+        "role": "AI Mentor"
+      }
     ]
   },
   "consultation": {

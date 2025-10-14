@@ -49,7 +49,6 @@
       }
     ]
   },
-
   "aboutFounders": {
     "title": "FOUNDERS OF EduPro",
     "button": "YOUR CAREER PATH",
@@ -84,19 +83,27 @@
       }
     ]
   },
-
   "footer": {
     "about": {
       "text": "Boost your career, income, and life to a new level. SkillUp has helped over 400 students get their first job in tech. Become the next one and change your life today!"
     },
     "quickLinks": {
       "title": "Quick Links",
-      "links": ["Home", "Program", "About Us", "Our Courses", "Contacts"]
+      "links": [
+        "Home",
+        "Program",
+        "About Us",
+        "Our Courses",
+        "Contacts"
+      ]
     },
-
     "programs": {
       "title": "Programs",
-      "items": ["Frontend Engineering", "Django Backend", "UX/UI Design"]
+      "items": [
+        "Frontend Engineering",
+        "Django Backend",
+        "UX/UI Design"
+      ]
     },
     "contact": {
       "title": "Contact",
