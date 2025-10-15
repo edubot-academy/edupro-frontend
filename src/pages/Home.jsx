@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import HomePricing from "../components/Pricing";
 import LeadForm from "../components/LeadForm";
 import HowItWork from "../components/HowItWork";
+import QuestionsAboutEduPro from "../components/QuestionsAboutEduPro";
+import AboutEdupro from "../components/Aboutedupro";
 
 // EduPro Academy Landing Page — single-file React component
 // - TailwindCSS utility classes
@@ -141,7 +143,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How it works */}
+      {/* How it works
       <section className="py-16 bg-slate-100/60" id="about">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-10">{t("home:how.title")}</h2>
@@ -162,9 +164,9 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <Aboutedupro />
+      <AboutEdupro />
 
       <HowItWork />
       {/* Features & Outcomes */}

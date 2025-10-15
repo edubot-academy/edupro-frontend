@@ -5,7 +5,7 @@ import computer from "../assets/icons/computer.svg";
 import person from "../assets/icons/person.svg";
 import file from "../assets/icons/file.svg";
 
-function Aboutedupro() {
+function AboutEdupro() {
   const features = [
     {
       title: "ИИ-жардамдуу окуу",
@@ -100,4 +100,4 @@ function Aboutedupro() {
   );
 }
 
-export default Aboutedupro;
+export default AboutEdupro;
