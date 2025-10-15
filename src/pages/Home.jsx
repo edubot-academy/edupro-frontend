@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import HomePricing from "../components/Pricing";
 import LeadForm from "../components/LeadForm";
 import HowItWork from "../components/HowItWork";
+import Metrics from "../components/Metrics";
 
 // EduPro Academy Landing Page — single-file React component
 // - TailwindCSS utility classes
@@ -97,22 +98,7 @@ export default function Home() {
         </div>
       </section>
       {/* Metrics */}
-      <section className="py-8">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {metrics.map((m, i) => (
-              <div
-                key={i}
-                className="rounded-2xl bg-white ring-1 ring-slate-200 p-6 text-center shadow-sm"
-              >
-                <div className="text-3xl font-bold">{m.value}</div>
-                <div className="text-slate-500 mt-1 text-sm">{m.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <Metrics />
       {/* Programs */}
       <section id="programs" className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
