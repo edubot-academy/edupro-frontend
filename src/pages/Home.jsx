@@ -1,7 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Aboutedupro from "../components/Aboutedupro";
-import QuestionsAboutEduPro from "../components/QuestionsAboutEduPro";
+import HomePricing from "../components/Pricing";
+import LeadForm from "../components/LeadForm";
+import HowItWork from "../components/HowItWork";
+
+// EduPro Academy Landing Page — single-file React component
+// - TailwindCSS utility classes
+// - Lightweight, no external UI deps
+// - Sections: Navbar, Hero, Metrics, Programs, HowItWorks, Features, Outcomes, Testimonials, Pricing, FAQ, CTA, Footer
+// - Language toggle mock (EN/KG/RU) with minimal copy variants
 
 export default function Home() {
   const { t } = useTranslation(["common", "home"]);
@@ -11,21 +18,38 @@ export default function Home() {
   const ctaPrimary = t("home:hero.ctaPrimary");
   const ctaSecondary = t("home:hero.ctaSecondary");
   const eyebrow = t("home:hero.eyebrow");
+  const metricsObj = t("home:metrics", { returnObjects: true });
+  const metrics = Array.isArray(metricsObj)
+    ? metricsObj
+    : Object.values(metricsObj);
 
-  const safeArray = (data) => (Array.isArray(data) ? data : []);
+  const programsObj = t("home:programs.items", { returnObjects: true });
+  const programs = Array.isArray(programsObj)
+    ? programsObj
+    : Object.values(programsObj);
 
-  const metrics = safeArray(t("home:metrics", { returnObjects: true }));
-  const programs = safeArray(t("home:programs.items", { returnObjects: true }));
-  const howSteps = safeArray(t("home:how.steps", { returnObjects: true }));
-  const features = safeArray(t("home:features.items", { returnObjects: true }));
-  const outcomes = safeArray(
-    t("home:outcomes.bullets", { returnObjects: true })
-  );
-  const testimonials = safeArray(
-    t("home:testimonials.items", { returnObjects: true })
-  );
-  const plans = safeArray(t("home:pricing.plans", { returnObjects: true }));
-  const faqItems = safeArray(t("home:faq.items", { returnObjects: true }));
+  const featuresObj = t("common:features.items", { returnObjects: true });
+  const features = Array.isArray(featuresObj)
+    ? featuresObj
+    : Object.values(featuresObj);
+
+  const outcomesObj = t("home:outcomes.bullets", { returnObjects: true });
+  const outcomes = Array.isArray(outcomesObj)
+    ? outcomesObj
+    : Object.values(outcomesObj);
+
+  const testimonialsObj = t("home:testimonials.items", { returnObjects: true });
+  const testimonials = Array.isArray(testimonialsObj)
+    ? testimonialsObj
+    : Object.values(testimonialsObj);
+
+  const plansObj = t("home:pricing.plans", { returnObjects: true });
+  const plans = Array.isArray(plansObj) ? plansObj : Object.values(plansObj);
+
+  const faqItemsObj = t("home:faq.items", { returnObjects: true });
+  const faqItems = Array.isArray(faqItemsObj)
+    ? faqItemsObj
+    : Object.values(faqItemsObj);
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
@@ -71,7 +95,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Metrics */}
       <section className="py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -143,6 +166,7 @@ export default function Home() {
 
       <Aboutedupro />
 
+      <HowItWork />
       {/* Features & Outcomes */}
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
@@ -201,6 +225,31 @@ export default function Home() {
                   — {it.name}, {it.role}
                 </figcaption>
               </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <HomePricing />
+
+      {/* FAQ */}
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-6 text-center">
+            {t("home:faq.title")}
+          </h2>
+          <div className="divide-y divide-slate-200 rounded-2xl bg-white ring-1 ring-slate-200">
+            {faqItems.map((qa, i) => (
+              <details key={i} className="p-6 group">
+                <summary className="cursor-pointer font-semibold flex items-center justify-between">
+                  {qa.q}
+                  <span className="ml-4 text-slate-400 group-open:rotate-45 transition">
+                    ＋
+                  </span>
+                </summary>
+                <p className="mt-2 text-slate-600">{qa.a}</p>
+              </details>
             ))}
           </div>
         </div>
