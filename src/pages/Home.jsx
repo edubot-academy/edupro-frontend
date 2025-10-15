@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
 import PopularPrograms from "../components/PopularPrograms";
+import HeroBanner from "../components/HeroBanner";
 import HomePricing from "../components/Pricing";
 import LeadForm from "../components/LeadForm";
 import HowItWork from "../components/HowItWork";
@@ -55,48 +56,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
-      {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-emerald-50 to-slate-50" />
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-12 gap-10 items-center">
-          <div className="lg:col-span-7">
-            <p className="text-emerald-700 font-medium mb-3">{eyebrow}</p>
-            <h1 className="text-4xl sm:text-5xl font-bold leading-tight tracking-tight mb-4">
-              {title}
-            </h1>
-            <p className="text-slate-600 text-lg mb-8 max-w-2xl">{subtitle}</p>
-            <div className="flex flex-wrap gap-3">
-              <a
-                href="#apply"
-                className="inline-flex items-center gap-2 rounded-2xl bg-emerald-600 text-white px-6 py-3 font-semibold shadow hover:shadow-md hover:bg-emerald-700"
-              >
-                {ctaPrimary}
-              </a>
-              <a
-                href="#brochure"
-                className="inline-flex items-center gap-2 rounded-2xl border border-slate-300 px-6 py-3 font-semibold text-slate-700 hover:bg-white"
-              >
-                {ctaSecondary}
-              </a>
-            </div>
-          </div>
-          <div className="lg:col-span-5">
-            <div className="relative aspect-[4/3] rounded-3xl bg-white shadow-sm ring-1 ring-slate-200 overflow-hidden">
-              <div className="absolute inset-0 grid grid-cols-3 gap-2 p-3">
-                <div className="rounded-2xl bg-emerald-100" />
-                <div className="rounded-2xl bg-blue-100" />
-                <div className="rounded-2xl bg-orange-100" />
-                <div className="rounded-2xl bg-blue-100" />
-                <div className="rounded-2xl bg-orange-100" />
-                <div className="rounded-2xl bg-emerald-100" />
-                <div className="rounded-2xl bg-orange-100" />
-                <div className="rounded-2xl bg-emerald-100" />
-                <div className="rounded-2xl bg-blue-100" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroBanner />
       {/* Metrics */}
       <section className="py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -211,20 +171,6 @@ export default function Home() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold">{t("home:cta.title")}</h2>
           <p className="text-slate-600 mt-2">{t("home:cta.subtitle")}</p>
-          {/* <form className="mt-8 grid sm:grid-cols-3 gap-3 text-left">
-                        <input required placeholder="Full name" className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3" />
-                        <input required type="email" placeholder="Email" className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3" />
-                        <input placeholder="Phone (WhatsApp/Telegram)" className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3" />
-                        <select className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3">
-                            {programs.map((p, i) => (<option key={i}>{p.name}</option>))}
-                        </select>
-                        <select className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3">
-                            <option>Online</option>
-                            <option>On‑campus</option>
-                            <option>Hybrid</option>
-                        </select>
-                        <button className="col-span-1 rounded-xl bg-emerald-600 text-white px-4 py-3 font-semibold hover:bg-emerald-700">{t('home:cta.button')}</button>
-                    </form> */}
           <LeadForm />
         </div>
       </section>
