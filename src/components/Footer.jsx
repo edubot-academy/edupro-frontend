@@ -4,16 +4,16 @@ import "../index.css";
 import lightIcon from "../assets/light.svg";
 
 export default function Footer() {
-  const { t } = useTranslation(["home"]);
+  const { t } = useTranslation(["common"]);
 
-  const quickLinksRaw = t("home:footer.quickLinks.links", {
+  const quickLinksRaw = t("common:footer.quickLinks.links", {
     returnObjects: true,
   });
   const quickLinks = Array.isArray(quickLinksRaw) ? quickLinksRaw : [];
 
   const programsRaw = t("footer.programs.items", { returnObjects: true });
   const programs = Array.isArray(programsRaw) ? programsRaw : [];
-  const qu = t("home:footer.programs", { returnObjects: true });
+  const qu = t("common:footer.programs", { returnObjects: true });
 
   return (
     <footer className="relative w-full min-h-[450px] bg-[#32215E] text-white overflow-hidden">
