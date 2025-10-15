@@ -49,28 +49,6 @@
       }
     ]
   },
-  "career": {
-    "title": "Start Your Journey",
-    "button": "YOUR CAREER PATH",
-    "features": [
-      {
-        "title": "Learn by Building",
-        "text": "Short lessons + real projects guided by mentors."
-      },
-      {
-        "title": "Get Feedback",
-        "text": "Receive comments and guidance from experts."
-      },
-      {
-        "title": "Build a Portfolio",
-        "text": "Capstone projects that impress recruiters."
-      },
-      {
-        "title": "Get Job-Ready",
-        "text": "Interview prep, tips, and job search support."
-      }
-    ]
-  },
   "aboutFounders": {
     "title": "FOUNDERS OF EduPro",
     "button": "YOUR CAREER PATH",
@@ -105,110 +83,27 @@
       }
     ]
   },
-  "pricing": {
-    "title": "Pricing Plans",
-    "button": "YOUR CAREER PATH",
-    "plans": [
-      {
-        "name": "Starter",
-        "price": "$49/mo",
-        "features": [
-          "Weekly workshops",
-          "Access to community",
-          "Career webinars"
-        ],
-        "cta": "Enroll Now"
-      },
-      {
-        "name": "Pro Track",
-        "price": "$149/mo",
-        "features": [
-          "Full program",
-          "1:1 mentor",
-          "Capstone review",
-          "Interview preparation"
-        ],
-        "cta": "Enroll Now"
-      },
-      {
-        "name": "Career Plus",
-        "price": "$399/mo",
-        "features": [
-          "Everything in Pro Track",
-          "Guaranteed internship",
-          "Personal coach"
-        ],
-        "cta": "Enroll Now"
-      }
-    ]
-  },
-  "freeTest": {
-    "title": "Take the test for free and find out your level!",
-    "text": "Answer a few simple questions and get instant results. Determine your current level of knowledge and understand where to start learning. The test is completely free and takes no more than 5 minutes.",
-    "button": "Take the Test"
-  },
-  "faq": {
-    "title": "FREQUENTLY ASKED QUESTIONS",
-    "button": "YOUR CAREER PATH",
-    "items": [
-      {
-        "q": "DO I NEED PRIOR EXPERIENCE?",
-        "description": "No. We start from the basics and quickly advance through projects and practical exercises."
-      },
-      {
-        "q": "IS IT ONLINE OR OFFLINE?",
-        "description": "You can choose either online or offline format depending on your preference and schedule."
-      },
-      {
-        "q": "HOW LONG IS THE PROGRAM?",
-        "description": "The program lasts several weeks, with weekly workshops, mentorship, and final projects."
-      },
-      {
-        "q": "WILL YOU HELP ME FIND A JOB?",
-        "description": "Yes. We provide portfolio guidance, mock interviews, and connections to our partner network."
-      }
-    ]
-  },
-  "mentors": {
-    "title": "OUR MENTORS",
-    "button": "WITH OVER 10 YEARS OF EXPERIENCE",
-    "mentors": [
-      { "name": "Talaaybek Imankulov", "role": "FrontEnd Mentor" },
-      { "name": "Mentor Name 2", "role": "BackEnd Mentor" },
-      { "name": "Mentor Name 3", "role": "UI/UX Mentor" },
-      { "name": "Mentor Name 4", "role": "AI Mentor" }
-    ]
-  },
-  "consultation": {
-    "title": "ANY QUESTIONS? WE'LL CONSULT YOU FOR FREE!",
-    "subtitle": "Submit your request in 3 minutes. Our team will contact you within 24 hours.",
-    "form": {
-      "name": "Your name",
-      "phone": "Leave your phone number",
-      "position": "FrontEnd Engineer",
-      "format": "Offline",
-      "button": "Sign up"
-    },
-    "socials": "We are on social media",
-    "contacts": {
-      "title": "Our contacts",
-      "phone": "+996 550 942 433",
-      "addressTitle": "Address",
-      "address": "Bishkek, Kyrgyzstan",
-      "email": "Email"
-    }
-  },
   "footer": {
     "about": {
       "text": "Boost your career, income, and life to a new level. EduPro has helped over 1,200 students get their first job in tech. Become the next one and change your life today!"
     },
     "quickLinks": {
       "title": "Quick Links",
-      "links": ["Home", "Program", "About Us", "Our Courses", "Contacts"]
+      "links": [
+        "Home",
+        "Program",
+        "About Us",
+        "Our Courses",
+        "Contacts"
+      ]
     },
     "programs": {
       "title": "Programs",
-      "items": ["Frontend Engineering", "Django Backend", "UX/UI Design"]
+      "items": [
+        "Frontend Engineering",
+        "Django Backend",
+        "UX/UI Design"
+      ]
     },
     "contact": {
       "title": "Contact",
