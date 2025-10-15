@@ -2,8 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
 import logo from "../assets/logo.svg";
-import arrow from "../assets/arrowRight.svg";
-
+import Button from "./UI/Button";
 export default function Header() {
   const { t } = useTranslation();
 
@@ -35,7 +34,6 @@ export default function Header() {
           </span>
         </Link>
 
-{/*  */}
 
 
         {/* Навигация */}
@@ -56,15 +54,10 @@ export default function Header() {
         {/* Контролы */}
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
-          <Link
-            to="/contact"
-            className="flex items-center gap-2 px-6 py-2 rounded-full text-white font-semibold text-sm
-             bg-gradient-to-t from-[#472799] to-[#7640FF] 
-             hover:text-white transition-colors duration-300"
-          >
+          <Button to="/contact">
             {labels.contact}
-            <img src={arrow} alt="arrow" className="w-6 h-6" />
-          </Link>
+          </Button>
+
 
         </div>
       </div>
