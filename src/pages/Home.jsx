@@ -4,6 +4,7 @@ import PopularPrograms from "../components/PopularPrograms";
 import HeroBanner from "../components/HeroBanner";
 import HomePricing from "../components/Pricing";
 import LeadForm from "../components/LeadForm";
+import Founders from "../components/Founders";
 import HowItWork from "../components/HowItWork";
 
 // EduPro Academy Landing Page — single-file React component
@@ -113,7 +114,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <Founders />
       {/* Testimonials */}
       <section className="py-16 bg-slate-100/60">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
