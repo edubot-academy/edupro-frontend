@@ -6,6 +6,7 @@ import HomePricing from "../components/Pricing";
 import LeadForm from "../components/LeadForm";
 import Founders from "../components/Founders";
 import HowItWork from "../components/HowItWork";
+import Metrics from "../components/Metrics";
 
 // EduPro Academy Landing Page — single-file React component
 // - TailwindCSS utility classes
@@ -58,22 +59,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <HeroBanner />
-      {/* Metrics */}
-      <section className="py-8">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {metrics.map((m, i) => (
-              <div
-                key={i}
-                className="rounded-2xl bg-white ring-1 ring-slate-200 p-6 text-center shadow-sm"
-              >
-                <div className="text-3xl font-bold">{m.value}</div>
-                <div className="text-slate-500 mt-1 text-sm">{m.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Metrics />
       <PopularPrograms />
       <HowItWork />
       {/* Features & Outcomes */}
