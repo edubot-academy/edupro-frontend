@@ -6,7 +6,7 @@ import computer from "../assets/icons/computer.svg";
 import person from "../assets/icons/person.svg";
 import file from "../assets/icons/file.svg";
 
-function Aboutedupro() {
+function AboutEdupro() {
   const { t } = useTranslation("home");
 
   const features = Array.isArray(t("about.features", { returnObjects: true }))
@@ -102,4 +102,4 @@ function Aboutedupro() {
   );
 }
 
-export default Aboutedupro;
+export default AboutEdupro;

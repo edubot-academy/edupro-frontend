@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import HomePricing from "../components/Pricing";
 import LeadForm from "../components/LeadForm";
 import HowItWork from "../components/HowItWork";
-import AboutEdupro from "../components/AboutEdupro";
+import AboutEdupro from "../components/Aboutedupro";
 
 // EduPro Academy Landing Page — single-file React component
 // - TailwindCSS utility classes
