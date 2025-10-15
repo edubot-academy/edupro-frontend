@@ -14,7 +14,7 @@ export default function PopularPrograms() {
   const { t } = useTranslation(['home']);
   const programs = t('home:programs.items', { returnObjects: true }) || [];
 
-  
+
   const techIcons = {
     HTML5: SiHtml5,
     CSS3: SiCss3,
@@ -55,21 +55,21 @@ export default function PopularPrograms() {
   // 🔹 Улучшенная функция для получения технологий
   const getProgramTechs = (programName) => {
     if (!programName) return [];
-    
+
     const name = programName.trim().toLowerCase();
-    
+
     // Фронтенд варианты
     if (name.includes('фронт') || name.includes('frontend')) {
       return programTechs.Frontend || [];
-    } 
+    }
     // Бэкенд варианты
     else if (name.includes('бэк') || name.includes('back-end') || name.includes('backend')) {
       return programTechs.Backend || [];
-    } 
+    }
     // Фулстек варианты
     else if (name.includes('фул') || name.includes('fullstack') || name.includes('full-stack')) {
       return programTechs.Fullstack || [];
-    } 
+    }
     // Английский варианты
     else if (name.includes('англ') || name.includes('english') || name.includes('ingl')) {
       return programTechs.English || [];
@@ -82,20 +82,16 @@ export default function PopularPrograms() {
     else if (name.includes('ux') || name.includes('ui') || name.includes('design') || name.includes('дизайн')) {
       return programTechs.UXUI || [];
     }
-    
+
     // Прямое соответствие
     const directMatch = programTechs[programName.trim()];
     if (directMatch) return directMatch;
-    
+
     console.warn(`No technologies found for program: ${programName}`);
     return [];
   };
 
   // Проверка структуры данных programs
-  console.log('PROGRAMS DATA:', programs);
-  console.log('Programs type:', typeof programs);
-  console.log('Programs length:', programs.length);
-  
   if (!Array.isArray(programs) || programs.length === 0) {
     return <div className="text-white text-center py-8">No programs data available</div>;
   }
@@ -115,23 +111,23 @@ export default function PopularPrograms() {
         />
       </div>
 
-   
+
       <div className="relative flex justify-center -mt-44">
-       
+
         <img
           src={bg}
           alt="Background"
           className="w-full max-w-full object-cover hidden md:block"
         />
 
-   
+
         <img
           src={mobile_bg}
           alt="Background"
           className="w-full max-w-full object-cover md:hidden"
         />
 
-     
+
         <h1 className="absolute text-[180px] md:text-[220px] lg:text-[280px] xl:text-[390px] font-bold bg-gradient-to-t from-[#190B3B] to-[#A37FFF] bg-clip-text text-transparent opacity-15 select-none top-[calc(25%-15px)] left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:block hidden max-w-[90vw] overflow-hidden">
           EduPro
         </h1>
@@ -159,10 +155,6 @@ export default function PopularPrograms() {
           {programs.map((p, i) => {
             const rawName = p.name?.trim() || `Program ${i + 1}`;
             const techList = getProgramTechs(rawName);
-
-        
-            console.log(`Program ${i}:`, rawName, 'Technologies:', techList);
-
             return (
               <article
                 key={i}
