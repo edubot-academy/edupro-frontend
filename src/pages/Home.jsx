@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
+import PopularPrograms from "../components/PopularPrograms";
 import HeroBanner from "../components/HeroBanner";
 import HomePricing from "../components/Pricing";
 import LeadForm from "../components/LeadForm";
@@ -72,35 +73,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Programs */}
-      <section id="programs" className="py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-8">
-            {t("home:programs.title")}
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {programs.map((p, i) => (
-              <article
-                key={i}
-                className="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow"
-              >
-                <h3 className="font-semibold text-lg">{p.name}</h3>
-                <p className="text-sm text-slate-500 mt-1">{p.dur}</p>
-                <p className="text-slate-600 mt-3 text-sm leading-relaxed">
-                  {p.text}
-                </p>
-                <a
-                  href="#apply"
-                  className="mt-4 inline-flex text-emerald-700 font-semibold"
-                >
-                  Apply →
-                </a>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      <PopularPrograms />
       <HowItWork />
       {/* Features & Outcomes */}
       <section className="py-16">
@@ -198,20 +171,6 @@ export default function Home() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold">{t("home:cta.title")}</h2>
           <p className="text-slate-600 mt-2">{t("home:cta.subtitle")}</p>
-          {/* <form className="mt-8 grid sm:grid-cols-3 gap-3 text-left">
-                        <input required placeholder="Full name" className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3" />
-                        <input required type="email" placeholder="Email" className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3" />
-                        <input placeholder="Phone (WhatsApp/Telegram)" className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3" />
-                        <select className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3">
-                            {programs.map((p, i) => (<option key={i}>{p.name}</option>))}
-                        </select>
-                        <select className="col-span-1 rounded-xl border border-slate-300 bg-white px-4 py-3">
-                            <option>Online</option>
-                            <option>On‑campus</option>
-                            <option>Hybrid</option>
-                        </select>
-                        <button className="col-span-1 rounded-xl bg-emerald-600 text-white px-4 py-3 font-semibold hover:bg-emerald-700">{t('home:cta.button')}</button>
-                    </form> */}
           <LeadForm />
         </div>
       </section>
