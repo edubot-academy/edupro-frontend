@@ -1,8 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import PopularPrograms from "../components/PopularPrograms";
+import HeroBanner from "../components/HeroBanner";
+import { useTranslation } from "react-i18next";
 import HomePricing from "../components/Pricing";
 import LeadForm from "../components/LeadForm";
+import Test from "../components/Test";
+import Founders from "../components/Founders";
 import HowItWork from "../components/HowItWork";
+import Metrics from "../components/Metrics";
 import AboutEdupro from "../components/AboutEdupro";
 
 // EduPro Academy Landing Page — single-file React component
@@ -54,6 +60,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
+      <HeroBanner />
+      <Metrics />
+      <PopularPrograms />
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-emerald-50 to-slate-50" />
@@ -205,7 +214,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <Founders />
       {/* Testimonials */}
       <section className="py-16 bg-slate-100/60">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -229,10 +238,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Pricing */}
+      <Test />
       <HomePricing />
-
       {/* FAQ */}
       <section className="py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -264,6 +271,7 @@ export default function Home() {
           <LeadForm />
           {/* <h2 className="text-3xl font-bold">{t("home:cta.title")}</h2>
           <p className="text-slate-600 mt-2">{t("home:cta.subtitle")}</p>
+          <LeadForm />
           <form className="mt-8 grid sm:grid-cols-3 gap-3 text-left">
             <input
               required
