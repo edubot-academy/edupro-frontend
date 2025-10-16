@@ -59,9 +59,9 @@
         "description": "Hi! My name is Bekten, I'm an IT specialist. I've been working in development for several years and love solving problems with technology. My main focus is web development: I create websites, applications, and various digital services. I started simple — with layouts and small projects for acquaintances, and now I work on more complex systems where architecture, security, and user experience are important. I constantly learn new things: studying modern frameworks, automation, and the latest IT trends."
       },
       {
-        "name": "Bekten Azhymyrza",
-        "position": "Founder of EduPro",
-        "description": "Hi! My name is Bekten, I'm an IT specialist. I've been working in development for several years and love solving problems with technology. My main focus is web development: I create websites, applications, and various digital services. I started simple — with layouts and small projects for acquaintances, and now I work on more complex systems where architecture, security, and user experience are important. I constantly learn new things: studying modern frameworks, automation, and the latest IT trends."
+        "name": "Co-founder Name",
+        "position": "Co-founder of EduPro",
+        "description": "Description of the second founder with their unique experience and specialization."
       }
     ]
   },
@@ -76,11 +76,32 @@
         "text": "Mentors reviewed every PR. Learned faster than at university."
       },
       {
-        "text": "Mentors reviewed every PR. Learned faster than at university."
+        "text": "Got a job offer from an international company after the course. Best investment in myself!"
       },
       {
-        "text": "Mentors reviewed every PR. Learned faster than at university."
+        "text": "Portfolio with real projects helped me pass the interview on the first try."
       }
     ]
+  },
+  "footer": {
+    "about": {
+      "text": "Boost your career, income, and life to a new level. EduPro has helped over 1,200 students get their first job in tech. Become the next one and change your life today!"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "links": ["Home", "Program", "About Us", "Our Courses", "Contacts"]
+    },
+    "programs": {
+      "title": "Programs",
+      "items": ["Frontend Engineering", "Django Backend", "UX/UI Design"]
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email",
+      "phone": "Phone",
+      "telegram": "Telegram",
+      "address": "Address: Bishkek, Kyrgyzstan"
+    },
+    "copyright": "Copyright © 2021–2025 EduPro | Privacy Policy | Terms & Conditions"
   }
 }
