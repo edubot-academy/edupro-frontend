@@ -1,10 +1,15 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import PopularPrograms from "../components/PopularPrograms";
+import HeroBanner from "../components/HeroBanner";
 import HomePricing from "../components/Pricing";
 import LeadForm from "../components/LeadForm";
+import Test from "../components/Test";
+import Founders from "../components/Founders";
 import HowItWork from "../components/HowItWork";
 import QuestionsAboutEduPro from "../components/QuestionsAboutEduPro";
 import AboutEdupro from "../components/Aboutedupro";
+import Metrics from "../components/Metrics";
 
 // EduPro Academy Landing Page — single-file React component
 // - TailwindCSS utility classes
@@ -167,7 +172,9 @@ export default function Home() {
       </section> */}
 
       <AboutEdupro />
-
+      <HeroBanner />
+      <Metrics />
+      <PopularPrograms />
       <HowItWork />
       {/* Features & Outcomes */}
       <section className="py-16">
@@ -207,7 +214,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <Founders />
       {/* Testimonials */}
       <section className="py-16 bg-slate-100/60">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -231,10 +238,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Pricing */}
+      <Test />
       <HomePricing />
-
       {/* FAQ */}
       <section className="py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -295,6 +300,7 @@ export default function Home() {
               {t("home:cta.button")}
             </button>
           </form>
+          <LeadForm />
         </div>
       </section>
       <QuestionsAboutEduPro />
