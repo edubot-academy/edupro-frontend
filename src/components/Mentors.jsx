@@ -8,7 +8,7 @@ function Mentors() {
     const mentor = t("common:mentors_section.mentors", { returnObjects: true });
 
     return (
-        <div className="flex flex-col items-center gap-6 lg:gap-12 px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center gap-6 lg:gap-12 px- sm:px-6 lg:px-8">
             <div className="flex flex-col items-center w-full">
                 <h2 className="text-[#32215E] font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-center mb-4 lg:mb-6">
                     {t("common:mentors_section.title")}
@@ -19,11 +19,7 @@ function Mentors() {
                 </div>
 
                 <div className="
-          flex sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
-          gap-6 sm:gap-8 justify-center items-center
-          overflow-x-auto sm:overflow-visible no-scrollbar
-          mt-8 w-full
-        ">
+          flex sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-8 items-center overflow-x-auto sm:overflow-visible no-scrollbar mt-8 w-full">
                     {mentor.map((x, index) => (
                         <div
                             key={index}
