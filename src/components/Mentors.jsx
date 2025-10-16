@@ -4,21 +4,20 @@ import { RiLinkedinFill } from "react-icons/ri";
 import mentor1 from '../assets/image/mentor1.png'
 
 function Mentors() {
-    const { t } = useTranslation(["home"]);
-    const mentor = t("home:mentors.mentor", { returnObjects: true });
+    const { t } = useTranslation(["common"]);
+    const mentor = t("common:mentors_section.mentors", { returnObjects: true });
 
     return (
         <div className="flex flex-col items-center gap-6 lg:gap-12 px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center w-full">
                 <h2 className="text-[#32215E] font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-center mb-4 lg:mb-6">
-                    {t("home:mentors.title")}
+                    {t("common:mentors_section.title")}
                 </h2>
 
                 <div className="border border-gray text-[#555555] text-center p-2 sm:p-3 w-full max-w-xs sm:w-72 font-normal text-sm sm:text-base rounded-full">
-                    {t("home:mentors.button")}
+                    {t("common:mentors_section.button")}
                 </div>
 
-                {/* Контейнер: скролл только на мобильных */}
                 <div className="
           flex sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
           gap-6 sm:gap-8 justify-center items-center
