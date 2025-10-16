@@ -15,22 +15,26 @@ export default function LeadForm({ programOptions = [] }) {
     const [ok, setOk] = useState(false);
     const [err, setErr] = useState("");
 
-    useEffect(() => { getUTMs(); }, []);
+    useEffect(() => {
+        getUTMs();
+    }, []);
 
     function onChange(e) {
-        setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
+        const { name, value } = e.target;
+        setForm((f) => ({ ...f, [name]: value }));
     }
 
     async function onSubmit(e) {
         e.preventDefault();
-        setLoading(true); setErr("");
+        setLoading(true);
+        setErr("");
         try {
-            const utm = readPersistedUTMs();
-            const payload = { ...form, source: "WEBSITE" };
+            const utm = readPersistedUTMs(); // include if present
+            const payload = { ...form, source: "WEBSITE", ...utm };
             await submitLead(payload);
             setOk(true);
             setForm((f) => ({ ...f, fullName: "", email: "", phone: "", notes: "" }));
-        } catch (e) {
+        } catch {
             setErr("Could not submit. Please try again.");
         } finally {
             setLoading(false);
@@ -45,38 +49,72 @@ export default function LeadForm({ programOptions = [] }) {
         );
     }
 
+    const options = programOptions.length
+        ? programOptions
+        : [
+            { slug: "frontend", title: "Frontend Engineering" },
+            { slug: "backend_django", title: "Backend (Django)" },
+            { slug: "flutter", title: "Mobile (Flutter)" },
+            { slug: "ux_ui", title: "UX/UI Design" },
+        ];
+
+    const fieldBase =
+        "rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500";
+
     return (
-        <form onSubmit={onSubmit} className="grid sm:grid-cols-3 gap-3">
+        <form
+            onSubmit={onSubmit}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3"
+            aria-busy={loading}
+        >
             <input
-                name="fullName" required placeholder="Full name" value={form.fullName} onChange={onChange}
-                className="rounded-xl border border-slate-300 px-4 py-3 col-span-1"
+                name="fullName"
+                required
+                placeholder="Full name"
+                value={form.fullName}
+                onChange={onChange}
+                autoComplete="name"
+                className={`${fieldBase} col-span-1`}
             />
+
             <input
-                name="email" type="email" placeholder="Email" value={form.email} onChange={onChange}
-                className="rounded-xl border border-slate-300 px-4 py-3 col-span-1"
+                name="email"
+                type="email"
+                placeholder="Email"
+                value={form.email}
+                onChange={onChange}
+                autoComplete="email"
+                className={`${fieldBase} col-span-1`}
             />
+
             <input
-                name="phone" placeholder="Phone (WhatsApp/Telegram)" value={form.phone} onChange={onChange}
-                className="rounded-xl border border-slate-300 px-4 py-3 col-span-1"
+                name="phone"
+                type="tel"
+                placeholder="Phone (WhatsApp/Telegram)"
+                value={form.phone}
+                onChange={onChange}
+                autoComplete="tel"
+                className={`${fieldBase} col-span-1`}
             />
 
             <select
-                name="courseName" value={form.courseName} onChange={onChange}
-                className="rounded-xl border border-slate-300 px-4 py-3 col-span-1"
+                name="courseName"
+                value={form.courseName}
+                onChange={onChange}
+                className={`${fieldBase} col-span-1`}
             >
-                {(programOptions.length ? programOptions : [
-                    { slug: "frontend", title: "Frontend Engineering" },
-                    { slug: "backend_django", title: "Backend (Django)" },
-                    { slug: "flutter", title: "Mobile (Flutter)" },
-                    { slug: "ux_ui", title: "UX/UI Design" },
-                ]).map((p) => (
-                    <option key={p.slug} value={p.slug}>{p.title}</option>
+                {options.map((p) => (
+                    <option key={p.slug} value={p.slug}>
+                        {p.title}
+                    </option>
                 ))}
             </select>
 
             <select
-                name="courseType" value={form.courseType} onChange={onChange}
-                className="rounded-xl border border-slate-300 px-4 py-3 col-span-1"
+                name="courseType"
+                value={form.courseType}
+                onChange={onChange}
+                className={`${fieldBase} col-span-1`}
             >
                 <option value="online">Online</option>
                 <option value="campus">On-campus</option>
@@ -85,17 +123,24 @@ export default function LeadForm({ programOptions = [] }) {
 
             <button
                 disabled={loading}
-                className="rounded-xl bg-emerald-600 text-white px-4 py-3 font-semibold hover:bg-emerald-700 col-span-1"
+                className="col-span-1 sm:col-span-2 lg:col-span-1 rounded-xl bg-emerald-600 text-white px-4 py-3 font-semibold hover:bg-emerald-700 disabled:opacity-60 disabled:cursor-not-allowed"
             >
                 {loading ? "Submitting…" : "Apply"}
             </button>
 
             <textarea
-                name="notes" placeholder="Anything we should know?" value={form.notes} onChange={onChange}
-                className="rounded-xl border border-slate-300 px-4 py-3 col-span-3 min-h-[90px]"
+                name="notes"
+                placeholder="Anything we should know?"
+                value={form.notes}
+                onChange={onChange}
+                className={`${fieldBase} col-span-1 sm:col-span-2 lg:col-span-3 min-h-[110px]`}
             />
 
-            {err && <div className="col-span-3 text-sm text-red-600">{err}</div>}
+            {err && (
+                <div className="col-span-1 sm:col-span-2 lg:col-span-3 text-sm text-red-600">
+                    {err}
+                </div>
+            )}
         </form>
     );
 }
