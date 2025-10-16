@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import PopularPrograms from "../components/PopularPrograms";
 import HeroBanner from "../components/HeroBanner";
-import { useTranslation } from "react-i18next";
 import HomePricing from "../components/Pricing";
 import LeadForm from "../components/LeadForm";
 import Test from "../components/Test";
