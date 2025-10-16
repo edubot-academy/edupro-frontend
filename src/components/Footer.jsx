@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import "../index.css";
 import lightIcon from "../assets/light.svg";
 
 export default function Footer() {
