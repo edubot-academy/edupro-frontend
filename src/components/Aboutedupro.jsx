@@ -9,14 +9,9 @@ import file from "../assets/icons/file.svg";
 function AboutEdupro() {
   const { t } = useTranslation("home");
 
-  const features = Array.isArray(t("about.features", { returnObjects: true }))
-    ? t("about.features", { returnObjects: true })
-    : [];
-  const extraFeatures = Array.isArray(
-    t("about.extraFeatures", { returnObjects: true })
-  )
-    ? t("about.extraFeatures", { returnObjects: true })
-    : [];
+  const features = t("aboutEdupro.features", { returnObjects: true }) || [];
+  const extraFeatures =
+    t("aboutEdupro.extraFeatures", { returnObjects: true }) || [];
 
   const icons = { world, computer, person, file };
 
@@ -28,17 +23,17 @@ function AboutEdupro() {
             className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4"
             style={{ color: "#32215E" }}
           >
-            {t("about.title")}
+            {t("aboutEdupro.title")}
           </h2>
 
           <button className="bg-white border border-gray-300 rounded-full px-4 sm:px-6 py-2 hover:bg-gray-50 text-sm sm:text-base">
-            {t("about.button")}
+            {t("aboutEdupro.button")}
           </button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
           <div className="space-y-4 sm:space-y-6">
-            {features.length > 0 ? (
+            {features.length > 0 &&
               features.map((feature, index) => (
                 <div
                   key={index}
@@ -66,14 +61,11 @@ function AboutEdupro() {
                     )}
                   </div>
                 </div>
-              ))
-            ) : (
-              <p>No features available</p>
-            )}
+              ))}
           </div>
 
           <div className="space-y-6 sm:space-y-12 mt-4 sm:mt-2">
-            {extraFeatures.length > 0 ? (
+            {extraFeatures.length > 0 &&
               extraFeatures.map((feature, index) => (
                 <div
                   key={index}
@@ -91,10 +83,7 @@ function AboutEdupro() {
                     {feature.title}
                   </h3>
                 </div>
-              ))
-            ) : (
-              <p>No extra features available</p>
-            )}
+              ))}
           </div>
         </div>
       </div>
