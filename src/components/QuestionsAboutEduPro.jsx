@@ -10,7 +10,7 @@ const QuestionsAboutEduPro = () => {
   const faqItems = t("faq.items", { returnObjects: true });
 
   return (
-    <div className="w-screen min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#DBCCFF] to-[#1E006B] px-4 py-12 md:px-16 md:py-16">
+    <div className="w-screen h-[43rem] flex flex-col items-center justify-center bg-gradient-to-b from-[#DBCCFF] to-[#1E006B] px-4 py-12 md:px-16 md:py-16">
       <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold font-unbounded mb-6 text-center">
         {t("faq.title")}
       </h2>
