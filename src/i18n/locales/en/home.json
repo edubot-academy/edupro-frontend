@@ -49,6 +49,35 @@
       }
     ]
   },
+  "aboutEdupro": {
+    "title": "WHY EDUPRO",
+    "button": "YOUR CAREER PATH",
+    "features": [
+      {
+        "title": "AI-assisted Learning",
+        "text": "Personal guidance, signals, and instant feedback."
+      },
+      {
+        "title": "Career Support",
+        "text": "Resume, LinkedIn, mock interviews, salary negotiations."
+      },
+      {
+        "title": "Flexible Formats",
+        "text": "Evenings/weekends, online or offline."
+      },
+      {
+        "title": "Community",
+        "text": "Mentors, graduates, and partners."
+      }
+    ],
+    "extraFeatures": [
+      { "icon": "world", "title": "English language and soft skills" },
+      { "icon": "computer", "title": "Teamwork with Git and sprints" },
+      { "icon": "person", "title": "Internship support" },
+      { "icon": "file", "title": "Portfolio ready by week 8" }
+    ]
+  },
+
   "aboutFounders": {
     "title": "FOUNDERS OF EduPro",
     "button": "YOUR CAREER PATH",
@@ -89,21 +118,11 @@
     },
     "quickLinks": {
       "title": "Quick Links",
-      "links": [
-        "Home",
-        "Program",
-        "About Us",
-        "Our Courses",
-        "Contacts"
-      ]
+      "links": ["Home", "Program", "About Us", "Our Courses", "Contacts"]
     },
     "programs": {
       "title": "Programs",
-      "items": [
-        "Frontend Engineering",
-        "Django Backend",
-        "UX/UI Design"
-      ]
+      "items": ["Frontend Engineering", "Django Backend", "UX/UI Design"]
     },
     "contact": {
       "title": "Contact",
