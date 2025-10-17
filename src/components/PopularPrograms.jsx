@@ -1,8 +1,10 @@
 import React from 'react';
 import earth from '../assets/earth.png';
 import bg from '../assets/violet_bg.png';
+import Button from "./UI/Button";
 import { useTranslation } from 'react-i18next';
 import mobile_bg from '../assets/bg_mobile.png';
+
 import {
   SiHtml5, SiCss3, SiReact, SiJavascript, SiTypescript, SiRedux, SiGithub, SiGit,
   SiPython, SiPostgresql, SiDocker, SiLinux, SiNginx,
@@ -11,9 +13,10 @@ import {
 import { FaHeadphones, FaComments, FaPenFancy } from "react-icons/fa";
 
 export default function PopularPrograms() {
-  const { t } = useTranslation(['home']);
+  const { t } = useTranslation(['common']);
   const programs = t('home:programs.items', { returnObjects: true }) || [];
-
+  const pricingPlans = t('pricing.plans', { returnObjects: true }) || [];
+  const ctaText = pricingPlans[0]?.cta || 'Записаться';
 
   const techIcons = {
     HTML5: SiHtml5,
@@ -33,8 +36,6 @@ export default function PopularPrograms() {
     Flutter: SiFlutter,
     Figma: SiFigma,
     NodeJS: SiNodedotjs,
-
-    // English skills
     Grammar: SiBookstack,
     Vocabulary: SiBookstack,
     Listening: FaHeadphones,
@@ -42,7 +43,6 @@ export default function PopularPrograms() {
     Writing: FaPenFancy,
   };
 
-  // 🔹 Технологии для каждой программы
   const programTechs = {
     Frontend: ["HTML5", "CSS3", "JavaScript", "React", "TypeScript", "Redux", "Git", "GitHub"],
     Backend: ["Python", "PostgreSQL", "Docker", "Linux", "Nginx", "Git"],
@@ -52,46 +52,20 @@ export default function PopularPrograms() {
     UXUI: ["Figma", "HTML5", "CSS3", "Git", "JavaScript"],
   };
 
-  // 🔹 Улучшенная функция для получения технологий
   const getProgramTechs = (programName) => {
     if (!programName) return [];
-
     const name = programName.trim().toLowerCase();
 
-    // Фронтенд варианты
-    if (name.includes('фронт') || name.includes('frontend')) {
-      return programTechs.Frontend || [];
-    }
-    // Бэкенд варианты
-    else if (name.includes('бэк') || name.includes('back-end') || name.includes('backend')) {
-      return programTechs.Backend || [];
-    }
-    // Фулстек варианты
-    else if (name.includes('фул') || name.includes('fullstack') || name.includes('full-stack')) {
-      return programTechs.Fullstack || [];
-    }
-    // Английский варианты
-    else if (name.includes('англ') || name.includes('english') || name.includes('ingl')) {
-      return programTechs.English || [];
-    }
-    // Mobile with Flutter
-    else if (name.includes('mobile') || name.includes('flutter') || name.includes('мобил')) {
-      return programTechs.Mobile || [];
-    }
-    // UX/UI Design
-    else if (name.includes('ux') || name.includes('ui') || name.includes('design') || name.includes('дизайн')) {
-      return programTechs.UXUI || [];
-    }
+    if (name.includes('фронт') || name.includes('frontend')) return programTechs.Frontend;
+    if (name.includes('бэк') || name.includes('backend')) return programTechs.Backend;
+    if (name.includes('фул') || name.includes('fullstack')) return programTechs.Fullstack;
+    if (name.includes('англ') || name.includes('english')) return programTechs.English;
+    if (name.includes('mobile') || name.includes('мобил') || name.includes('flutter')) return programTechs.Mobile;
+    if (name.includes('ux') || name.includes('ui') || name.includes('дизайн')) return programTechs.UXUI;
 
-    // Прямое соответствие
-    const directMatch = programTechs[programName.trim()];
-    if (directMatch) return directMatch;
-
-    console.warn(`No technologies found for program: ${programName}`);
-    return [];
+    return programTechs[programName.trim()] || [];
   };
 
-  // Проверка структуры данных programs
   if (!Array.isArray(programs) || programs.length === 0) {
     return <div className="text-white text-center py-8">No programs data available</div>;
   }
@@ -111,22 +85,18 @@ export default function PopularPrograms() {
         />
       </div>
 
-
       <div className="relative flex justify-center -mt-44">
-
         <img
           src={bg}
           alt="Background"
           className="w-full max-w-full object-cover hidden md:block"
         />
 
-
         <img
           src={mobile_bg}
           alt="Background"
           className="w-full max-w-full object-cover md:hidden"
         />
-
 
         <h1 className="absolute text-[180px] md:text-[220px] lg:text-[280px] xl:text-[390px] font-bold bg-gradient-to-t from-[#190B3B] to-[#A37FFF] bg-clip-text text-transparent opacity-15 select-none top-[calc(25%-15px)] left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:block hidden max-w-[90vw] overflow-hidden">
           EduPro
@@ -150,7 +120,16 @@ export default function PopularPrograms() {
       </div>
 
       {/* Карточки программ */}
-      <div className="relative flex justify-center z-20 mx-auto max-w-9xl px-4 sm:px-6 lg:px-8 mt-[5%] sm:mt-[10%] md:-mt-[25%] lg:-mt-[35%] xl:-mt-[420px]">
+      <div className="
+  absolute left-1/2 transform -translate-x-1/2
+  -translate-y-[50vh]    /* мобильные до 375px */
+  [@media(min-width:375px)]:-translate-y-[55vh]  /* 375px */
+  [@media(min-width:425px)]:-translate-y-[60vh]  /* 425px */
+  md:-translate-y-[35vh]   /* планшеты */
+  lg:-translate-y-[15vh]   /* десктопы */
+  xl:-translate-y-[10vh]   /* большие десктопы */
+  w-full max-w-9xl px-4 sm:px-6 lg:px-8 z-20
+">
         <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-4 md:overflow-visible md:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
           {programs.map((p, i) => {
             const rawName = p.name?.trim() || `Program ${i + 1}`;
@@ -158,50 +137,49 @@ export default function PopularPrograms() {
             return (
               <article
                 key={i}
-                className="flex-shrink-0 rounded-2xl bg-white w-80 md:w-auto ring-1 ring-slate-200 p-5 shadow-sm hover:shadow-lg transition min-w-0"
+                className="flex flex-col justify-between flex-shrink-0 rounded-2xl bg-white w-80 md:w-auto ring-1 ring-slate-200 p-5 shadow-sm hover:shadow-lg transition min-w-0 lg:-mt-5"
               >
-                <h3 className="font-bold text-[20px] leading-[120%] tracking-[0.01em] uppercase">
-                  {rawName}
-                </h3>
+                <div>
+                  <h3 className="font-bold text-[20px] leading-[120%] tracking-[0.01em] uppercase">
+                    {rawName}
+                  </h3>
+                  <p className="text-sm text-slate-500 mt-1">{p.dur || 'Duration not specified'}</p>
+                  <p className="text-slate-600 mt-2 text-sm leading-relaxed line-clamp-3">
+                    {p.text || 'Description not available'}
+                  </p>
 
-                <p className="text-sm text-slate-500 mt-1">{p.dur || 'Duration not specified'}</p>
-                <p className="text-slate-600 mt-2 text-sm leading-relaxed line-clamp-3">
-                  {p.text || 'Description not available'}
-                </p>
-
-                <div className="mt-3 flex flex-wrap gap-1.5">
-                  {techList.length > 0 ? (
-                    techList.map((tech, idx) => {
-                      const Icon = techIcons[tech];
-                      return (
-                        <div
-                          key={idx}
-                          className="flex items-center border border-black rounded-md px-1.5 py-0.5 text-xs hover:scale-105 transition-transform"
-                        >
-                          {Icon ? (
-                            <Icon className="w-4 h-4 mr-1.5 text-[#555]" />
-                          ) : (
-                            <span className="w-4 h-4 mr-1.5 bg-gray-300 rounded flex items-center justify-center text-[10px]">
-                              ?
-                            </span>
-                          )}
-                          {tech}
-                        </div>
-                      );
-                    })
-                  ) : (
-                    <span className="text-slate-400 text-xs italic">
-                      Technologies not configured for: {rawName}
-                    </span>
-                  )}
+                  <div className="mt-3 flex flex-wrap gap-1.5">
+                    {techList.length > 0 ? (
+                      techList.map((tech, idx) => {
+                        const Icon = techIcons[tech];
+                        return (
+                          <div
+                            key={idx}
+                            className="flex items-center border border-black rounded-md px-1.5 py-0.5 text-xs hover:scale-105 transition-transform"
+                          >
+                            {Icon ? (
+                              <Icon className="w-4 h-4 mr-1.5 text-[#555]" />
+                            ) : (
+                              <span className="w-4 h-4 mr-1.5 bg-gray-300 rounded flex items-center justify-center text-[10px]">
+                                ?
+                              </span>
+                            )}
+                            {tech}
+                          </div>
+                        );
+                      })
+                    ) : (
+                      <span className="text-slate-400 text-xs italic">
+                        Technologies not configured for: {rawName}
+                      </span>
+                    )}
+                  </div>
                 </div>
-
-                <a
-                  href="#apply"
-                  className="mt-3 inline-flex text-emerald-700 font-semibold text-sm hover:text-emerald-800 transition-colors"
-                >
-                  Apply →
-                </a>
+                <div className="mt-4">
+                  <Button to="/contact" className="w-full flex justify-center items-center text-center">
+                    {ctaText}
+                  </Button>
+                </div>
               </article>
             );
           })}
