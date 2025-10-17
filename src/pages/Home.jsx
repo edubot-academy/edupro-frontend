@@ -328,10 +328,11 @@ export default function Home() {
                         </select>
                         <button className="col-span-1 rounded-xl bg-emerald-600 text-white px-4 py-3 font-semibold hover:bg-emerald-700">{t('home:cta.button')}</button>
                     </form> */}
-          {/* <LeadForm /> */}
+         
           
         </div>
-        <Consult/>
+         <LeadForm />
+        {/* <Consult/> */}
       </section>
     </div>
   );

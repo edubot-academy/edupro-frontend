@@ -10,6 +10,36 @@
         "about": "About",
         "contact": "Contact"
     },
+    "consultation": {
+  "title": "Have questions? We provide free consultation!",
+  "subtitle": "Fill out the form in 3 minutes. Our team will contact you within 24 hours.",
+  "submitting": "Submitting…",
+  "submit": "Sign Up",
+  "socials": "Find us on social media",
+  "address": "Address",
+  "contacts": "Our contacts",
+  "email": "Email",
+  "location": "Bishkek, Kyrgyzstan",
+  "courseType": {
+    "online": "Online",
+    "campus": "On-campus",
+    "hybrid": "Hybrid"
+  },
+  "placeholders": {
+    "fullName": "Full name",
+    "phone": "Phone number",
+    "email": "Email"
+  },
+  "courseName": {
+    "label": "Select a course",
+    "options": {
+      "frontend": "Frontend Development",
+      "backend": "Backend (Django)",
+      "flutter": "Mobile (Flutter)",
+      "ux_ui": "UI/UX Design"
+    }
+  }
+},
     "footer": {
         "brand": {
             "name": "EduPro Academy",
