@@ -19,38 +19,11 @@ import AboutEdupro from "../components/AboutEdupro";
 
 export default function Home() {
   const { t } = useTranslation(["common", "home"]);
-  const title = t("home:hero.title");
-  const subtitle = t("home:hero.subtitle");
-  const ctaPrimary = t("home:hero.ctaPrimary");
-  const ctaSecondary = t("home:hero.ctaSecondary");
-  const eyebrow = t("home:hero.eyebrow");
-  const metricsObj = t("home:metrics", { returnObjects: true });
-  const metrics = Array.isArray(metricsObj)
-    ? metricsObj
-    : Object.values(metricsObj);
-
-  const programsObj = t("home:programs.items", { returnObjects: true });
-  const programs = Array.isArray(programsObj)
-    ? programsObj
-    : Object.values(programsObj);
-
-  const featuresObj = t("common:features.items", { returnObjects: true });
-  const features = Array.isArray(featuresObj)
-    ? featuresObj
-    : Object.values(featuresObj);
-
-  const outcomesObj = t("home:outcomes.bullets", { returnObjects: true });
-  const outcomes = Array.isArray(outcomesObj)
-    ? outcomesObj
-    : Object.values(outcomesObj);
 
   const testimonialsObj = t("home:testimonials.items", { returnObjects: true });
   const testimonials = Array.isArray(testimonialsObj)
     ? testimonialsObj
     : Object.values(testimonialsObj);
-
-  const plansObj = t("home:pricing.plans", { returnObjects: true });
-  const plans = Array.isArray(plansObj) ? plansObj : Object.values(plansObj);
 
   const faqItemsObj = t("home:faq.items", { returnObjects: true });
   const faqItems = Array.isArray(faqItemsObj)
@@ -120,8 +93,8 @@ export default function Home() {
         className="py-16 bg-gradient-to-br from-emerald-50 to-blue-50"
       >
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold">{t("home:cta.title")}</h2>
-          <p className="text-slate-600 mt-2">{t("home:cta.subtitle")}</p>
+          <h2 className="text-3xl font-bold">{t("common:consultation.title")}</h2>
+          <p className="text-slate-600 mt-2">{t("common:consultation.subtitle")}</p>
           <LeadForm />
         </div>
       </section>
