@@ -28,17 +28,17 @@
     "title": "Popular Programs",
     "items": [
       {
-        "name": "Frontend Engineering",
+        "name": "Frontend",
         "dur": "16 weeks",
         "text": "React, Tailwind, APIs, deployment, interview prep."
       },
       {
-        "name": "Backend with Django",
+        "name": "Backend",
         "dur": "24 weeks",
         "text": "Python, Django REST, PostgreSQL, Docker, CI/CD."
       },
       {
-        "name": "Mobile with Flutter",
+        "name": "Flutter",
         "dur": "20 weeks",
         "text": "Dart, Flutter UI, state mgmt, Play Store/App Store."
       },
@@ -88,9 +88,9 @@
         "description": "Hi! My name is Bekten, I'm an IT specialist. I've been working in development for several years and love solving problems with technology. My main focus is web development: I create websites, applications, and various digital services. I started simple — with layouts and small projects for acquaintances, and now I work on more complex systems where architecture, security, and user experience are important. I constantly learn new things: studying modern frameworks, automation, and the latest IT trends."
       },
       {
-        "name": "Co-founder Name",
-        "position": "Co-founder of EduPro",
-        "description": "Description of the second founder with their unique experience and specialization."
+        "name": "Bekten Azhymyrza",
+        "position": "Founder of EduPro",
+        "description": "Hi! My name is Bekten, I'm an IT specialist. I've been working in development for several years and love solving problems with technology. My main focus is web development: I create websites, applications, and various digital services. I started simple — with layouts and small projects for acquaintances, and now I work on more complex systems where architecture, security, and user experience are important. I constantly learn new things: studying modern frameworks, automation, and the latest IT trends."
       }
     ]
   },
