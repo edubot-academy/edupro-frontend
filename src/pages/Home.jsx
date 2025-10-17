@@ -4,6 +4,7 @@ import PopularPrograms from "../components/PopularPrograms";
 import HeroBanner from "../components/HeroBanner";
 import HomePricing from "../components/Pricing";
 import LeadForm from "../components/LeadForm";
+import Mentors from "../components/Mentors";
 import Test from "../components/Test";
 import Founders from "../components/Founders";
 import HowItWork from "../components/HowItWork";
@@ -125,8 +126,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Test />
+
+
       <HomePricing />
+      <Test />
       {/* FAQ */}
       <section className="py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -148,6 +151,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Mentors />
 
       {/* CTA */}
       <section

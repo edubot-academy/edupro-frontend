@@ -69,3 +69,28 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* 
+.clip-path-custom {
+  clip-path: none;
+}
+
+@media (min-width: 768px) {
+  .clip-path-custom {
+    clip-path: polygon( 0% 20%,
+  60% 20%,
+  60% 0%,
+  100% 50%,
+  60% 100%,
+  60% 80%,
+  0% 80%);
+  }
+} */
