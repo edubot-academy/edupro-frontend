@@ -67,6 +67,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 /* 
 .clip-path-custom {
   clip-path: none;
