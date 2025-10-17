@@ -332,7 +332,7 @@ export default function Home() {
           
         </div>
          <LeadForm />
-        {/* <Consult/> */}
+       
       </section>
     </div>
   );
