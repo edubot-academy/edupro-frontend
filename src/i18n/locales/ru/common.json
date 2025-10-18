@@ -138,26 +138,24 @@
     }
   },
   "footer": {
-    "brand": {
-      "name": "EduPro Academy",
-      "tagline": "Готовим студентов к будущему с ИИ: практические IT-навыки и менторство."
+    "about": {
+      "text": "Поднимите свою карьеру, доход и жизнь на новый уровень. SkillUp помог более 400 студентам получить первую работу в сфере технологий. Станьте следующим и измените свою жизнь уже сегодня!"
     },
-    "quick": {
-      "title": "Быстрые ссылки"
+    "quickLinks": {
+      "title": "Тез шилтемелер",
+      "links": ["Главная", "Программа", "О нас", "Наши курсы", "Контакты"]
+    },
+    "programs": {
+      "title": "Программы",
+      "items": ["Frontend инженерия", "Django Backend", "UX/UI дизайн"]
     },
     "contact": {
-      "title": "Контакты",
-      "labels": {
-        "email": "Email",
-        "phone": "Телефон",
-        "telegram": "Telegram",
-        "address": "Адрес"
-      },
-      "email": "info@edupro.academy",
-      "phone": "+996 (555) 000-111",
-      "telegram": "@eduproacademy",
-      "location": "Бишкек, Кыргызстан"
+      "title": "Байланыш",
+      "email": "Email",
+      "phone": "Телефон",
+      "telegram": "Telegram",
+      "address": "Адрес: Бишкек, Кыргызстан"
     },
-    "rights": "© {{year}} EduPro Academy. Все права защищены."
+    "copyright": "Copyright © 2021–2025 SkillUP | Политика конфиденциальности | Условия использования"
   }
 }
