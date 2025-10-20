@@ -4,20 +4,15 @@
     "columns": [
       {
         "header": "Feature",
-        "text": "Толук окуу программасына кирүү"
+        "features": [
+          "Толук окуу программасына кирүү",
+          "Ментордук колдоо",
+          "Сертификат"
+        ]
       },
-      {
-        "header": "Starter",
-        "text": "Толук окуу программасына кирүү"
-      },
-      {
-        "header": "Pro Track",
-        "text": "Толук окуу программасына кирүү"
-      },
-      {
-        "header": "Career Plus",
-        "text": "Толук окуу программасына кирүү"
-      }
+      { "header": "Starter" },
+      { "header": "Pro Track" },
+      { "header": "Career Plus" }
     ]
   },
   "aiFutureSection": {
