@@ -28,17 +28,17 @@
     "title": "Популярдуу программалар",
     "items": [
       {
-        "name": "Frontend инженериясы",
+        "name": "Frontend",
         "dur": "16 жума",
         "text": "React, Tailwind, API, жайгаштыруу, маекке даярдык."
       },
       {
-        "name": "Django менен Backend",
+        "name": "Backend",
         "dur": "24 жума",
         "text": "Python, Django REST, PostgreSQL, Docker, CI/CD."
       },
       {
-        "name": "Flutter менен мобилдик",
+        "name": "Flutter",
         "dur": "20 жума",
         "text": "Dart, Flutter UI, стейт-менеджмент, дүкөндөргө чыгаруу."
       },
