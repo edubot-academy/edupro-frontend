@@ -1,0 +1,63 @@
+{
+  "comparePlans": {
+    "title": "Compare Plans",
+    "columns": [
+      {
+        "header": "Feature",
+        "text": "Full curriculum access"
+      },
+      {
+        "header": "Starter",
+        "text": "Full curriculum access"
+      },
+      {
+        "header": "Pro Track",
+        "text": "Full curriculum access"
+      },
+      {
+        "header": "Career Plus",
+        "text": "Full curriculum access"
+      }
+    ]
+  },
+  "aiFutureSection": {
+    "title": "Preparing students for an AI-driven future",
+    "missionBlock": {
+      "missionTitle": "Our Mission",
+      "missionText": "Make high-quality tech education accessible in Kyrgyzstan and beyond, and connect graduates to real roles.",
+      "features": [
+        "Hands-on projects reviewed by mentors",
+        "Portfolio by Week 8",
+        "Internship & job search support"
+      ],
+      "description": "We blend practical projects, mentorship, and AI-assisted learning to help beginners become job-ready. Our programs are bilingual (KG/RU) with English support and a strong focus on real outcomes.",
+      "whatWeDo": {
+        "title": "What We Do",
+        "text": "We run cohort-based programs in Frontend, Backend (Django), Flutter, and UX/UI. Students learn by building, get weekly feedback, and graduate with career assets."
+      }
+    },
+    "verticalBlocks": [
+      {
+        "title": "AI-Assisted Learning",
+        "text": "Personalized guidance, signals, and instant feedback."
+      },
+      {
+        "title": "Career Support",
+        "text": "Resume, LinkedIn, mock interviews, salary negotiation."
+      },
+      {
+        "title": "Flexible Formats",
+        "text": "Evening/weekend, online or offline."
+      },
+      {
+        "title": "Community",
+        "text": "Mentors, alumni, and partners."
+      }
+    ],
+    "buttons": ["Explore Programs", "Apply Now"]
+  },
+  "partners": {
+    "title": "PARTNERS",
+    "button": "THE PATH TO YOUR CAREER"
+  }
+}
