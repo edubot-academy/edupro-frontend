@@ -4,20 +4,15 @@
     "columns": [
       {
         "header": "Feature",
-        "text": "Полный доступ к учебной программе"
+        "features": [
+          "Полный доступ к учебной программе",
+          "Поддержка наставника",
+          "Сертификат"
+        ]
       },
-      {
-        "header": "Starter",
-        "text": "Полный доступ к учебной программе"
-      },
-      {
-        "header": "Pro Track",
-        "text": "Полный доступ к учебной программе"
-      },
-      {
-        "header": "Career Plus",
-        "text": "Полный доступ к учебной программе"
-      }
+      { "header": "Starter" },
+      { "header": "Pro Track" },
+      { "header": "Career Plus" }
     ]
   },
   "aiFutureSection": {
