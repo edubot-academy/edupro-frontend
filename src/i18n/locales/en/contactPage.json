@@ -1,0 +1,23 @@
+{
+  "contactUs": {
+    "title": "CONTACT US",
+    "subtitle": "Have questions about our programs or admissions? Reach out anytime.",
+    "formBlock": {
+      "columns": [
+        { "placeholder": "Your Name" },
+        { "placeholder": "Leave your phone number" },
+        { "placeholder": "FrontEnd Engineer" },
+        { "placeholder": "Offline" }
+      ],
+      "button": "Sign Up"
+    },
+    "infoBlock": {
+      "blocks": [
+        { "title": "We are on social media" },
+        { "title": "Our contacts" },
+        { "title": "Address" },
+        { "title": "Email" }
+      ]
+    }
+  }
+}

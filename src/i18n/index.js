@@ -5,24 +5,43 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import en_common from "./locales/en/common.json";
 import en_home from "./locales/en/home.json";
 import en_entry from "./locales/en/entryTest.json";
+import en_pricePage from "./locales/en/pricePage.json";
 
 import ru_common from "./locales/ru/common.json";
 import ru_home from "./locales/ru/home.json";
 import ru_entry from "./locales/ru/entryTest.json";
+import ru_pricePage from "./locales/ru/pricePage.json";
 
 import ky_common from "./locales/ky/common.json";
 import ky_home from "./locales/ky/home.json";
 import ky_entry from "./locales/ky/entryTest.json";
+import ky_pricePage from "./locales/ky/pricePage.json";
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
-      en: { common: en_common, home: en_home, entryTest: en_entry },
-      ru: { common: ru_common, home: ru_home, entryTest: ru_entry },
-      ky: { common: ky_common, home: ky_home, entryTest: ky_entry },
+      en: {
+        common: en_common,
+        home: en_home,
+        entryTest: en_entry,
+        pricePage: en_pricePage,
+      },
+      ru: {
+        common: ru_common,
+        home: ru_home,
+        entryTest: ru_entry,
+        pricePage: ru_pricePage,
+      },
+      ky: {
+        common: ky_common,
+        home: ky_home,
+        entryTest: ky_entry,
+        pricePage: ky_pricePage,
+      },
     },
+
     supportedLngs: ["ky", "ru", "en"],
     load: "languageOnly",
 
