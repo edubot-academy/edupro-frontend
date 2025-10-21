@@ -18,7 +18,6 @@ export default function Footer() {
 
   const isHome = location.pathname === "/";
 
-  // Маппинг id → путь
   const pathMap = {
     home: "/",
     about: "/about",
@@ -28,7 +27,6 @@ export default function Footer() {
 
   return (
     <footer className="relative w-full min-h-[450px] bg-[#32215E] text-white overflow-hidden">
-      {/* Фон с текстом EduPro */}
       <div className="absolute inset-0 flex justify-center items-center pointer-events-none overflow-hidden hidden sm:flex">
         <h1
           className="font-[Unbounded] text-[180px] sm:text-[220px] md:text-[260px] lg:text-[300px] font-extrabold leading-[1] w-auto max-w-full select-none tracking-wide"
@@ -49,7 +47,6 @@ export default function Footer() {
       </div>
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 sm:px-10 py-10 sm:py-16 md:py-20 flex flex-col md:flex-row justify-between gap-10 sm:gap-14 md:gap-20">
-        {/* Логотип и описание */}
         <div className="flex flex-col h-[300px] justify-start mb-[30px]">
           <div className="max-w-sm text-left">
             <div className="mb-20">
@@ -67,9 +64,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Quick Links, Programs, Contact */}
         <div className="flex flex-col sm:flex-row flex-wrap gap-8 sm:gap-12 md:gap-16">
-          {/* Quick Links */}
           <div className="min-w-[120px] sm:min-w-[160px]">
             <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">
               {quickLinksTitle}
@@ -77,7 +72,6 @@ export default function Footer() {
             <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
               {quickLinks.map((link) => (
                 <li key={link.id}>
-                  {/* Слово "Home" показываем только вне Home */}
                   {link.id === "home" && isHome ? null : (
                     <Link
                       to={pathMap[link.id]}
@@ -91,7 +85,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Programs (только текст) */}
           <div className="min-w-[120px] sm:min-w-[160px]">
             <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">
               {programsTitle}
@@ -105,7 +98,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div className="min-w-[160px] sm:min-w-[180px] mb-20 sm:mb-0">
             <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">
               {contact.title}
