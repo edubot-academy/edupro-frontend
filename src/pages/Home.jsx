@@ -30,9 +30,9 @@ export default function Home() {
         <HowItWork />
         <AboutEdupro />
         <Founders />
-        <Test />
         <HomePricing />
         <Test />
+        <QuestionsAboutEduPro />
         <Mentors />
 
         {/* CTA */}
@@ -46,7 +46,6 @@ export default function Home() {
             <LeadForm />
           </div>
         </section>
-        <QuestionsAboutEduPro />
       </div>
     );
 }
