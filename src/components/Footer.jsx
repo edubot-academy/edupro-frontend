@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import lightIcon from "../assets/light.svg";
+import { Link } from "react-router-dom";
+import logo from "../assets/svg/logo.svg";
 
 export default function Footer() {
   const { t } = useTranslation(["common"]);
@@ -12,7 +13,8 @@ export default function Footer() {
 
   const programsRaw = t("footer.programs.items", { returnObjects: true });
   const programs = Array.isArray(programsRaw) ? programsRaw : [];
-  const qu = t("common:footer.programs", { returnObjects: true });
+
+  const qu = t("common:footer.programs", { returnObjects: true }) || {};
 
   return (
     <footer className="relative w-full min-h-[450px] bg-[#32215E] text-white overflow-hidden">
@@ -38,14 +40,19 @@ export default function Footer() {
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 sm:px-10 py-10 sm:py-16 md:py-20 flex flex-col md:flex-row justify-between gap-10 sm:gap-14 md:gap-20">
         <div className="max-w-sm text-left flex-1">
-          <h2 className="text-xl sm:text-2xl font-bold mb-4 flex items-center gap-2 font-['Open_Sans']">
+          <Link
+            to="/"
+            className="flex items-center gap-2 mb-4 text-xl sm:text-2xl font-bold font-['Open_Sans']"
+          >
             <img
-              src={lightIcon}
-              alt="Light"
-              className="w-5 h-5 sm:w-6 sm:h-6"
+              src={logo}
+              alt="EduPro Logo"
+              className="w-10 h-10 text-white"
             />
-            <span className="font-extrabold">EduPro</span>
-          </h2>
+
+            <span className="font-extrabold text-white">EduPro</span>
+          </Link>
+
           <p className="text-xs sm:text-sm leading-relaxed text-gray-200 break-words max-w-[400px]">
             {t("footer.about.text")}
           </p>
@@ -87,13 +94,11 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
       <div className="absolute bottom-20 left-0 w-full border-t border-[#FFFFFF33]" />
-
       <div
         className="
         absolute bottom-8 left-0 w-full 
-        text-center lg:text-center 
+        text-center 
         px-4 
         text-xs sm:text-sm 
         text-gray-400 

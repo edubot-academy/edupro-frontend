@@ -28,17 +28,17 @@
     "title": "Популярные программы",
     "items": [
       {
-        "name": "Frontend-инженерия",
+        "name": "Frontend",
         "dur": "16 недель",
         "text": "React, Tailwind, API, деплой, подготовка к собеседованиям."
       },
       {
-        "name": "Backend на Django",
+        "name": "Backend",
         "dur": "24 недели",
         "text": "Python, Django REST, PostgreSQL, Docker, CI/CD."
       },
       {
-        "name": "Мобильная разработка на Flutter",
+        "name": "Flutter",
         "dur": "20 недель",
         "text": "Dart, UI на Flutter, стейт-менеджмент, публикация в сторах."
       },
@@ -49,6 +49,35 @@
       }
     ]
   },
+  "aboutEdupro": {
+    "title": "ПОЧЕМУ EDUPRO",
+    "button": "ПУТЬ К ВАШЕЙ КАРЬЕРЕ",
+    "features": [
+      {
+        "title": "Обучение с помощью ИИ",
+        "text": "Личная поддержка, сигналы и мгновенная обратная связь."
+      },
+      {
+        "title": "Поддержка карьеры",
+        "text": "Резюме, LinkedIn, пробные интервью, переговоры по зарплате."
+      },
+      {
+        "title": "Гибкие форматы",
+        "text": "Вечерами/выходные, онлайн или офлайн."
+      },
+      {
+        "title": "Сообщество",
+        "text": "Наставники, выпускники и партнёры."
+      }
+    ],
+    "extraFeatures": [
+      { "icon": "world", "title": "Английский язык и soft-skills" },
+      { "icon": "computer", "title": "Командная работа с Git и спринтами" },
+      { "icon": "person", "title": "Поддержка в поиске стажировки" },
+      { "icon": "file", "title": "Портфолио готово к 8-й неделе" }
+    ]
+  },
+
   "aboutFounders": {
     "title": "ОСНОВАТЕЛИ КОМПАНИИ EduPro",
     "button": "ПУТЬ К ВАШЕЙ КАРЬЕРЕ",

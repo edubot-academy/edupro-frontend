@@ -4,20 +4,11 @@
     "columns": [
       {
         "header": "Feature",
-        "text": "Full curriculum access"
+        "features": ["Full curriculum access", "Mentor support", "Certificate"]
       },
-      {
-        "header": "Starter",
-        "text": "Full curriculum access"
-      },
-      {
-        "header": "Pro Track",
-        "text": "Full curriculum access"
-      },
-      {
-        "header": "Career Plus",
-        "text": "Full curriculum access"
-      }
+      { "header": "Starter" },
+      { "header": "Pro Track" },
+      { "header": "Career Plus" }
     ]
   },
   "aiFutureSection": {

@@ -3,6 +3,7 @@ import girl from '../assets/image/girl.png'
 import menu from '../assets/svg/menu-burger.svg'
 import magic from '../assets/svg/magic.svg'
 import bg from '../assets/image/bgImage.png'
+import Metrics from "../components/Metrics";
 
 function HeroBanner() {
   return (
@@ -63,6 +64,10 @@ function HeroBanner() {
               </p>
             </div>
           </div>
+          <div className="absolute bottom-44 z-30">
+            <Metrics />
+          </div>
+
         </div>
       </div>
     </div>
