@@ -1,0 +1,23 @@
+{
+  "contactUs": {
+    "title": "СВЯЗАТЬСЯ С НАМИ",
+    "subtitle": "Есть вопросы о наших программах или приёме? Свяжитесь с нами в любое время.",
+    "formBlock": {
+      "columns": [
+        { "placeholder": "Ваше имя" },
+        { "placeholder": "Оставьте свой номер" },
+        { "placeholder": "FrontEnd инженер" },
+        { "placeholder": "Офлайн" }
+      ],
+      "button": "Записаться"
+    },
+    "infoBlock": {
+      "blocks": [
+        { "title": "Мы в социальных сетях" },
+        { "title": "Наши контакты" },
+        { "title": "Адрес" },
+        { "title": "Email" }
+      ]
+    }
+  }
+}
