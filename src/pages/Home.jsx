@@ -12,6 +12,8 @@ import AboutEdupro from "../components/Aboutedupro";
 import Metrics from "../components/Metrics";
 import Mentors from "../components/Mentors";
 
+import TestForm from "../components/TestForm";
+
 // EduPro Academy Landing Page — single-file React component
 // - TailwindCSS utility classes
 // - Lightweight, no external UI deps
@@ -33,6 +35,7 @@ export default function Home() {
         <Test />
         <HomePricing />
         <Test />
+        <TestForm />
         <Mentors />
 
         {/* CTA */}
