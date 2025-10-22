@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import PopularPrograms from "../components/PopularPrograms";
 import HeroBanner from "../components/HeroBanner";
@@ -9,7 +8,6 @@ import Founders from "../components/Founders";
 import HowItWork from "../components/HowItWork";
 import QuestionsAboutEduPro from "../components/QuestionsAboutEduPro";
 import AboutEdupro from "../components/Aboutedupro";
-import Metrics from "../components/Metrics";
 import Mentors from "../components/Mentors";
 
 // EduPro Academy Landing Page — single-file React component
@@ -20,33 +18,31 @@ import Mentors from "../components/Mentors";
 
 export default function Home() {
   const { t } = useTranslation(["common", "home"]);
-  const programsObj = t("home:programs.items", { returnObjects: true });
-  const programs = Array.isArray(programsObj)
-    ? programsObj
-    : Object.values(programsObj); return (
-      <div className="min-h-screen bg-slate-50 text-slate-900">
-        <HeroBanner />
-        <PopularPrograms />
-        <HowItWork />
-        <AboutEdupro />
-        <Founders />
-        <Test />
-        <HomePricing />
-        <Test />
-        <Mentors />
 
-        {/* CTA */}
-        <section
-          id="apply"
-          className="py-16 bg-gradient-to-br from-emerald-50 to-blue-50"
-        >
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold">{t("home:cta.title")}</h2>
-            <p className="text-slate-600 mt-2">{t("home:cta.subtitle")}</p>
-            <LeadForm />
-          </div>
-        </section>
-        <QuestionsAboutEduPro />
-      </div>
-    );
+  return (
+    <div className="min-h-screen bg-slate-50 text-slate-900">
+      <HeroBanner />
+      <PopularPrograms />
+      <HowItWork />
+      <AboutEdupro />
+      <Founders />
+      <Test />
+      <HomePricing />
+      <Test />
+      <Mentors />
+
+      {/* CTA */}
+      <section
+        id="apply"
+        className="py-16 bg-gradient-to-br from-emerald-50 to-blue-50"
+      >
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold">{t("home:cta.title")}</h2>
+          <p className="text-slate-600 mt-2">{t("home:cta.subtitle")}</p>
+          <LeadForm />
+        </div>
+      </section>
+      <QuestionsAboutEduPro />
+    </div>
+  );
 }
