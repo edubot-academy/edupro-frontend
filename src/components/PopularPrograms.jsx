@@ -122,8 +122,8 @@ export default function PopularPrograms() {
       {/* Карточки программ */}
       <div className="
   absolute left-1/2 transform -translate-x-1/2
-  -translate-y-[50vh]    /* мобильные до 375px */
-  [@media(min-width:375px)]:-translate-y-[55vh]  /* 375px */
+  -translate-y-[130vh]    /* мобильные до 375px */
+  [@media(min-width:375px)]:-translate-y-[150vh]  /* 375px */
   [@media(min-width:425px)]:-translate-y-[60vh]  /* 425px */
   md:-translate-y-[35vh]   /* планшеты */
   lg:-translate-y-[15vh]   /* десктопы */
