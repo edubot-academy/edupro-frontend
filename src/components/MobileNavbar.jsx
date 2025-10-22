@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
-import logo from "../assets/logo.svg";
+import logo from "../assets/svg/logo.svg";
 import { CiMenuBurger } from "react-icons/ci";
 import { HiXMark } from "react-icons/hi2";
 
@@ -40,7 +40,10 @@ export default function MobileNavbar() {
         </Link>
 
         {/* Гамбургер справа */}
-        <button onClick={() => setOpen(true)} className="focus:outline-none bg-white">
+        <button
+          onClick={() => setOpen(true)}
+          className="focus:outline-none bg-white"
+        >
           <CiMenuBurger className="h-7 w-7 text-black" />
         </button>
       </div>
@@ -74,7 +77,8 @@ export default function MobileNavbar() {
                   to={link.to}
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
-                    `font-medium hover:text-purple-600 ${isActive ? "text-purple-600" : "text-black"
+                    `font-medium hover:text-purple-600 ${
+                      isActive ? "text-purple-600" : "text-black"
                     }`
                   }
                 >
