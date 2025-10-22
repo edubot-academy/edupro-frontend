@@ -4,37 +4,51 @@ import cursorfront from "../assets/cursor-frontend.svg"
 import cursorFlutter from "../assets/cursor-flutter.svg"
 import cursorUxui from "../assets/cursor-ux-ui.svg"
 import comment from "../assets/comment-back.png"
+import avatar1 from "../assets/comment-avatar1.jpg"
+import avatar2 from "../assets/comment-avatar2.jpg"
+import avatar3 from "../assets/comment-avatar3.jpg"
+import avatar4 from "../assets/comment-avatar4.jpg"
+import { useTranslation } from "react-i18next";
 
 
 const Comments = () => {
+  const { t } = useTranslation(["home"]);
+  const title = t("home:studentFeedback.title");
+  const button = t("home:studentFeedback.button");
+  // const blocks = t("home:studentFeedback.blocks");
+  const studentFeedbackObj = t("home:studentFeedback.blocks", { returnObjects: true });
+  const blocks = Array.isArray(studentFeedbackObj)
+    ? studentFeedbackObj
+    : Object.values(studentFeedbackObj);
+  console.log(blocks)
   const cards = [
     {
-      text: "“Долбоорлор чыныгы жумуштай болду. Мок-интервью чечүүчү роль ойнооду.”",
+      text: `"${blocks[0].text}"`,
       name: "— Эркин К., Junior Python Dev",
       tag: "UX-UI",
-      position: "top-0 left-[100px]",
-      avatar: "https://i.pravatar.cc/100?img=1",
+      position: "top-0",
+      avatar: avatar1,
     },
     {
-      text: "“Наставниктер ар бир PRды карады. Университетке караганда тез үйрөндүм.”",
+      text: `"${blocks[1].text}"`,
       name: "— Айзада Т., Frontend Dev @ FinTech",
       tag: "Frontend",
-      position: "top-0 left-[600px]",
-      avatar: "https://i.pravatar.cc/100?img=2",
+      position: "top-0 left-[560px]",
+      avatar: avatar2,
     },
     {
-      text: "“Наставниктер ар бир PRды карады. Университетке караганда тез үйрөндүм.”",
+      text: `"${blocks[2].text}"`,
       name: "— Айзада Т., Frontend Dev @ FinTech",
       tag: "UX-UI",
-      position: "left-[200px] top-[200px]",
-      avatar: "https://i.pravatar.cc/100?img=3",
+      position: "left-[200px] top-[220px]",
+      avatar: avatar3,
     },
     {
-      text: "“Наставниктер ар бир PRды карады. Университетке караганда тез үйрөндүм.”",
+      text: `"${blocks[3].text}"`,
       name: "— Айзада Т., Frontend Dev @ FinTech",
       tag: "Flutter",
-      position: "left-[700px] top-[200px]",
-      avatar: "https://i.pravatar.cc/100?img=4",
+      position: "left-[780px] top-[220px]",
+      avatar: avatar4,
     }
   ];
 
@@ -43,10 +57,10 @@ const Comments = () => {
       {/* Заголовок */}
       <div className="text-center mb-16">
         <h2 className="text-[#32215E] text-3xl md:text-5xl font-bold uppercase mb-3">
-          СТУДЕНТТЕР ЭМНЕ ДЕЙТ
+          {title}
         </h2>
         <div className="px- py-2.5 w-[250px] border border-gray-300 rounded-full text-gray-600 text-base font-medium m-auto">
-          ПУТЬ К ВАШЕЙ КАРЬЕРЕ
+          {button}
         </div>
       </div>
 
@@ -88,25 +102,25 @@ const Comments = () => {
 
         ))}
 
-        <div className="">
+        <div className="absolute top-20 left-[1050px]">
           <img src={cursorfront} alt="" />
           <div className="ml-4 mt-[-5px] bg-[#DD2590] w-[102px] h-[40px] rounded-[24px] flex justify-center items-center text-white font-inter font-medium text-[16px]">
             Frontend
           </div>
         </div>
-        <div className="">
+        <div className="absolute top-60 left-10">
           <img src={cursorUxui} alt="" />
           <div className="ml-6 mt-[-1px] border-2 border-[#DD2590] bg-[#DD2590] w-[62px] h-[28px] flex justify-center items-center text-white font-inter font-medium text-[16px]">
             UX-UI
           </div>
         </div>
-        <div className="">
+        <div className="absolute top-60 left-[670px]">
           <img src={cursorFlutter} alt="" />
           <div className="ml-4 mt-[-5px] shadow-[4px_4px_10px_0px_#12B76A29] border-2 border-[#039855] bg-[#12B76A] w-[87px] h-[40px] rounded-tl-[2px] rounded-tr-[24px] rounded-br-[24px] rounded-bl-[24px] flex justify-center items-center text-white font-inter font-medium text-[16px]">
             Flutter
           </div>
         </div>
-        <div className="">
+        <div className="absolute top-[450px] left-[600px]">
           <img src={cursorBack} alt="" />
           <div className="ml-5 mt-[-6px] bg-[#1570EF] w-[99px] h-[40px] flex justify-center items-center text-white font-inter font-medium text-[16px]">
             Backend
