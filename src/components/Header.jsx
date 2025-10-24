@@ -1,9 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
-import logo from "../assets/logo.svg";
-import arrow from "../assets/arrowRight.svg";
-
+import logo from "../assets/svg/logo.svg";
+import Button from "./UI/Button";
 export default function Header() {
   const { t } = useTranslation();
 
@@ -22,9 +21,7 @@ export default function Header() {
   ];
 
   return (
-
     <header className="hidden md:block sticky top-0 z-50 backdrop-blur bg-white/40 border-b border-slate-200">
-
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Логотип */}
         <Link to="/" className="flex items-center gap-1">
@@ -35,17 +32,16 @@ export default function Header() {
           </span>
         </Link>
 
-{/*  */}
-
-
         {/* Навигация */}
         <nav className="flex items-center gap-8 text-sm">
-          {navLinks.map(link => (
+          {navLinks.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
               className={({ isActive }) =>
-                `font-medium hover:text-purple-600 ${isActive ? "text-purple-600" : "text-black"}`
+                `font-medium hover:text-purple-600 ${
+                  isActive ? "text-purple-600" : "text-black"
+                }`
               }
             >
               {link.label}
@@ -56,16 +52,7 @@ export default function Header() {
         {/* Контролы */}
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
-          <Link
-            to="/contact"
-            className="flex items-center gap-2 px-6 py-2 rounded-full text-white font-semibold text-sm
-             bg-gradient-to-t from-[#472799] to-[#7640FF] 
-             hover:text-white transition-colors duration-300"
-          >
-            {labels.contact}
-            <img src={arrow} alt="arrow" className="w-6 h-6" />
-          </Link>
-
+          <Button to="/contact">{labels.contact}</Button>
         </div>
       </div>
     </header>

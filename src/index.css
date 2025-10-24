@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -67,3 +69,28 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* 
+.clip-path-custom {
+  clip-path: none;
+}
+
+@media (min-width: 768px) {
+  .clip-path-custom {
+    clip-path: polygon( 0% 20%,
+  60% 20%,
+  60% 0%,
+  100% 50%,
+  60% 100%,
+  60% 80%,
+  0% 80%);
+  }
+} */

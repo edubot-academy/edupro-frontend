@@ -1,0 +1,18 @@
+{
+  "comparePlans": {
+    "title": "Пландары салыштыруу",
+    "columns": [
+      {
+        "header": "Feature",
+        "features": [
+          "Толук окуу программасына кирүү",
+          "Ментордук колдоо",
+          "Сертификат"
+        ]
+      },
+      { "header": "Starter" },
+      { "header": "Pro Track" },
+      { "header": "Career Plus" }
+    ]
+  }
+}

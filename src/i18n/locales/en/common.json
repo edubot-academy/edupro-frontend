@@ -74,7 +74,6 @@
     "text": "Answer a few simple questions and get instant results. Determine your current level of knowledge and understand where to start learning. The test is completely free and takes no more than 5 minutes.",
     "button": "Take the Test"
   },
-
   "career": {
     "title": "Start Your Journey",
     "button": "YOUR CAREER PATH",
@@ -97,14 +96,26 @@
       }
     ]
   },
-  "mentors": {
+  "mentors_section": {
     "title": "OUR MENTORS",
     "button": "WITH OVER 10 YEARS OF EXPERIENCE",
     "mentors": [
-      { "name": "Talaaybek Imankulov", "role": "FrontEnd Mentor" },
-      { "name": "Mentor Name 2", "role": "BackEnd Mentor" },
-      { "name": "Mentor Name 3", "role": "UI/UX Mentor" },
-      { "name": "Mentor Name 4", "role": "AI Mentor" }
+      {
+        "name": "Talaaybek Imankulov",
+        "role": "FrontEnd Mentor"
+      },
+      {
+        "name": "Mentor Name 2",
+        "role": "BackEnd Mentor"
+      },
+      {
+        "name": "Mentor Name 3",
+        "role": "UI/UX Mentor"
+      },
+      {
+        "name": "Mentor Name 4",
+        "role": "AI Mentor"
+      }
     ]
   },
   "consultation": {
@@ -127,26 +138,26 @@
     }
   },
   "footer": {
-    "brand": {
-      "name": "EduPro Academy",
-      "tagline": "Preparing students for an AI-driven future with practical IT skills and mentorship."
+    "quickLinks": {
+      "title": "Quick Links",
+      "links": [
+        { "id": "home", "text": "Home" },
+        { "id": "about", "text": "About Us" },
+        { "id": "programs", "text": "Our Courses" },
+        { "id": "contact", "text": "Contacts" }
+      ]
     },
-    "quick": {
-      "title": "Quick Links"
+    "programs": {
+      "title": "Programs",
+      "items": ["Frontend Engineering", "Django Backend", "UX/UI Design"]
     },
     "contact": {
       "title": "Contact",
-      "labels": {
-        "email": "Email",
-        "phone": "Phone",
-        "telegram": "Telegram",
-        "address": "Address"
-      },
-      "email": "info@edupro.academy",
-      "phone": "+996 (555) 000-111",
-      "telegram": "@eduproacademy",
-      "location": "Bishkek, Kyrgyzstan"
-    },
-    "rights": "© {{year}} EduPro Academy. All rights reserved."
+      "email": "Email",
+      "phone": "Phone",
+      "telegram": "Instagram",
+      "addressPrefix": "Address",
+      "address": "Ахунбаев 129Б, Bishkek, Kyrgyzstan"
+    }
   }
 }

@@ -1,0 +1,18 @@
+{
+  "comparePlans": {
+    "title": "Сравнить планы",
+    "columns": [
+      {
+        "header": "Feature",
+        "features": [
+          "Полный доступ к учебной программе",
+          "Поддержка наставника",
+          "Сертификат"
+        ]
+      },
+      { "header": "Starter" },
+      { "header": "Pro Track" },
+      { "header": "Career Plus" }
+    ]
+  }
+}

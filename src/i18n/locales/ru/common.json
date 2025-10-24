@@ -96,14 +96,26 @@
       }
     ]
   },
-  "mentors": {
+  "mentors_section": {
     "title": "НАШИ МЕНТОРЫ",
     "button": "С ОПЫТОМ БОЛЕЕ 10 ЛЕТ",
     "mentors": [
-      { "name": "Талаайбек Ыманкулов", "role": "FrontEnd Ментор" },
-      { "name": "Имя Ментор 2", "role": "BackEnd Ментор" },
-      { "name": "Имя Ментор 3", "role": "UI/UX Ментор" },
-      { "name": "Имя Ментор 4", "role": "AI Ментор" }
+      {
+        "name": "Талаайбек Ыманкулов",
+        "role": "FrontEnd Ментор"
+      },
+      {
+        "name": "Имя Ментор 2",
+        "role": "BackEnd Ментор"
+      },
+      {
+        "name": "Имя Ментор 3",
+        "role": "UI/UX Ментор"
+      },
+      {
+        "name": "Имя Ментор 4",
+        "role": "AI Ментор"
+      }
     ]
   },
   "consultation": {
@@ -126,26 +138,30 @@
     }
   },
   "footer": {
-    "brand": {
-      "name": "EduPro Academy",
-      "tagline": "Готовим студентов к будущему с ИИ: практические IT-навыки и менторство."
+    "about": {
+      "text": "Повышайте карьеру, доход и жизнь на новый уровень. SkillUp помог более 400 студентам получить первую работу в IT. Станьте следующим и измените свою жизнь сегодня!"
     },
-    "quick": {
-      "title": "Быстрые ссылки"
+    "quickLinks": {
+      "title": "Быстрые ссылки",
+      "links": [
+        { "id": "home", "text": "Главная" },
+        { "id": "about", "text": "О нас" },
+        { "id": "programs", "text": "Наши курсы" },
+        { "id": "contact", "text": "Контакты" }
+      ]
+    },
+    "programs": {
+      "title": "Программы",
+      "items": ["Frontend инженериясы", "Django менен Backend", "UX/UI дизайн"]
     },
     "contact": {
       "title": "Контакты",
-      "labels": {
-        "email": "Email",
-        "phone": "Телефон",
-        "telegram": "Telegram",
-        "address": "Адрес"
-      },
-      "email": "info@edupro.academy",
-      "phone": "+996 (555) 000-111",
-      "telegram": "@eduproacademy",
-      "location": "Бишкек, Кыргызстан"
+      "email": "Электронная почта",
+      "phone": "Телефон",
+      "telegram": "Instagram",
+      "addressPrefix": "Адрес",
+      "address": "Ахунбаев 129Б, Бишкек, Кыргызстан"
     },
-    "rights": "© {{year}} EduPro Academy. Все права защищены."
+    "copyright": "© 2021–2025 SkillUP | Политика конфиденциальности | Условия использования"
   }
 }

@@ -1,0 +1,14 @@
+{
+  "comparePlans": {
+    "title": "Compare Plans",
+    "columns": [
+      {
+        "header": "Feature",
+        "features": ["Full curriculum access", "Mentor support", "Certificate"]
+      },
+      { "header": "Starter" },
+      { "header": "Pro Track" },
+      { "header": "Career Plus" }
+    ]
+  }
+}
