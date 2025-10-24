@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <header className="hidden md:block sticky top-0 z-50 backdrop-blur bg-white/40 border-b border-slate-200">
 
-      <div className="mx-10 mx-auto flex items-center justify-between px-6 py-4">
+      <div className="mx-12 mx-auto flex items-center justify-between px-6 py-4">
         {/* Логотип */}
         <Link to="/" className="flex items-center gap-1">
           <img src={logo} alt="EduPro logo" className="h-12 w-12" />
