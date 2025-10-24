@@ -65,7 +65,7 @@ const Comments = () => {
       </div>
 
       {/* Карточки в абсолютных позициях */}
-      <div className="relative w-full max-w-7xl mx-auto h-[650px] md:h-[500px]">
+      <div className="relative w-full max-w-7xl mx-auto h-[650px] md:h-[500px] hidden lg:block">
         {cards.map((c, i) => (
           <div className={`flex items-end absolute ${c.position}`}>
             <img
@@ -74,11 +74,6 @@ const Comments = () => {
               className="w-12 rounded-full object-cover z-20"
             />
 
-            {/* comment.png теперь сзади */}
-
-
-
-            {/* сам текстовый блок — поверх comment */}
             <div
               key={i}
               className={` relative w-[300px] md:w-[380px] pt-[20px] pl-[20px] pr-[50px] pb-[30px] ml-4 z-10 mb-6`}
@@ -126,7 +121,67 @@ const Comments = () => {
             Backend
           </div>
         </div>
+      </div>
 
+      <div className="lg:hidden relative w-full ">
+        <div className="overflow-x-auto scrollbar-hide grid gap-6 pb-6 ">
+          <div className="flex">
+            {cards.map((c, i) => (
+              <div className={`flex items-end`}>
+                <img
+                  src={c.avatar}
+                  alt={c.name}
+                  className="w-[51px] h-[51px] rounded-full object-cover z-20"
+                />
+                <div
+                  key={i}
+                  className={` relative w-[300px] md:w-[380px] pt-[20px] pl-[20px] pr-[50px] pb-[30px] ml-4 z-10 mb-6`}
+                >
+                  <img
+                    src={comment}
+                    alt=""
+                    className="absolute top-0 left-0 z-0 w-[318.0238342285156px] h-[145px]"
+                  />
+                  <div className="relative z-10 w-[250px] h-[77px]">
+                    <p className="text-[#2C2C2C] font-[Suisse_Intl] font-normal text-[15.7px] leading-[120%] tracking-[1%] mb-3">
+                      {c.text}
+                    </p>
+
+                    <div className="flex items-center gap-3">
+                      <span className="text-gray-600 text-[11.22px]">{c.name}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="flex w-full justify-between px-[5%]">
+            <div className="">
+              <img src={cursorfront} alt="" />
+              <div className="ml-4 mt-[-5px] bg-[#DD2590] w-[102px] h-[40px] rounded-[24px] flex justify-center items-center text-white font-inter font-medium text-[16px]">
+                Frontend
+              </div>
+            </div>
+            <div className="">
+              <img src={cursorUxui} alt="" />
+              <div className="ml-6 mt-[-1px] border-2 border-[#DD2590] bg-[#DD2590] w-[62px] h-[28px] flex justify-center items-center text-white font-inter font-medium text-[16px]">
+                UX-UI
+              </div>
+            </div>
+            <div className="">
+              <img src={cursorFlutter} alt="" />
+              <div className="ml-4 mt-[-5px] shadow-[4px_4px_10px_0px_#12B76A29] border-2 border-[#039855] bg-[#12B76A] w-[87px] h-[40px] rounded-tl-[2px] rounded-tr-[24px] rounded-br-[24px] rounded-bl-[24px] flex justify-center items-center text-white font-inter font-medium text-[16px]">
+                Flutter
+              </div>
+            </div>
+            <div className="">
+              <img src={cursorBack} alt="" />
+              <div className="ml-5 mt-[-6px] bg-[#1570EF] w-[99px] h-[40px] flex justify-center items-center text-white font-inter font-medium text-[16px]">
+                Backend
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
