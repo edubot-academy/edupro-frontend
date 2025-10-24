@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -76,19 +82,3 @@ button:focus-visible {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-/* 
-.clip-path-custom {
-  clip-path: none;
-}
-
-@media (min-width: 768px) {
-  .clip-path-custom {
-    clip-path: polygon( 0% 20%,
-  60% 20%,
-  60% 0%,
-  100% 50%,
-  60% 100%,
-  60% 80%,
-  0% 80%);
-  }
-} */

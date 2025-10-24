@@ -19,7 +19,7 @@ const QuestionsAboutEduPro = () => {
         {t("faq.button")}
       </button>
 
-      <div className="bg-white rounded-2xl w-full max-w-3xl sm:max-w-4xl flex flex-col justify-start p-3 gap-4">
+      <div className="bg-white rounded-2xl w-full flex flex-col justify-start p-3 gap-4">
         {faqItems.map((item, idx) => (
           <div key={idx} className="flex flex-col">
             <button

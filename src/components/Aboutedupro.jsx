@@ -16,8 +16,8 @@ function AboutEdupro() {
   const icons = { world, computer, person, file };
 
   return (
-    <div className="bg-[#F8F8F8]  flex justify-center mb-[38rem]">
-      <div className="p-[2.5rem] sm:p-[3.75rem] rounded-2xl mt-[0.1rem] w-[120.75rem] h-[30rem] max-w-full">
+    <div className="bg-[#F8F8F8]  flex justify-center mb-[30rem] lg:mb-60">
+      <div className="p-[1rem] sm:p-[2rem] rounded-2xl mt-[0.1rem] w-[120.75rem] h-[30rem] max-w-full">
         <div className="text-center mb-[2.5rem] sm:mb-[3rem]">
           <h2
             className="text-[2rem] sm:text-[3rem] font-bold mb-[1rem] sm:mb-[1.25rem]"
@@ -31,7 +31,7 @@ function AboutEdupro() {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[1.5rem] md:gap-[2.5rem]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[1.5rem] md:gap-[5rem]">
           {/* Левая часть */}
           <div className="space-y-[1rem] sm:space-y-[1.5rem]">
             {features.map((feature, index) => (

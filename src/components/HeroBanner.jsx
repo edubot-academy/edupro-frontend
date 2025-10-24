@@ -17,7 +17,7 @@ function HeroBanner() {
         </h1>
         <div className="relative z-10 flex lg:-mt-80 md:-mt-36 flex-col-reverse lg:flex-row md:flex-row items-center gap-6 md:gap-12 lg:gap-96">
           <h2
-            className="text-[#32215E] text-3xl md:text-4xl lg:text-6xl absolute md:static -mt-16 md:mt-0 z-10 w-96 bg-gradient-to-t md:bg-none lg:bg-none font-extrabold px-6 pt-10 -mb-2 md:max-w-md lg:max-w-xl leading-tight text-left"
+            className="text-[#32215E] text-3xl md:text-4xl lg:text-6xl absolute md:static -mt-16 md:mt-0 z-10 w-96 bg-gradient-to-t md:bg-none lg:bg-none font-extrabold px-6 pt-10 -mb-2 md:max-w-md lg:max-w-xl leading-tight text-left lg:-ml-20"
           >
             КЕЛЕЧЕККЕ БАГЫТТАЛГАН <br /> БИЛИМ
           </h2>
