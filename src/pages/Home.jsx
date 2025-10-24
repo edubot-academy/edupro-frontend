@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import PopularPrograms from "../components/PopularPrograms";
 import HeroBanner from "../components/HeroBanner";
@@ -9,7 +8,6 @@ import Founders from "../components/Founders";
 import HowItWork from "../components/HowItWork";
 import QuestionsAboutEduPro from "../components/QuestionsAboutEduPro";
 import AboutEdupro from "../components/Aboutedupro";
-import Metrics from "../components/Metrics";
 import Mentors from "../components/Mentors";
 
 // EduPro Academy Landing Page — single-file React component

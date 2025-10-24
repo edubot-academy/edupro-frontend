@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import arrow from "../../assets/arrowRight.svg";
+import arrow from "../../assets/svg/arrowRight.svg";
 
 const Button = ({
   children,
-  url, 
+  url,
   onClick,
   className = "",
-  type = "button", 
+  type = "button",
   disabled = false,
   loading = false,
   ...props
@@ -43,7 +43,7 @@ const Button = ({
 
   return (
     <button
-      type={type === "link" ? "button" : type} 
+      type={type === "link" ? "button" : type}
       onClick={onClick}
       disabled={disabled || loading}
       className={finalStyles}
