@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import earth from '../assets/earth.png';
 import bg from '../assets/violet_bg.png';
 import Button from "./UI/Button";
@@ -11,12 +11,14 @@ import {
   SiDart, SiFlutter, SiFigma, SiNodedotjs, SiBookstack
 } from "react-icons/si";
 import { FaHeadphones, FaComments, FaPenFancy } from "react-icons/fa";
+import CourseDetail from './CourseDetail';
 
 export default function PopularPrograms() {
   const { t } = useTranslation(['common']);
   const programs = t('home:programs.items', { returnObjects: true }) || [];
   const pricingPlans = t('pricing.plans', { returnObjects: true }) || [];
   const ctaText = pricingPlans[0]?.cta || 'Записаться';
+  const [open, setOpen] = useState(false);
 
   const techIcons = {
     HTML5: SiHtml5,
@@ -176,7 +178,7 @@ export default function PopularPrograms() {
                   </div>
                 </div>
                 <div className="mt-4">
-                  <Button to="/contact" className="w-full flex justify-center items-center text-center">
+                  <Button onClick={() => setOpen(true)} to="/contact" className="w-full flex justify-center items-center text-center">
                     {ctaText}
                   </Button>
                 </div>
@@ -185,6 +187,7 @@ export default function PopularPrograms() {
           })}
         </div>
       </div>
+      <CourseDetail open={open} onClose={() => setOpen(false)} />
     </section>
   );
 }
