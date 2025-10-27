@@ -178,7 +178,7 @@ export default function LeadForm({
             value={form[field.name]}
             onChange={handleChange}
             autoComplete={field.autoComplete}
-            className="w-full rounded-xl border border-slate-300 px-4 py-3 bg-[#f8f8f8] text-[#555555] focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            className="w-full rounded-xl border border-slate-300 px-4 py-3 bg-[#f8f8f8] text-[#555555] focus:outline-none focus:ring-2 focus:ring-violet-500"
         />
     );
 
@@ -188,7 +188,7 @@ export default function LeadForm({
                 name={field.name}
                 value={form[field.name]}
                 onChange={handleChange}
-                className="w-full rounded-xl border border-slate-300 px-4 py-3 bg-[#f8f8f8] text-[#555555] pr-10 appearance-none focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                className="w-full rounded-xl border border-slate-300 px-4 py-3 bg-[#f8f8f8] text-[#555555] pr-10 appearance-none focus:outline-none focus:ring-2 focus:ring-violet-500"
             >
                 {field.options.map(option => (
                     <option
@@ -225,7 +225,7 @@ export default function LeadForm({
 
     if (ok) {
         return (
-            <div className="rounded-xl bg-emerald-50 p-6 text-emerald-800 text-center">
+            <div className="rounded-xl bg-violet-50 p-6 text-violet-800 text-center">
                 Thanks! Our team will contact you within 24 hours.
             </div>
         );
@@ -269,7 +269,7 @@ export default function LeadForm({
                             <Button
                                 type="submit"
                                 disabled={loading}
-                                className="w-full lg:w-1/2 px-8 justify-center rounded-xl bg-emerald-600 text-white font-semibold py-3 hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                                className="w-full lg:w-1/2 px-8 justify-center rounded-xl bg-violet-600 text-white font-semibold py-3 hover:bg-violet-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                             >
                                 {loading ? "Submitting…" : "Apply"}
                             </Button>

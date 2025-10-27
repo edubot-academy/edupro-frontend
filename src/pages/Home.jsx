@@ -37,8 +37,6 @@ export default function Home() {
         className="py-16"
       >
         <div className="text-center">
-          <h2 className="text-3xl font-bold">{t("home:cta.title")}</h2>
-          <p className="p-8">{t("home:cta.subtitle")}</p>
           <LeadForm
             title={
               <>
