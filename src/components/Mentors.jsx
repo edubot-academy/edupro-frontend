@@ -8,7 +8,7 @@ function Mentors() {
     const mentor = t("common:mentors_section.mentors", { returnObjects: true });
 
     return (
-        <div className="flex flex-col items-center gap-6 lg:gap-12 px- sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center gap-6 lg:gap-12 px- sm:px-6 lg:px-8 my-16">
             <div className="flex flex-col items-center w-full">
                 <h2 className="text-[#32215E] font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-center mb-4 lg:mb-6">
                     {t("common:mentors_section.title")}
