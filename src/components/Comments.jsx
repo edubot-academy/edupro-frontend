@@ -20,7 +20,7 @@ const Comments = () => {
   const blocks = Array.isArray(studentFeedbackObj)
     ? studentFeedbackObj
     : Object.values(studentFeedbackObj);
-  console.log(blocks)
+
   const cards = [
     {
       text: `"${blocks[0].text}"`,
@@ -67,7 +67,7 @@ const Comments = () => {
       {/* Карточки в абсолютных позициях */}
       <div className="relative w-full max-w-7xl mx-auto h-[650px] md:h-[500px] hidden lg:block">
         {cards.map((c, i) => (
-          <div className={`flex items-end absolute ${c.position}`}>
+          <div key={i} className={`flex items-end absolute ${c.position}`}>
             <img
               src={c.avatar}
               alt={c.name}
@@ -125,30 +125,30 @@ const Comments = () => {
 
       <div className="lg:hidden relative w-full ">
         <div className="overflow-x-auto scrollbar-hide grid gap-6 pb-6 ">
-          <div className="flex">
+          <div className="flex gap-2">
             {cards.map((c, i) => (
-              <div className={`flex items-end`}>
+              <div key={i} className={`flex items-end`}>
                 <img
                   src={c.avatar}
                   alt={c.name}
-                  className="w-[51px] h-[51px] rounded-full object-cover z-20"
+                  className="w-[35px] sm:w-[51px] rounded-full object-cover z-20"
                 />
                 <div
                   key={i}
-                  className={` relative w-[300px] md:w-[380px] pt-[20px] pl-[20px] pr-[50px] pb-[30px] ml-4 z-10 mb-6`}
+                  className={` relative w-[230px] sm:w-[300px] md:w-[380px] pt-[10px] sm:pt-[20px] pl-[15px] sm:pl-[20px] pr-[25px] sm:pr-[50px] pb-[15px] sm:pb-[30px] ml-4 z-10 mb-3 sm:mb-6`}
                 >
                   <img
                     src={comment}
                     alt=""
-                    className="absolute top-0 left-0 z-0 w-[318.0238342285156px] h-[145px]"
+                    className="absolute top-0 left-0 z-0 w-[90%] h-[120px] sm:h-[145px]"
                   />
-                  <div className="relative z-10 w-[250px] h-[77px]">
-                    <p className="text-[#2C2C2C] font-[Suisse_Intl] font-normal text-[15.7px] leading-[120%] tracking-[1%] mb-3">
+                  <div className="relative z-10 w-[100%] h-[77px]">
+                    <p className="text-[#2C2C2C] font-[Suisse_Intl] font-normal text-[12px] sm:text-[15.7px] leading-[120%] tracking-[1%] mb-3">
                       {c.text}
                     </p>
 
                     <div className="flex items-center gap-3">
-                      <span className="text-gray-600 text-[11.22px]">{c.name}</span>
+                      <span className="text-gray-600 text-[8px] sm:text-[11.22px]">{c.name}</span>
                     </div>
                   </div>
                 </div>
