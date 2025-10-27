@@ -1,7 +1,9 @@
+// src/i18n/index.js
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
+// Импорты переводов
 import en_common from "./locales/en/common.json";
 import en_home from "./locales/en/home.json";
 import en_entry from "./locales/en/entryTest.json";
@@ -20,6 +22,7 @@ import ky_entry from "./locales/ky/entryTest.json";
 import ky_pricePage from "./locales/ky/pricePage.json";
 import ky_aboutPage from "./locales/ky/aboutPage.json";
 
+// Инициализация i18n
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -47,17 +50,16 @@ i18n
         aboutPage: ky_aboutPage,
       },
     },
-
     supportedLngs: ["ky", "ru", "en"],
     load: "languageOnly",
-
     fallbackLng: "ky",
+    keySeparator: ".",
     detection: {
       order: ["localStorage", "querystring", "cookie", "htmlTag", "navigator"],
       lookupQuerystring: "lang",
       caches: ["localStorage"],
     },
-    ns: ["common", "home", "entryTest"],
+    ns: ["common", "home", "entryTest", "aboutPage", "contactPage"],
     defaultNS: "common",
     interpolation: { escapeValue: false },
     react: { useSuspense: false },
@@ -68,11 +70,4 @@ i18n
     },
   });
 
-i18n.on("languageChanged", (lng) => {
-  if (typeof document !== "undefined") {
-    document.documentElement.lang = lng || "ky";
-    document.documentElement.dir = "ltr";
-  }
-});
-
-export default i18n;
+export default i18n; // ✅ Default export
