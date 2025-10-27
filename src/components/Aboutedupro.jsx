@@ -1,10 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import check from "../assets/icons/check.svg";
-import world from "../assets/icons/world.svg";
-import computer from "../assets/icons/computer.svg";
-import person from "../assets/icons/person.svg";
-import file from "../assets/icons/file.svg";
+import check from "../assets/svg/check.svg";
+import world from "../assets/svg/world.svg";
+import computer from "../assets/svg/computer.svg";
+import person from "../assets/svg/person.svg";
+import file from "../assets/svg/file.svg";
 
 function AboutEdupro() {
   const { t } = useTranslation("home");

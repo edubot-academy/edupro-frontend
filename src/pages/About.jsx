@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Partners from "../components/Partners";
 
 export default function About() {
     const values = [
@@ -127,6 +128,8 @@ export default function About() {
                     </div>
                 </div>
             </section>
+
+            <Partners/>
 
             {/* Timeline */}
             <section className="py-16 bg-white">
