@@ -29,14 +29,14 @@ const CourseDetail = ({ open, onClose }) => {
                 <p className="font-bold text-[10px] md:text-[15px] xl:text-[20px] leading-[120%] tracking-[0.01em] mt-2 md:mt-4 mb-1 md:mb-2">{all.willLearnName}:</p>
                 <ul className="font-normal text-[10px] md:text-[15px] xl:text-[20px] leading-[120%] tracking-[0.01em]">
                     {all.willLearns.map((p, i) => (
-                        <li>{p}</li>
+                        <li key={i}>{p}</li>
                     ))}
                 </ul>
 
                 <p className="font-bold text-[10px] md:text-[15px] xl:text-[20px] leading-[120%] tracking-[0.01em] mt-2 md:mt-4 mb-1 md:mb-2">{all.canDoAfterName}:</p>
                 <ul className="font-normal text-[10px] md:text-[15px] xl:text-[20px] leading-[120%] tracking-[0.01em]">
                     {all.canDoAfter.map((p, i) => (
-                        <li>{p}</li>
+                        <li key={i}>{p}</li>
                     ))}
                 </ul>
 
