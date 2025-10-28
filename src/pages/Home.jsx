@@ -35,7 +35,6 @@ export default function Home() {
         <Test />
         <HomePricing />
         <Test />
-        <TestForm />
         <Mentors />
 
         {/* CTA */}

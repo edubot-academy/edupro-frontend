@@ -74,6 +74,7 @@
     "text": "Answer a few simple questions and get instant results. Determine your current level of knowledge and understand where to start learning. The test is completely free and takes no more than 5 minutes.",
     "button": "Take the Test"
   },
+  
   "career": {
     "title": "Start Your Journey",
     "button": "YOUR CAREER PATH",
@@ -118,6 +119,7 @@
       }
     ]
   },
+  
   "consultation": {
     "title": "ANY QUESTIONS? WE’LL CONSULT YOU FOR FREE!",
     "subtitle": "Submit your request in 3 minutes. Our team will contact you within 24 hours.",
@@ -160,4 +162,5 @@
     },
     "rights": "© {{year}} EduPro Academy. All rights reserved."
   }
+  
 }
