@@ -13,19 +13,35 @@ export default function LanguageSwitcher() {
 
   return (
     <div className="relative inline-block">
-      <FiGlobe className="absolute left-2 top-1/2 -translate-y-1/2 text-black dark:text-white pointer-events-none" />
+      <FiGlobe className="absolute left-2 top-1/2 -translate-y-1/2 text-black pointer-events-none z-10" />
       <select
         value={i18n.language}
         onChange={(e) => i18n.changeLanguage(e.target.value)}
         className="
-    pl-7 pr-5 py-0.5
-    rounded-md bg-white/80 dark:bg-slate-900/60
-    text-sm focus:outline-none appearance-none
-  "
+          pl-7 pr-5 py-0.5
+          rounded-md bg-white/80 text-black
+          text-sm focus:outline-none appearance-none
+          border border-gray-300
+          backdrop-blur-sm
+          relative z-0
+        "
+        style={{
+          colorScheme: 'light only',
+          WebkitAppearance: 'none',
+          MozAppearance: 'none',
+          appearance: 'none',
+        }}
         aria-label="Change language"
       >
         {LANGS.map(({ code, labelKey }) => (
-          <option key={code} value={code}>
+          <option 
+            key={code} 
+            value={code}
+            style={{
+              backgroundColor: 'white',
+              color: 'black'
+            }}
+          >
             {t(labelKey)}
           </option>
         ))}
@@ -33,7 +49,7 @@ export default function LanguageSwitcher() {
 
       {/* Кастомная стрелка */}
       <svg
-        className="absolute right-2 top-1/2 -translate-y-1/2 w-3 h-3 pointer-events-none text-gray-500 dark:text-white"
+        className="absolute right-2 top-1/2 -translate-y-1/2 w-3 h-3 pointer-events-none text-gray-500 z-10"
         fill="none"
         stroke="currentColor"
         strokeWidth={2}
@@ -42,6 +58,5 @@ export default function LanguageSwitcher() {
         <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
       </svg>
     </div>
-
   );
 }

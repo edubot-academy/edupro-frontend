@@ -140,27 +140,27 @@
     }
   },
   "footer": {
-    "brand": {
-      "name": "EduPro Academy",
-      "tagline": "Preparing students for an AI-driven future with practical IT skills and mentorship."
+    "quickLinks": {
+      "title": "Quick Links",
+      "links": [
+        { "id": "home", "text": "Home" },
+        { "id": "about", "text": "About Us" },
+        { "id": "programs", "text": "Our Courses" },
+        { "id": "contact", "text": "Contacts" }
+      ]
     },
-    "quick": {
-      "title": "Quick Links"
+    "programs": {
+      "title": "Programs",
+      "items": ["Frontend Engineering", "Django Backend", "UX/UI Design"]
     },
     "contact": {
       "title": "Contact",
-      "labels": {
-        "email": "Email",
-        "phone": "Phone",
-        "telegram": "Telegram",
-        "address": "Address"
-      },
-      "email": "info@edupro.academy",
-      "phone": "+996 (555) 000-111",
-      "telegram": "@eduproacademy",
-      "location": "Bishkek, Kyrgyzstan"
-    },
-    "rights": "© {{year}} EduPro Academy. All rights reserved."
+      "email": "Email",
+      "phone": "Phone",
+      "telegram": "Instagram",
+      "addressPrefix": "Address",
+      "address": "Ахунбаев 129Б, Bishkek, Kyrgyzstan"
+    }
   }
   
 }
