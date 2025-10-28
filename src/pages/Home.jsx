@@ -10,6 +10,8 @@ import QuestionsAboutEduPro from "../components/QuestionsAboutEduPro";
 import AboutEdupro from "../components/Aboutedupro";
 import Mentors from "../components/Mentors";
 
+
+
 // EduPro Academy Landing Page — single-file React component
 // - TailwindCSS utility classes
 // - Lightweight, no external UI deps

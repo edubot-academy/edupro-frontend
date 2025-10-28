@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 
 import "./index.css";
 import LanguageProvider from './providers/LanguageProvider';
+import TestForm from "./components/TestForm";
 
 const url = new URL(window.location.href);
 const preserved = url.searchParams.get('p');
@@ -25,7 +26,7 @@ if (preserved) {
 
 const router = createBrowserRouter([
   {
-    element: <AppLayout />,   // header + footer live here
+    element: <AppLayout />, // header + footer live here
     children: [
       { path: "/", element: <Home /> },
       { path: "/programs", element: <Programs /> },
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
       { path: "/apply", element: <Apply /> },
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
+      { path: "/test", element: <TestForm /> },
       { path: "*", element: <NotFound /> }, // optional 404
     ],
   },

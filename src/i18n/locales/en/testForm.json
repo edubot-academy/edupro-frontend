@@ -1,0 +1,14 @@
+{
+  "logic": {
+    "questions": {
+      "logic-1": {
+        "text": "If all apples are fruits and all fruits are edible, are apples edible?",
+        "choices": {
+          "yes": "Yes",
+          "no": "No",
+          "unknown": "Cannot be determined"
+        }
+      }
+    }
+  }
+}
