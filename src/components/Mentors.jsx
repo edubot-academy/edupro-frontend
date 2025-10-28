@@ -7,12 +7,12 @@ function Mentors() {
   const { t } = useTranslation(["common"]);
   const mentor = t("common:mentors_section.mentors", { returnObjects: true });
 
-  return (
-    <div className="flex flex-col items-center gap-6 lg:gap-10 px-4 sm:px-6 lg:px-8 py-10 sm:py-12 bg-[#f9f9f9] dark:bg-[#f5f5f5] transition-colors duration-300">
-      <div className="flex flex-col items-center w-full">
-        <h2 className="text-[#32215E] dark:text-[#32215E] font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-center mb-3 lg:mb-4">
-          {t("common:mentors_section.title")}
-        </h2>
+    return (
+        <div className="flex flex-col items-center gap-6 lg:gap-12 my-16 sm:px-6 lg:px-8">
+            <div className="flex flex-col items-center w-full">
+                <h2 className="text-[#32215E] font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-center mb-4 lg:mb-6">
+                    {t("common:mentors_section.title")}
+                </h2>
 
         <div className="border border-gray-300 text-[#555555] text-center p-2 sm:p-3 w-full max-w-xs sm:w-72 font-normal text-sm sm:text-base rounded-full dark:border-gray-400">
           {t("common:mentors_section.button")}
@@ -25,7 +25,7 @@ function Mentors() {
           {mentor.map((x, index) => (
             <div
               key={index}
-              className="flex flex-col items-center flex-shrink-0 sm:flex-shrink bg-white dark:bg-[#fafafa] rounded-2xl p-4 shadow-md"
+              className="flex flex-col items-center flex-shrink-0 sm:flex-shrink bg-white dark:bg-[#fafafa] rounded-2xl p-4"
             >
               <img
                 className="w-[200px] sm:w-[240px] md:w-[260px] lg:w-[280px] xl:w-[300px]
@@ -34,7 +34,7 @@ function Mentors() {
                 src={mentor1}
                 alt={x.name}
               />
-              <div className="flex items-center justify-between w-full bg-[#2C2C2C] dark:bg-[#5a5a5a] rounded-3xl px-3 sm:px-4 py-1.5 sm:py-2 mt-3">
+              <div className="flex items-center justify-between w-full bg-[#2C2C2C] rounded-3xl px-3 sm:px-4 py-1.5 sm:py-2 mt-3">
                 <div className="leading-tight">
                   <span className="text-white text-sm sm:text-base font-medium">
                     {x.name}
