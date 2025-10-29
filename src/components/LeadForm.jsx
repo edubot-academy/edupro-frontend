@@ -9,8 +9,8 @@ import { HiOutlineMail } from "react-icons/hi";
 import Button from "./UI/Button";
 export default function LeadForm({
     programOptions = [],
-    title = "Contact Us",
-    subtitle = "Have questions about our programs or admissions? Reach out anytime.",
+    title = "Биз менен байланыш",
+    subtitle = "Программалар же кабыл алуу тууралуу суроолоруңуз барбы? Ар дайым байланышсаңыз болот.",
     className = "uppercase"
 }) {
     const [form, setForm] = useState({
@@ -20,7 +20,7 @@ export default function LeadForm({
         company: "",
         courseName: programOptions[0]?.slug || "frontend",
         courseType: "online",
-        notes: "",
+        message: "",
     });
     const [loading, setLoading] = useState(false);
     const [ok, setOk] = useState(false);
@@ -35,20 +35,20 @@ export default function LeadForm({
 
     const contactSections = [
         {
-            title: "Мы в социальных сетях",
+            title: "Биз социалдык тармактарда",
             items: [
                 {
                     icon: <FaInstagram />,
                     bg: "#472799",
                     color: "#fff",
-                    href: "#",
-                    content: "@edupro.academy",
+                    href: "https://www.instagram.com/edupro_academy_kg/",
+                    content: "@edupro_academy_kg",
                 },
 
             ],
         },
         {
-            title: "Наши контакты",
+            title: "Биздин байланыштар",
             items: [
                 {
                     icon: <LuPhoneCall />,
@@ -86,7 +86,7 @@ export default function LeadForm({
         {
             name: "fullName",
             type: "text",
-            placeholder: "Full name",
+            placeholder: "Сиздин атыңыз",
             autoComplete: "name",
             required: true,
             col: "left"
@@ -94,7 +94,7 @@ export default function LeadForm({
         {
             name: "phone",
             type: "tel",
-            placeholder: "Phone (WhatsApp/Telegram)",
+            placeholder: "Номериниз (WhatsApp/Telegram)",
             autoComplete: "tel",
             required: false,
             col: "left"
@@ -104,17 +104,17 @@ export default function LeadForm({
             type: "email",
             placeholder: "Email",
             autoComplete: "email",
-            required: true,
+            required: false,
             col: "left"
         },
-        {
-            name: "company",
-            type: "text",
-            placeholder: "Company (optional)",
-            autoComplete: "organization",
-            required: false,
-            col: "right"
-        }
+        // {
+        //     name: "company",
+        //     type: "text",
+        //     placeholder: "Компания (опционально)",
+        //     autoComplete: "organization",
+        //     required: false,
+        //     col: "right"
+        // }
     ];
 
     const selectFields = [
@@ -127,7 +127,7 @@ export default function LeadForm({
             name: "courseType",
             options: [
                 { value: "online", label: "Online" },
-                { value: "offline", label: "Offline" }
+                { value: "campus", label: "Campus" }
             ],
             col: "right"
         }
@@ -149,7 +149,7 @@ export default function LeadForm({
 
         try {
             const utm = readPersistedUTMs();
-            const payload = { ...form, source: "WEBSITE", ...utm };
+            const payload = { ...form, source: "WEBSITE" };
             await submitLead(payload);
             setOk(true);
             setForm(prevForm => ({
@@ -158,7 +158,7 @@ export default function LeadForm({
                 email: "",
                 phone: "",
                 company: "",
-                notes: ""
+                message: ""
             }));
         } catch (error) {
             setErr("Could not submit. Please try again.");
@@ -226,7 +226,7 @@ export default function LeadForm({
     if (ok) {
         return (
             <div className="rounded-xl bg-violet-50 p-6 text-violet-800 text-center">
-                Thanks! Our team will contact you within 24 hours.
+                Баиланышканыңызга рахмат! Командабыз 24 саат ичинде байланышка чыгат.
             </div>
         );
     }
@@ -261,6 +261,13 @@ export default function LeadForm({
                                     .map(renderInputField)
                                 }
                                 {selectFields.map(renderSelectField)}
+                                <textarea
+                                    name="message"
+                                    placeholder="Комментарий"
+                                    value={form.message}
+                                    onChange={handleChange}
+                                    className={`w-full rounded-xl border border-slate-300 px-4 py-3 bg-[#f8f8f8] text-[#555555] focus:outline-none focus:ring-2 focus:ring-violet-500`}
+                                />
                             </div>
                         </div>
 
@@ -271,7 +278,7 @@ export default function LeadForm({
                                 disabled={loading}
                                 className="w-full lg:w-1/2 px-8 justify-center rounded-xl bg-violet-600 text-white font-semibold py-3 hover:bg-violet-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                             >
-                                {loading ? "Submitting…" : "Apply"}
+                                {loading ? "Жөнөтүү..." : "Жөнөтүү"}
                             </Button>
                         </div>
 

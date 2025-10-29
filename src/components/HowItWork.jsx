@@ -5,8 +5,7 @@ function HowItWork() {
   const features = t("common:career.features", { returnObjects: true });
 
   return (
-    <div className="flex flex-col items-center gap-6 lg:gap-12 px-4 sm:px-6 lg:px-8">
-      {/* Заголовок и кнопка */}
+    <div className="flex flex-col bg-white items-center gap-6 lg:gap-12 px-4 sm:px-6 lg:px-8 pb-12">
       <div className="flex flex-col items-center w-full max-w-4xl">
         <h2 className="text-[#32215E] font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-center mb-4 lg:mb-6">
           {t("common:career.title")}
@@ -16,11 +15,11 @@ function HowItWork() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 w-full max-w-7xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 w-full">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex flex-col items-start gap-1  justify-start border border-gray p-4 sm:p-6 rounded-xl lg:rounded-2xl hover:shadow-lg transition-shadow duration-300"
+            className="flex flex-col items-start gap-1  justify-start border border-gray p-4 sm:p-6 rounded-xl lg:rounded-2xl"
           >
             <div className="bg-[#472799] text-[#F5F5F5] rounded-full px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base">
               {index + 1}

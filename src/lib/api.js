@@ -12,6 +12,7 @@ async function postJSON(url, body) {
 }
 
 export async function submitLead(payload) {
+    console.log(payload);
     const url = CONFIG.USE_FORMSPREE ? CONFIG.FORMSPREE_ENDPOINT : CONFIG.CRM_ENDPOINT;
     const body = CONFIG.USE_FORMSPREE ? { ...payload, _subject: "New EduPro Lead" } : payload;
     return postJSON(url, body);

@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import PopularPrograms from "../components/PopularPrograms";
 import HeroBanner from "../components/HeroBanner";
 import HomePricing from "../components/Pricing";
@@ -17,7 +16,6 @@ import Mentors from "../components/Mentors";
 // - Language toggle mock (EN/KG/RU) with minimal copy variants
 
 export default function Home() {
-  const { t } = useTranslation(["common", "home"]);
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
@@ -26,9 +24,9 @@ export default function Home() {
       <HowItWork />
       <AboutEdupro />
       <Founders />
-      <Test />
       <HomePricing />
       <Test />
+      <QuestionsAboutEduPro />
       <Mentors />
 
       {/* CTA */}
