@@ -18,7 +18,7 @@ export default function LeadForm({
         email: "",
         phone: "",
         company: "",
-        courseName: programOptions[0]?.slug || "frontend",
+        courseName: programOptions[0]?.slug || "it",
         courseType: "online",
         message: "",
     });
@@ -27,10 +27,8 @@ export default function LeadForm({
     const [err, setErr] = useState("");
 
     const defaultProgramOptions = [
-        { slug: "frontend", title: "Frontend Engineering" },
-        { slug: "backend_django", title: "Backend (Django)" },
-        { slug: "flutter", title: "Mobile (Flutter)" },
-        { slug: "ux_ui", title: "UX/UI Design" },
+        { slug: "it", title: "Айти (IT)" },
+        { slug: "english", title: "Англис тили" },
     ];
 
     const contactSections = [
@@ -126,8 +124,8 @@ export default function LeadForm({
         {
             name: "courseType",
             options: [
-                { value: "online", label: "Online" },
-                { value: "campus", label: "Campus" }
+                { value: "online", label: "Онлайн" },
+                { value: "offline", label: "Оффлайн" }
             ],
             col: "right"
         }
