@@ -29,6 +29,7 @@ export default function Home() {
         <HowItWork />
         <AboutEdupro />
         <Founders />
+        <Comments />
         <HomePricing />
         <Test />
         <QuestionsAboutEduPro />
