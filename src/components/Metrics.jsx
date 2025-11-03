@@ -6,8 +6,8 @@ export default function Metrics() {
     const metrics = Array.isArray(metricsObj) ? metricsObj : Object.values(metricsObj);
 
     return (
-        <section className="w-full">
-            <div className="mx-16">
+        <section className="w-full flex justify-center">
+            <div className="lg:mx-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {metrics.map((m, i) => (
                         <div

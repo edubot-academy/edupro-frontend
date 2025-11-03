@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import bekten_azhymyrza from '../assets/bekten_azhymyrza.png';
+import bekten_azhymyrza from '../assets/image/bekten_azhymyrza.png';
 
 function FounderCard({ founder }) {
   return (
@@ -37,9 +37,9 @@ export default function Founders() {
 
   return (
     <section className="py-12 bg-gradient-to-t from-[#E7E7E7] to-[#EBE2FF]">
-      <div className="container mx-auto px-4 max-w-6xl">
+      <div className="container mx-auto px-10">
         <div className="text-center">
-          <h2 className="text-3xl font-bold uppercase mb-4">{t("aboutFounders.title")}</h2>
+          <h2 className="md:text-[50px] font-bold text-[#32215E] mb-6 text-[30px] leading-[120%] tracking-[1%] text-center uppercase">{t("aboutFounders.title")}</h2>
           <p className="bg-white px-4 py-2 rounded-full inline-block">{t("aboutFounders.button")}</p>
         </div>
 
