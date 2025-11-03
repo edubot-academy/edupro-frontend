@@ -16,8 +16,8 @@ function AboutEdupro() {
   const icons = { world, computer, person, file };
 
   return (
-    <div className="bg-gray-100  flex justify-center mb-[15rem]">
-      <div className="bg-white p-[2.5rem] sm:p-[3.75rem] rounded-2xl mt-[0.1rem] w-[120.75rem] h-[30rem] max-w-full">
+    <div className="bg-[#F8F8F8]  flex justify-center mb-[30rem] lg:mb-60">
+      <div className="p-[1rem] sm:p-[2rem] rounded-2xl mt-[0.1rem] w-[120.75rem] h-[30rem] max-w-full">
         <div className="text-center mb-[2.5rem] sm:mb-[3rem]">
           <h2
             className="text-[2rem] sm:text-[3rem] font-bold mb-[1rem] sm:mb-[1.25rem]"
@@ -31,7 +31,7 @@ function AboutEdupro() {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[1.5rem] md:gap-[2.5rem]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[1.5rem] md:gap-[5rem]">
           {/* Левая часть */}
           <div className="space-y-[1rem] sm:space-y-[1.5rem]">
             {features.map((feature, index) => (
@@ -69,7 +69,7 @@ function AboutEdupro() {
             {extraFeatures.map((feature, index) => (
               <div
                 key={index}
-                className="flex items-center gap-[0.75rem] sm:gap-[1rem] border-white shadow-lg p-[0.75rem] sm:p-[0.75rem] rounded-lg"
+                className="flex items-center gap-[0.75rem] sm:gap-[1rem] border-white bg-white p-[0.75rem] sm:p-[0.75rem] rounded-lg"
               >
                 <img
                   src={icons[feature.icon] || check}

@@ -71,9 +71,9 @@ export default function PopularPrograms() {
   }
 
   return (
-    <section className="relative w-full mb-10">
+    <section className="relative bg-white w-full">
       {/* Земля */}
-      <div className="flex justify-center relative z-10 pt-20">
+      <div className="flex justify-center relative z-10">
         <img
           src={earth}
           alt="Earth"

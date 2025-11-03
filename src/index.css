@@ -1,8 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -34,7 +39,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -53,7 +58,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -78,19 +83,3 @@ button:focus-visible {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-/* 
-.clip-path-custom {
-  clip-path: none;
-}
-
-@media (min-width: 768px) {
-  .clip-path-custom {
-    clip-path: polygon( 0% 20%,
-  60% 20%,
-  60% 0%,
-  100% 50%,
-  60% 100%,
-  60% 80%,
-  0% 80%);
-  }
-} */
