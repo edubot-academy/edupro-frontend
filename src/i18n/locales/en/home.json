@@ -49,6 +49,32 @@
       }
     ]
   },
+  "courseDetail": {
+    "title": "COURS FRONTEND",
+    "formatName": "Format",
+    "format": "online / offline (optional)",
+    "willLearnName": "What you will learn",
+    "willLearns": [
+      "Website layout using HTML5, CSS3",
+      "Working with JavaScript and modern frameworks",
+      "Creating interfaces with React, Tailwind",
+      "Connecting and working with the API",
+      "Git and GitHub – Team Development",
+      "Redux, TypeScript — Advanced Frontend",
+      "Preparing for real interviews"
+    ],
+    "canDoAfterName": "After the course you will be able",
+    "canDoAfter": [
+      "Build modern web applications from scratch",
+      "Work in a team with developers",
+      "Interview for a Junior Frontend Developer position",
+      "Начать зарабатывать как фрилансер или в IT-компании"
+    ],
+    "price":"Course fee",
+    "som":"som",
+    "start":"Start of training",
+    "button":"Buy a course"
+  },
   "aboutEdupro": {
     "title": "WHY EDUPRO",
     "button": "YOUR CAREER PATH",
