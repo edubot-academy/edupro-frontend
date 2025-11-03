@@ -10,7 +10,7 @@ function Test() {
             <h3 className="text-[#32215E] font-bold text-4xl text-center max-w-xl">
                 {t("common:freeTest.title")}
             </h3>
-            <p className="font-normal text-base text-center max-w-4xl">
+           <p className="font-normal text-[#555555] text-base text-center max-w-4xl">
                 {t("common:freeTest.text")}
             </p>
             <Button>
