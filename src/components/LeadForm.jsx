@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { submitLead } from "../lib/api";
 import { getUTMs, readPersistedUTMs } from "../lib/utm";
 import { FaInstagram } from "react-icons/fa";
@@ -7,12 +8,18 @@ import { LuPhoneCall } from "react-icons/lu";
 import { HiLocationMarker } from "react-icons/hi";
 import { HiOutlineMail } from "react-icons/hi";
 import Button from "./UI/Button";
+
 export default function LeadForm({
     programOptions = [],
-    title = "Биз менен байланыш",
-    subtitle = "Программалар же кабыл алуу тууралуу суроолоруңуз барбы? Ар дайым байланышсаңыз болот.",
     className = "uppercase"
 }) {
+    const { t } = useTranslation(["contactPage"]);
+
+    // Функция для безопасного получения переводов
+    const getTranslation = (key) => {
+        return t(key, { defaultValue: key });
+    };
+
     const [form, setForm] = useState({
         fullName: "",
         email: "",
@@ -27,64 +34,73 @@ export default function LeadForm({
     const [err, setErr] = useState("");
 
     const defaultProgramOptions = [
-        { slug: "it", title: "Айти (IT)" },
-        { slug: "english", title: "Англис тили" },
+        { slug: "it", title: getTranslation("contactUs.programs.it") },
+        { slug: "english", title: getTranslation("contactUs.programs.english") },
     ];
 
-    const contactSections = [
-        {
-            title: "Биз социалдык тармактарда",
-            items: [
-                {
-                    icon: <FaInstagram />,
-                    bg: "#472799",
-                    color: "#fff",
-                    href: "https://www.instagram.com/edupro_academy_kg/",
-                    content: "@edupro_academy_kg",
-                },
-
-            ],
-        },
-        {
-            title: "Биздин байланыштар",
-            items: [
-                {
-                    icon: <LuPhoneCall />,
-                    bg: "#472799",
-                    color: "#fff",
-                    content: "+996 550 942 433",
-                },
-            ],
-        },
-        {
-            title: "Адрес",
-            items: [
-                {
-                    icon: <HiLocationMarker />,
-                    bg: "#472799",
-                    color: "#fff",
-                    content: "Bishkek, Kyrgyzstan",
-                },
-            ],
-        },
-        {
-            title: "Email",
-            items: [
-                {
-                    icon: <HiOutlineMail />,
-                    bg: "#472799",
-                    color: "#fff",
-                    content: "info@edupro.academy",
-                },
-            ],
-        },
-    ];
+   const contactSections = [
+    {
+        title: getTranslation("contactUs.infoBlock.blocks.0.title"),
+        items: [
+            {
+                icon: <FaInstagram />,
+                bg: "#472799",
+                color: "#fff",
+                href: "https://www.instagram.com/edupro_academy_kg/",
+                content: getTranslation("contactUs.contacts.instagram"),
+            },
+            {
+                icon: <LiaTelegramPlane />,
+                bg: "#472799",
+                color: "#fff",
+                href: "https://t.me/your_telegram_account",
+                content: getTranslation("contactUs.contacts.telegram"),
+            }
+        ],
+    },
+    {
+        title: getTranslation("contactUs.infoBlock.blocks.1.title"),
+        items: [
+            {
+                icon: <LuPhoneCall />,
+                bg: "#472799",
+                color: "#fff",
+                href: "https://wa.me/996555123456", // ← ИЗМЕНИТЕ ЭТУ СТРОКУ
+                content: getTranslation("contactUs.contacts.phone"),
+            },
+        ],
+    },
+    {
+        title: getTranslation("contactUs.infoBlock.blocks.2.title"),
+        items: [
+            {
+                icon: <HiLocationMarker />,
+                bg: "#472799",
+                color: "#fff",
+                href: "https://maps.google.com/?q=ваш_адрес",
+                content: getTranslation("contactUs.contacts.address"),
+            },
+        ],
+    },
+    {
+        title: getTranslation("contactUs.infoBlock.blocks.3.title"),
+        items: [
+            {
+                icon: <HiOutlineMail />,
+                bg: "#472799",
+                color: "#fff",
+                href: "mailto:your_email@example.com",
+                content: getTranslation("contactUs.contacts.email"),
+            },
+        ],
+    },
+];
 
     const inputFields = [
         {
             name: "fullName",
             type: "text",
-            placeholder: "Сиздин атыңыз",
+            placeholder: getTranslation("contactUs.formFields.fullName"),
             autoComplete: "name",
             required: true,
             col: "left"
@@ -92,7 +108,7 @@ export default function LeadForm({
         {
             name: "phone",
             type: "tel",
-            placeholder: "Номериниз (WhatsApp/Telegram)",
+            placeholder: getTranslation("contactUs.formFields.phone"),
             autoComplete: "tel",
             required: false,
             col: "left"
@@ -100,19 +116,11 @@ export default function LeadForm({
         {
             name: "email",
             type: "email",
-            placeholder: "Email",
+            placeholder: getTranslation("contactUs.formFields.email"),
             autoComplete: "email",
             required: false,
             col: "left"
         },
-        // {
-        //     name: "company",
-        //     type: "text",
-        //     placeholder: "Компания (опционально)",
-        //     autoComplete: "organization",
-        //     required: false,
-        //     col: "right"
-        // }
     ];
 
     const selectFields = [
@@ -124,8 +132,8 @@ export default function LeadForm({
         {
             name: "courseType",
             options: [
-                { value: "online", label: "Онлайн" },
-                { value: "offline", label: "Оффлайн" }
+                { value: "online", label: getTranslation("contactUs.formFields.online") },
+                { value: "offline", label: getTranslation("contactUs.formFields.offline") }
             ],
             col: "right"
         }
@@ -159,7 +167,7 @@ export default function LeadForm({
                 message: ""
             }));
         } catch (error) {
-            setErr("Could not submit. Please try again.");
+            setErr(getTranslation("contactUs.errors.submission"));
             console.error("Submission error:", error);
         } finally {
             setLoading(false);
@@ -210,11 +218,23 @@ export default function LeadForm({
             <div
                 className="w-12 h-12 flex items-center justify-center rounded-full shrink-0 transition-transform hover:scale-110 hover:shadow-md cursor-pointer"
                 style={{ backgroundColor: item.bg, color: item.color }}
+                onClick={() => {
+                    if (item.href) {
+                        window.open(item.href, '_blank', 'noopener,noreferrer');
+                    }
+                }}
             >
                 {item.icon}
             </div>
             {item.content && (
-                <div className="text-[#555] text-sm whitespace-pre-line">
+                <div 
+                    className="text-[#555] text-sm whitespace-pre-line cursor-pointer hover:underline transition-all"
+                    onClick={() => {
+                        if (item.href) {
+                            window.open(item.href, '_blank', 'noopener,noreferrer');
+                        }
+                    }}
+                >
                     {item.content}
                 </div>
             )}
@@ -224,7 +244,7 @@ export default function LeadForm({
     if (ok) {
         return (
             <div className="rounded-xl bg-violet-50 p-6 text-violet-800 text-center">
-                Баиланышканыңызга рахмат! Командабыз 24 саат ичинде байланышка чыгат.
+                {getTranslation("contactUs.successMessage")}
             </div>
         );
     }
@@ -233,18 +253,16 @@ export default function LeadForm({
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 pt-10 pb-16">
             <div className="text-center mb-8 lg:mb-12">
                 <h2 className={`text-[#32215E] font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-center mb-4 lg:mb-6 ${className}`}>
-                    {title}
+                    {getTranslation("contactUs.title")}
                 </h2>
                 <div className="border border-gray text-[#555555] text-center p-2 sm:p-3 font-normal text-sm sm:text-base rounded-full mx-auto inline-block px-4">
-                    {subtitle}
+                    {getTranslation("contactUs.subtitle")}
                 </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-                {/* Левая сторона - форма */}
                 <div>
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                            {/* Левая колонка инпутов */}
                             <div className="space-y-4">
                                 {inputFields
                                     .filter(field => field.col === "left")
@@ -252,7 +270,6 @@ export default function LeadForm({
                                 }
                             </div>
 
-                            {/* Правая колонка инпутов */}
                             <div className="space-y-4">
                                 {inputFields
                                     .filter(field => field.col === "right")
@@ -261,22 +278,22 @@ export default function LeadForm({
                                 {selectFields.map(renderSelectField)}
                                 <textarea
                                     name="message"
-                                    placeholder="Комментарий"
+                                    placeholder={getTranslation("contactUs.formFields.message")}
                                     value={form.message}
                                     onChange={handleChange}
+                                    style={{ height: '48px' }}
                                     className={`w-full rounded-xl border border-slate-300 px-4 py-3 bg-[#f8f8f8] text-[#555555] focus:outline-none focus:ring-2 focus:ring-violet-500`}
                                 />
                             </div>
                         </div>
 
-                        {/* Кнопка */}
                         <div className="pt-2 flex justify-center">
                             <Button
                                 type="submit"
                                 disabled={loading}
-                                className="w-full lg:w-1/2 px-8 justify-center rounded-xl bg-violet-600 text-white font-semibold py-3 hover:bg-violet-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                                className="w-full lg:w-1/2 px-8 justify-center rounded-full bg-violet-600 text-white font-semibold py-3 hover:bg-violet-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                             >
-                                {loading ? "Жөнөтүү..." : "Жөнөтүү"}
+                                {loading ? getTranslation("contactUs.buttons.sending") : getTranslation("contactUs.buttons.submit")}
                             </Button>
                         </div>
 
@@ -288,7 +305,6 @@ export default function LeadForm({
                     </form>
                 </div>
 
-                {/* Правая сторона - контактная информация */}
                 <div className="flex flex-col justify-center mb-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {contactSections.map((section, index) => (

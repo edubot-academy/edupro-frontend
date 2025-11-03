@@ -2,14 +2,21 @@
   "contactUs": {
     "title": "БИЗ МЕНЕН БАЙЛАНЫШ",
     "subtitle": "Программалар же кабыл алуу тууралуу суроолоруңуз барбы? Ар дайым байланышсаңыз болот.",
-    "formBlock": {
-      "columns": [
-        { "placeholder": "Сиздин атыңыз" },
-        { "placeholder": "Сиздин номерди калтырыңыз" },
-        { "placeholder": "FrontEnd инженер" },
-        { "placeholder": "Офлайн" }
-      ],
-      "button": "Катталуу"
+    "formFields": {
+      "fullName": "Сиздин атыңыз",
+      "phone": "Сиздин номерди калтырыңыз",
+      "email": "Email",
+      "message": "Комментарий",
+      "online": "Онлайн",
+      "offline": "Оффлайн"
+    },
+    "programs": {
+      "it": "Айти (IT)",
+      "english": "Англис тили"
+    },
+    "buttons": {
+      "submit": "Катталуу",
+      "sending": "Жөнөтүлүүдө..."
     },
     "infoBlock": {
       "blocks": [
@@ -18,6 +25,17 @@
         { "title": "Дарек" },
         { "title": "Email" }
       ]
+    },
+    "contacts": {
+      "instagram": "@edupro_academy_kg",
+      "telegram": "@edupro_academy",
+       "phone": "+996 501 503 452",
+      "address": "Бишкек, Кыргызстан",
+      "email": "learningedubot@gmail.com"
+    },
+    "successMessage": "Баиланышканыңызга рахмат! Командабыз 24 саат ичинде байланышка чыгат.",
+    "errors": {
+      "submission": "Жөнөтүү ишке ашкан жок. Сураныч, кайра аракет кылыңыз."
     }
   }
 }

@@ -2,14 +2,21 @@
   "contactUs": {
     "title": "СВЯЗАТЬСЯ С НАМИ",
     "subtitle": "Есть вопросы о наших программах или приёме? Свяжитесь с нами в любое время.",
-    "formBlock": {
-      "columns": [
-        { "placeholder": "Ваше имя" },
-        { "placeholder": "Оставьте свой номер" },
-        { "placeholder": "FrontEnd инженер" },
-        { "placeholder": "Офлайн" }
-      ],
-      "button": "Записаться"
+    "formFields": {
+      "fullName": "Ваше имя",
+      "phone": "Оставьте свой номер",
+      "email": "Email",
+      "message": "Комментарий",
+      "online": "Онлайн",
+      "offline": "Офлайн"
+    },
+    "programs": {
+      "it": "Айти (IT)",
+      "english": "Английский язык"
+    },
+    "buttons": {
+      "submit": "Записаться",
+      "sending": "Отправка..."
     },
     "infoBlock": {
       "blocks": [
@@ -18,6 +25,17 @@
         { "title": "Адрес" },
         { "title": "Email" }
       ]
+    },
+    "contacts": {
+      "instagram": "@edupro_academy_kg",
+      "telegram": "@edupro_academy",
+      "phone": "+996 501 503 452",
+      "address": "Бишкек, Кыргызстан",
+      "email": "learningedubot@gmail.com"
+    },
+    "successMessage": "Спасибо за обращение! Наша команда свяжется с вами в течение 24 часов.",
+    "errors": {
+      "submission": "Не удалось отправить. Пожалуйста, попробуйте еще раз."
     }
   }
 }
