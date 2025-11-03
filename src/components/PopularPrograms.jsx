@@ -1,9 +1,9 @@
 import React from 'react';
-import earth from '../assets/earth.png';
-import bg from '../assets/violet_bg.png';
+import earth from '../assets/image/earth.png';
+import bg from '../assets/image/violet_bg.png';
 import Button from "./UI/Button";
 import { useTranslation } from 'react-i18next';
-import mobile_bg from '../assets/bg_mobile.png';
+import mobile_bg from '../assets/image/bg_mobile.png';
 
 import {
   SiHtml5, SiCss3, SiReact, SiJavascript, SiTypescript, SiRedux, SiGithub, SiGit,

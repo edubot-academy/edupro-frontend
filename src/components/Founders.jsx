@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import bekten_azhymyrza from '../assets/bekten_azhymyrza.png';
+import bekten_azhymyrza from '../assets/image/bekten_azhymyrza.png';
 
 function FounderCard({ founder }) {
   return (
