@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import Comments from "../components/Comments";
 import PopularPrograms from "../components/PopularPrograms";
 import HeroBanner from "../components/HeroBanner";
 import HomePricing from "../components/Pricing";
@@ -28,6 +29,7 @@ export default function Home() {
         <HowItWork />
         <AboutEdupro />
         <Founders />
+        <Comments />
         <HomePricing />
         <Test />
         <QuestionsAboutEduPro />
