@@ -1,10 +1,10 @@
 {
   "hero": {
     "eyebrow": "Future-Ready Education",
-    "title": "Learn skills that get you hired.",
+    "title": "Experienced mentors who help our students build a bright career",
     "subtitle": "EduPro Academy blends practical projects, mentorship, and AI-assisted learning to turn beginners into job-ready talent.",
     "ctaPrimary": "Apply now",
-    "ctaSecondary": "Download brochure"
+    "ctaSecondary": "EFFECTIVE PROGRAM"
   },
   "metrics": [
     {
@@ -97,13 +97,24 @@
       }
     ],
     "extraFeatures": [
-      { "icon": "world", "title": "English language and soft skills" },
-      { "icon": "computer", "title": "Teamwork with Git and sprints" },
-      { "icon": "person", "title": "Internship support" },
-      { "icon": "file", "title": "Portfolio ready by week 8" }
+      {
+        "icon": "world",
+        "title": "English language and soft skills"
+      },
+      {
+        "icon": "computer",
+        "title": "Teamwork with Git and sprints"
+      },
+      {
+        "icon": "person",
+        "title": "Internship support"
+      },
+      {
+        "icon": "file",
+        "title": "Portfolio ready by week 8"
+      }
     ]
   },
-
   "aboutFounders": {
     "title": "FOUNDERS OF EduPro",
     "button": "YOUR CAREER PATH",
@@ -144,11 +155,21 @@
     },
     "quickLinks": {
       "title": "Quick Links",
-      "links": ["Home", "Program", "About Us", "Our Courses", "Contacts"]
+      "links": [
+        "Home",
+        "Program",
+        "About Us",
+        "Our Courses",
+        "Contacts"
+      ]
     },
     "programs": {
       "title": "Programs",
-      "items": ["Frontend Engineering", "Django Backend", "UX/UI Design"]
+      "items": [
+        "Frontend Engineering",
+        "Django Backend",
+        "UX/UI Design"
+      ]
     },
     "contact": {
       "title": "Contact",

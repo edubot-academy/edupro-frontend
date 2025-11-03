@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import earth from '../assets/earth.png';
-import bg from '../assets/violet_bg.png';
+import earth from '../assets/image/earth.png';
+import bg from '../assets/image/violet_bg.png';
 import Button from "./UI/Button";
 import { useTranslation } from 'react-i18next';
-import mobile_bg from '../assets/bg_mobile.png';
+import mobile_bg from '../assets/image/bg_mobile.png';
 
 import {
   SiHtml5, SiCss3, SiReact, SiJavascript, SiTypescript, SiRedux, SiGithub, SiGit,
@@ -73,9 +73,9 @@ export default function PopularPrograms() {
   }
 
   return (
-    <section className="relative w-full mb-10">
+    <section className="relative bg-white w-full">
       {/* Земля */}
-      <div className="flex justify-center relative z-10 pt-20">
+      <div className="flex justify-center relative z-10">
         <img
           src={earth}
           alt="Earth"
