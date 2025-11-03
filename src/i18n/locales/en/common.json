@@ -10,6 +10,29 @@
     "about": "About",
     "contact": "Contact"
   },
+  "career": {
+    "title": "Start Your Journey",
+    "button": "YOUR CAREER PATH",
+    "allNewsButton": "All news",
+    "features": [
+      {
+        "title": "Learn by Building",
+        "text": "Short lessons + real projects guided by mentors."
+      },
+      {
+        "title": "Get Feedback",
+        "text": "Receive comments and guidance from experts."
+      },
+      {
+        "title": "Build a Portfolio",
+        "text": "Capstone projects that impress recruiters."
+      },
+      {
+        "title": "Get Job-Ready",
+        "text": "Interview prep, tips, and job search support."
+      }
+    ]
+  },
   "pricing": {
     "title": "Pricing Plans",
     "button": "YOUR CAREER PATH",
@@ -47,6 +70,11 @@
       }
     ]
   },
+  "freeTest": {
+    "title": "Take the test for free and find out your level!",
+    "text": "Answer a few simple questions and get instant results. Determine your current level of knowledge and understand where to start learning. The test is completely free and takes no more than 5 minutes.",
+    "button": "Take the Test"
+  },
   "faq": {
     "title": "FREQUENTLY ASKED QUESTIONS",
     "button": "YOUR CAREER PATH",
@@ -66,33 +94,6 @@
       {
         "q": "WILL YOU HELP ME FIND A JOB?",
         "description": "Yes. We provide portfolio guidance, mock interviews, and connections to our partner network."
-      }
-    ]
-  },
-  "freeTest": {
-    "title": "Take the test for free and find out your level!",
-    "text": "Answer a few simple questions and get instant results. Determine your current level of knowledge and understand where to start learning. The test is completely free and takes no more than 5 minutes.",
-    "button": "Take the Test"
-  },
-  "career": {
-    "title": "Start Your Journey",
-    "button": "YOUR CAREER PATH",
-    "features": [
-      {
-        "title": "Learn by Building",
-        "text": "Short lessons + real projects guided by mentors."
-      },
-      {
-        "title": "Get Feedback",
-        "text": "Receive comments and guidance from experts."
-      },
-      {
-        "title": "Build a Portfolio",
-        "text": "Capstone projects that impress recruiters."
-      },
-      {
-        "title": "Get Job-Ready",
-        "text": "Interview prep, tips, and job search support."
       }
     ]
   },
@@ -119,7 +120,7 @@
     ]
   },
   "consultation": {
-    "title": "ANY QUESTIONS? WE’LL CONSULT YOU FOR FREE!",
+    "title": "ANY QUESTIONS? WE'LL CONSULT YOU FOR FREE!",
     "subtitle": "Submit your request in 3 minutes. Our team will contact you within 24 hours.",
     "form": {
       "name": "Your name",
@@ -138,6 +139,9 @@
     }
   },
   "footer": {
+    "about": {
+      "text": "Elevate your career, income, and life to a new level. SkillUp has helped over 400 students land their first IT job. Be the next one and change your life today!"
+    },
     "quickLinks": {
       "title": "Quick Links",
       "links": [
@@ -158,6 +162,8 @@
       "telegram": "Instagram",
       "addressPrefix": "Address",
       "address": "Ахунбаев 129Б, Bishkek, Kyrgyzstan"
-    }
-  }
+    },
+    "copyright": "© 2021–2025 SkillUP | Privacy Policy | Terms of Use"
+  },
+  "view": "View"
 }
