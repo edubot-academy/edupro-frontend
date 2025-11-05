@@ -1,3 +1,4 @@
+// Компонент LeadForm
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaInstagram } from "react-icons/fa";
@@ -5,6 +6,7 @@ import { LiaTelegramPlane } from "react-icons/lia";
 import { LuPhoneCall } from "react-icons/lu";
 import { HiLocationMarker } from "react-icons/hi";
 import { HiOutlineMail } from "react-icons/hi";
+import { submitLead } from "../lib/api";
 import Button from "./UI/Button";
 
 export default function LeadForm({
@@ -19,10 +21,9 @@ export default function LeadForm({
     };
 
     const [form, setForm] = useState({
-        name: "",
+        fullName: "", // ИЗМЕНЕНО: name → fullName
         email: "", 
         phone: "",
-        company: "",
         courseName: programOptions[0]?.slug || "it",
         courseType: "online",
         message: "",
@@ -36,26 +37,29 @@ export default function LeadForm({
 
     async function onSubmit(e) {
         e.preventDefault();
+        
+        // ДОБАВЛЕНО: базовая валидация
+        if (!form.email && !form.phone) {
+            alert("Please provide email or phone");
+            return;
+        }
+        
         setLoading(true);
         try {
-            // For MVP, send via Formspree - ЗАМЕНИ XXXXX НА СВОЙ ID
-            await fetch("https://formspree.io/f/XXXXX", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(form),
-            });
+            // ИСПРАВЛЕНО: убрано преобразование полей, так как теперь используем fullName
+            const payload = { ...form, source: "WEBSITE"};
+            await submitLead(payload);
             setOk(true);
             setForm({ 
-                name: "", 
+                fullName: "", // ИЗМЕНЕНО: name → fullName
                 email: "", 
                 phone: "",
-                company: "",
                 courseName: programOptions[0]?.slug || "it",
                 courseType: "online",
                 message: "" 
             });
-        } catch {
-            alert("Error sending message. Please try again later.");
+        } catch (error) {
+            alert(error.message || "Error sending message. Please try again later.");
         } finally {
             setLoading(false);
         }
@@ -126,7 +130,7 @@ export default function LeadForm({
 
     const inputFields = [
         {
-            name: "name", // Изменил fullName → name
+            name: "fullName", // ИЗМЕНЕНО: name → fullName
             type: "text",
             placeholder: getTranslation("contactUs.formFields.fullName"),
             autoComplete: "name",
