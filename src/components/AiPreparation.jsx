@@ -2,8 +2,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../components/UI/Button";
 import checkMarks from "../assets/svg/checkMarks.svg";
-import world from "../assets/icons/world.svg";
-import computer from "../assets/icons/computer.svg";
+import world from '../assets/svg/world.svg'
+import computer from "../assets/svg/computer.svg";
 
 export default function AiPreparation() {
   const { t } = useTranslation("aboutPage");

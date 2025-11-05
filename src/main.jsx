@@ -11,7 +11,7 @@ import Pricing from "./pages/Pricing";
 import Apply from "./pages/Apply";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-
+import News from "./pages/News";
 import "./index.css";
 import LanguageProvider from './providers/LanguageProvider';
 
@@ -34,6 +34,7 @@ const router = createBrowserRouter([
       { path: "/apply", element: <Apply /> },
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
+      {path: "/news", element: <News /> },
       { path: "*", element: <NotFound /> }, // optional 404
     ],
   },
