@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { submitLead } from "../lib/api";
-import { getUTMs, readPersistedUTMs } from "../lib/utm";
 import { FaInstagram } from "react-icons/fa";
 import { LiaTelegramPlane } from "react-icons/lia";
 import { LuPhoneCall } from "react-icons/lu";
@@ -21,8 +19,8 @@ export default function LeadForm({
     };
 
     const [form, setForm] = useState({
-        fullName: "",
-        email: "",
+        name: "",
+        email: "", 
         phone: "",
         company: "",
         courseName: programOptions[0]?.slug || "it",
@@ -31,7 +29,37 @@ export default function LeadForm({
     });
     const [loading, setLoading] = useState(false);
     const [ok, setOk] = useState(false);
-    const [err, setErr] = useState("");
+
+    function onChange(e) {
+        setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
+    }
+
+    async function onSubmit(e) {
+        e.preventDefault();
+        setLoading(true);
+        try {
+            // For MVP, send via Formspree - ЗАМЕНИ XXXXX НА СВОЙ ID
+            await fetch("https://formspree.io/f/XXXXX", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(form),
+            });
+            setOk(true);
+            setForm({ 
+                name: "", 
+                email: "", 
+                phone: "",
+                company: "",
+                courseName: programOptions[0]?.slug || "it",
+                courseType: "online",
+                message: "" 
+            });
+        } catch {
+            alert("Error sending message. Please try again later.");
+        } finally {
+            setLoading(false);
+        }
+    }
 
     const defaultProgramOptions = [
         { slug: "it", title: getTranslation("contactUs.programs.it") },
@@ -65,7 +93,7 @@ export default function LeadForm({
                 icon: <LuPhoneCall />,
                 bg: "#472799",
                 color: "#fff",
-                href: "https://wa.me/996555123456", // ← ИЗМЕНИТЕ ЭТУ СТРОКУ
+                href: "https://wa.me/996555123456",
                 content: getTranslation("contactUs.contacts.phone"),
             },
         ],
@@ -98,7 +126,7 @@ export default function LeadForm({
 
     const inputFields = [
         {
-            name: "fullName",
+            name: "name", // Изменил fullName → name
             type: "text",
             placeholder: getTranslation("contactUs.formFields.fullName"),
             autoComplete: "name",
@@ -139,41 +167,6 @@ export default function LeadForm({
         }
     ];
 
-    useEffect(() => {
-        getUTMs();
-    }, []);
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setForm(prevForm => ({ ...prevForm, [name]: value }));
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setLoading(true);
-        setErr("");
-
-        try {
-            const utm = readPersistedUTMs();
-            const payload = { ...form, source: "WEBSITE" };
-            await submitLead(payload);
-            setOk(true);
-            setForm(prevForm => ({
-                ...prevForm,
-                fullName: "",
-                email: "",
-                phone: "",
-                company: "",
-                message: ""
-            }));
-        } catch (error) {
-            setErr(getTranslation("contactUs.errors.submission"));
-            console.error("Submission error:", error);
-        } finally {
-            setLoading(false);
-        }
-    };
-
     const renderInputField = (field) => (
         <input
             key={field.name}
@@ -182,7 +175,7 @@ export default function LeadForm({
             required={field.required}
             placeholder={field.placeholder}
             value={form[field.name]}
-            onChange={handleChange}
+            onChange={onChange}
             autoComplete={field.autoComplete}
             className="w-full rounded-xl border border-slate-300 px-4 py-3 bg-[#f8f8f8] text-[#555555] focus:outline-none focus:ring-2 focus:ring-violet-500"
         />
@@ -193,7 +186,7 @@ export default function LeadForm({
             <select
                 name={field.name}
                 value={form[field.name]}
-                onChange={handleChange}
+                onChange={onChange}
                 className="w-full rounded-xl border border-slate-300 px-4 py-3 bg-[#f8f8f8] text-[#555555] pr-10 appearance-none focus:outline-none focus:ring-2 focus:ring-violet-500"
             >
                 {field.options.map(option => (
@@ -261,7 +254,7 @@ export default function LeadForm({
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
                 <div>
-                    <form onSubmit={handleSubmit} className="space-y-6">
+                    <form onSubmit={onSubmit} className="space-y-6">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                             <div className="space-y-4">
                                 {inputFields
@@ -280,7 +273,7 @@ export default function LeadForm({
                                     name="message"
                                     placeholder={getTranslation("contactUs.formFields.message")}
                                     value={form.message}
-                                    onChange={handleChange}
+                                    onChange={onChange}
                                     style={{ height: '48px' }}
                                     className={`w-full rounded-xl border border-slate-300 px-4 py-3 bg-[#f8f8f8] text-[#555555] focus:outline-none focus:ring-2 focus:ring-violet-500`}
                                 />
@@ -296,12 +289,6 @@ export default function LeadForm({
                                 {loading ? getTranslation("contactUs.buttons.sending") : getTranslation("contactUs.buttons.submit")}
                             </Button>
                         </div>
-
-                        {err && (
-                            <div className="text-center text-sm text-red-600">
-                                {err}
-                            </div>
-                        )}
                     </form>
                 </div>
 
