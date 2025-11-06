@@ -124,12 +124,12 @@ export default function PopularPrograms() {
       {/* Карточки программ */}
       <div className="
   absolute left-1/2 transform -translate-x-1/2
-  -translate-y-[50vh]    /* мобильные до 375px */
-  [@media(min-width:375px)]:-translate-y-[55vh]  /* 375px */
-  [@media(min-width:425px)]:-translate-y-[60vh]  /* 425px */
-  md:-translate-y-[35vh]   /* планшеты */
-  lg:-translate-y-[15vh]   /* десктопы */
-  xl:-translate-y-[10vh]   /* большие десктопы */
+  top-[33%]     /* мобильные */
+  xs:top-[50%]  /* маленькие мобильные */
+  sm:top-[55%]  /* средние мобильные */
+  md:top-[65%]  /* планшеты */
+  lg:top-[75%]  /* десктопы */
+  xl:top-[60%]  /* большие десктопы */
   w-full max-w-9xl px-4 sm:px-6 lg:px-8 z-20
 ">
         <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-4 md:overflow-visible md:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
