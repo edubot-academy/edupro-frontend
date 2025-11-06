@@ -1,5 +1,3 @@
-import { useTranslation } from "react-i18next";
-import Comments from "../components/Comments";
 import PopularPrograms from "../components/PopularPrograms";
 import HeroBanner from "../components/HeroBanner";
 import HomePricing from "../components/Pricing";
@@ -18,34 +16,38 @@ import Mentors from "../components/Mentors";
 // - Language toggle mock (EN/KG/RU) with minimal copy variants
 
 export default function Home() {
-  const { t } = useTranslation(["common", "home"]);
-  const programsObj = t("home:programs.items", { returnObjects: true });
-  const programs = Array.isArray(programsObj)
-    ? programsObj
-    : Object.values(programsObj); return (
-      <div className="min-h-screen bg-slate-50 text-slate-900">
-        <HeroBanner />
-        <PopularPrograms />
-        <HowItWork />
-        <AboutEdupro />
-        <Founders />
-        <Comments />
-        <HomePricing />
-        <Test />
-        <QuestionsAboutEduPro />
-        <Mentors />
 
-        {/* CTA */}
-        <section
-          id="apply"
-          className="py-16 bg-gradient-to-br from-emerald-50 to-blue-50"
-        >
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold">{t("home:cta.title")}</h2>
-            <p className="text-slate-600 mt-2">{t("home:cta.subtitle")}</p>
-            <LeadForm />
-          </div>
-        </section>
-      </div>
-    );
+  return (
+    <div className="min-h-screen bg-slate-50 text-slate-900">
+      <HeroBanner />
+      <PopularPrograms />
+      <HowItWork />
+      <AboutEdupro />
+      <Founders />
+      <HomePricing />
+      <Test />
+      <QuestionsAboutEduPro />
+      <Mentors />
+
+      {/* CTA */}
+      <section
+        id="apply"
+        className="py-16"
+      >
+        <div className="text-center">
+          <LeadForm
+            title={
+              <>
+                остались вопросы?<br />
+                проконсультируем бесплатно!
+              </>
+            }
+            subtitle="3 мүнөттө арыз бер. Командабыз 24 саат ичинде байланышка чыгат."
+            className="uppercase"
+          />
+        </div>
+      </section>
+      <QuestionsAboutEduPro />
+    </div>
+  );
 }
