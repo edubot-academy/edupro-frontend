@@ -20,17 +20,25 @@
     },
     "infoBlock": {
       "blocks": [
-        { "title": "Биз социалдык тармактарда" },
-        { "title": "Биздин байланыштар" },
-        { "title": "Дарек" },
-        { "title": "Email" }
+        {
+          "title": "Биз социалдык тармактарда"
+        },
+        {
+          "title": "Биздин байланыштар"
+        },
+        {
+          "title": "Дарек"
+        },
+        {
+          "title": "Email"
+        }
       ]
     },
     "contacts": {
       "instagram": "@edupro_academy_kg",
       "telegram": "@edupro_academy",
-       "phone": "+996 501 503 452",
-      "address": "Бишкек, Кыргызстан",
+      "phone": "+996 501 503 452",
+      "address": "Ахунбаев 129Б, Бишкек",
       "email": "learningedubot@gmail.com"
     },
     "successMessage": "Баиланышканыңызга рахмат! Командабыз 24 саат ичинде байланышка чыгат.",

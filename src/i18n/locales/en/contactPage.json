@@ -20,17 +20,25 @@
     },
     "infoBlock": {
       "blocks": [
-        { "title": "We are on social media" },
-        { "title": "Our contacts" },
-        { "title": "Address" },
-        { "title": "Email" }
+        {
+          "title": "We are on social media"
+        },
+        {
+          "title": "Our contacts"
+        },
+        {
+          "title": "Address"
+        },
+        {
+          "title": "Email"
+        }
       ]
     },
     "contacts": {
       "instagram": "@edupro_academy_kg",
       "telegram": "@edupro_academy",
-       "phone": "+996 501 503 452",
-      "address": "Bishkek, Kyrgyzstan",
+      "phone": "+996 501 503 452",
+      "address": "Akhunbaev 129B, Bishkek",
       "email": "learningedubot@gmail.com"
     },
     "successMessage": "Thank you for contacting us! Our team will reach out within 24 hours.",

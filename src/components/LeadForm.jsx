@@ -22,7 +22,7 @@ export default function LeadForm({
 
     const [form, setForm] = useState({
         fullName: "", // ИЗМЕНЕНО: name → fullName
-        email: "", 
+        email: "",
         phone: "",
         courseName: programOptions[0]?.slug || "it",
         courseType: "online",
@@ -37,26 +37,26 @@ export default function LeadForm({
 
     async function onSubmit(e) {
         e.preventDefault();
-        
+
         // ДОБАВЛЕНО: базовая валидация
         if (!form.email && !form.phone) {
             alert("Please provide email or phone");
             return;
         }
-        
+
         setLoading(true);
         try {
             // ИСПРАВЛЕНО: убрано преобразование полей, так как теперь используем fullName
-            const payload = { ...form, source: "WEBSITE"};
+            const payload = { ...form, source: "WEBSITE" };
             await submitLead(payload);
             setOk(true);
-            setForm({ 
+            setForm({
                 fullName: "", // ИЗМЕНЕНО: name → fullName
-                email: "", 
+                email: "",
                 phone: "",
                 courseName: programOptions[0]?.slug || "it",
                 courseType: "online",
-                message: "" 
+                message: ""
             });
         } catch (error) {
             alert(error.message || "Error sending message. Please try again later.");
@@ -70,63 +70,63 @@ export default function LeadForm({
         { slug: "english", title: getTranslation("contactUs.programs.english") },
     ];
 
-   const contactSections = [
-    {
-        title: getTranslation("contactUs.infoBlock.blocks.0.title"),
-        items: [
-            {
-                icon: <FaInstagram />,
-                bg: "#472799",
-                color: "#fff",
-                href: "https://www.instagram.com/edupro_academy_kg/",
-                content: getTranslation("contactUs.contacts.instagram"),
-            },
-            {
-                icon: <LiaTelegramPlane />,
-                bg: "#472799",
-                color: "#fff",
-                href: "https://t.me/your_telegram_account",
-                content: getTranslation("contactUs.contacts.telegram"),
-            }
-        ],
-    },
-    {
-        title: getTranslation("contactUs.infoBlock.blocks.1.title"),
-        items: [
-            {
-                icon: <LuPhoneCall />,
-                bg: "#472799",
-                color: "#fff",
-                href: "https://wa.me/996555123456",
-                content: getTranslation("contactUs.contacts.phone"),
-            },
-        ],
-    },
-    {
-        title: getTranslation("contactUs.infoBlock.blocks.2.title"),
-        items: [
-            {
-                icon: <HiLocationMarker />,
-                bg: "#472799",
-                color: "#fff",
-                href: "https://maps.google.com/?q=ваш_адрес",
-                content: getTranslation("contactUs.contacts.address"),
-            },
-        ],
-    },
-    {
-        title: getTranslation("contactUs.infoBlock.blocks.3.title"),
-        items: [
-            {
-                icon: <HiOutlineMail />,
-                bg: "#472799",
-                color: "#fff",
-                href: "mailto:your_email@example.com",
-                content: getTranslation("contactUs.contacts.email"),
-            },
-        ],
-    },
-];
+    const contactSections = [
+        {
+            title: getTranslation("contactUs.infoBlock.blocks.0.title"),
+            items: [
+                {
+                    icon: <FaInstagram />,
+                    bg: "#472799",
+                    color: "#fff",
+                    href: "https://www.instagram.com/edupro_academy_kg/",
+                    content: getTranslation("contactUs.contacts.instagram"),
+                },
+                {
+                    icon: <LiaTelegramPlane />,
+                    bg: "#472799",
+                    color: "#fff",
+                    href: "https://t.me/+iSKtm7ETpJU4Yzgx",
+                    content: getTranslation("contactUs.contacts.telegram"),
+                }
+            ],
+        },
+        {
+            title: getTranslation("contactUs.infoBlock.blocks.1.title"),
+            items: [
+                {
+                    icon: <LuPhoneCall />,
+                    bg: "#472799",
+                    color: "#fff",
+                    href: "https://wa.me/996501503452",
+                    content: getTranslation("contactUs.contacts.phone"),
+                },
+            ],
+        },
+        {
+            title: getTranslation("contactUs.infoBlock.blocks.2.title"),
+            items: [
+                {
+                    icon: <HiLocationMarker />,
+                    bg: "#472799",
+                    color: "#fff",
+                    href: "https://go.2gis.com/stJ8u",
+                    content: getTranslation("contactUs.contacts.address"),
+                },
+            ],
+        },
+        {
+            title: getTranslation("contactUs.infoBlock.blocks.3.title"),
+            items: [
+                {
+                    icon: <HiOutlineMail />,
+                    bg: "#472799",
+                    color: "#fff",
+                    href: "mailto:learningedubot@gmail.com",
+                    content: getTranslation("contactUs.contacts.email"),
+                },
+            ],
+        },
+    ];
 
     const inputFields = [
         {
@@ -224,7 +224,7 @@ export default function LeadForm({
                 {item.icon}
             </div>
             {item.content && (
-                <div 
+                <div
                     className="text-[#555] text-sm whitespace-pre-line cursor-pointer hover:underline transition-all"
                     onClick={() => {
                         if (item.href) {

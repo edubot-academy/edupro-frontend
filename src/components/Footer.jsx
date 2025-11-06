@@ -97,21 +97,21 @@ export default function Footer() {
               <li className="flex flex-col sm:flex-row sm:items-center">
                 <span className="mr-1">{contact.email}:</span>
                 <a
-                  href="mailto:info@edupro.academy"
+                  href="mailto:learningedubot@gmail.com"
                   className="hover:underline break-words"
                 >
-                  info@edupro.academy
+                  learningedubot@gmail.com
                 </a>
               </li>
               <li className="flex flex-col sm:flex-row sm:items-center">
                 <span className="mr-1">{contact.phone}:</span>
                 <a
-                  href="https://wa.me/996555497977"
+                  href="https://wa.me/996501503452"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline break-words"
                 >
-                  +996 (555) 497-977
+                  +996 501 503 452
                 </a>
               </li>
               <li className="flex flex-col sm:flex-row sm:items-center">
@@ -128,9 +128,7 @@ export default function Footer() {
               <li className="flex flex-col sm:flex-row sm:items-center text-white">
                 <span className="mr-1">{contact.addressPrefix}:</span>
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                    contact.address
-                  )}`}
+                  href={`https://go.2gis.com/stJ8u`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline break-words"
