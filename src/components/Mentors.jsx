@@ -31,7 +31,7 @@ function Mentors() {
                 className="w-[200px] sm:w-[240px] md:w-[260px] lg:w-[280px] xl:w-[300px]
                            h-[240px] sm:h-[300px] md:h-[320px] lg:h-[340px]
                            object-contain rounded-2xl"
-                src={mentor1}
+                src={x.image}
                 alt={x.name}
               />
               <div className="flex items-center justify-between w-full bg-[#2C2C2C] rounded-3xl px-3 sm:px-4 py-1.5 sm:py-2 mt-3">

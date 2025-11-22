@@ -102,20 +102,24 @@
     "button": "WITH OVER 10 YEARS OF EXPERIENCE",
     "mentors": [
       {
-        "name": "Talaaybek Imankulov",
+        "image": "/Islam.png",
+        "name": "Tabaev Islam",
         "role": "FrontEnd Mentor"
       },
       {
-        "name": "Mentor Name 2",
-        "role": "BackEnd Mentor"
+        "image": "/Tansuluu.png",
+        "name": "Karybekova Tansuluu",
+        "role": "FrontEnd Mentor"
       },
       {
-        "name": "Mentor Name 3",
-        "role": "UI/UX Mentor"
+        "image": "/Saadat.png",
+        "name": "Zholchubaeva Saadat",
+        "role": "FrontEnd Mentor"
       },
       {
-        "name": "Mentor Name 4",
-        "role": "AI Mentor"
+        "image": "/Kulpunai.png",
+        "name": "Jekshenbekova Kulpunai",
+        "role": "FrontEnd Mentor"
       }
     ]
   },
