@@ -1,12 +1,25 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import ModalTest from "./ModalTest";
 
 const TestForm = () => {
   const [activeStep, setActiveStep] = useState(null);
   const [answers, setAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
-    const navigate = useNavigate();
+   const [isModalOpen, setIsModalOpen] = useState(false);
+   const [result, setResult] = useState(null);
+
+   const handleClick = () => {
+     // 👉 здесь вычисляешь свой реальный результат
+     const calculatedResult = 75; // пример
+     setResult(calculatedResult);
+     setIsModalOpen(true); // открыть модалку
+   };
+     
+
+
+  const navigate = useNavigate();
   const { t } = useTranslation();
 
   const questionsByCategory = {
@@ -59,7 +72,6 @@ const TestForm = () => {
   ];
 
   const toggle = (index) => {
-   
     setActiveStep(index === activeStep ? null : index);
   };
 
@@ -71,7 +83,17 @@ const TestForm = () => {
     e.preventDefault();
     console.log("Ответы:", answers);
     setSubmitted(true);
+      let correctCount = 0;
+      questionsByCategory.forEach((q) => {
+        if (answers[q.id] === q.correct) correctCount++;
+      });
+
+      const percent = Math.round((correctCount / questionsByCategory.length) * 100);
+      setResult(percent);
+      setIsModalOpen(true);
+    
   };
+  
   return (
     <form
       onSubmit={handleSubmit}
@@ -201,6 +223,7 @@ const TestForm = () => {
         </div>
 
         <button
+        onClick={handleClick}
           type="submit"
           className="flex items-center justify-center gap-3 px-10 py-4 w-[262px] h-[77px] rounded-full text-white text-[24px] font-medium bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0] 
             hover:opacity-90 transition 
@@ -222,6 +245,11 @@ const TestForm = () => {
             />
           </svg>
         </button>
+        <ModalTest
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          result={result}
+        />
       </div>
     </form>
   );
