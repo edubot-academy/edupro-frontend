@@ -102,20 +102,24 @@
     "button": "С ОПЫТОМ БОЛЕЕ 10 ЛЕТ",
     "mentors": [
       {
-        "name": "Талаайбек Ыманкулов",
+        "image": "/Islam.png",
+        "name": "Табаев Ислам",
         "role": "FrontEnd Ментор"
       },
       {
-        "name": "Имя Ментор 2",
-        "role": "BackEnd Ментор"
+        "image": "/Tansuluu.png",
+        "name": "Карыбекова Тансулу",
+        "role": "FrontEnd Ментор"
       },
       {
-        "name": "Имя Ментор 3",
-        "role": "UI/UX Ментор"
+        "image": "/Saadat.png",
+        "name": "Жолчубаева Саадат",
+        "role": "FrontEnd Ментор"
       },
       {
-        "name": "Имя Ментор 4",
-        "role": "AI Ментор"
+        "image": "/Kulpunai.png",
+        "name": "Жекшенбекова Кулпунай",
+        "role": "FrontEnd Ментор"
       }
     ]
   },

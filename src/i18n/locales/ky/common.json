@@ -98,20 +98,24 @@
     "button": "10 ЖЫЛДАН АШУК ТАЖРЫЙБА МЕНЕН",
     "mentors": [
       {
-        "name": "Талаайбек Ыманкулов",
+        "image": "/Islam.png",
+        "name": "Табаев Ислам",
         "role": "FrontEnd Ментор"
       },
       {
-        "name": "Ментор ысым 2",
-        "role": "BackEnd Ментор"
+        "image": "/Tansuluu.png",
+        "name": "Карыбекова Тансулу",
+        "role": "FrontEnd Ментор"
       },
       {
-        "name": "Ментор ысым 3",
-        "role": "UI/UX Ментор"
+        "image": "/Saadat.png",
+        "name": "Жолчубаева Саадат",
+        "role": "FrontEnd Ментор"
       },
       {
-        "name": "Ментор ысым 4",
-        "role": "AI Ментор"
+        "image": "/Kulpunai.png",
+        "name": "Жекшенбекова Кулпунай",
+        "role": "FrontEnd Ментор"
       }
     ]
   },
